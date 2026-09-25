@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!foundClass) return;
 
     subjectModalTitle.textContent = foundClass.name;
-    subjectModalSubtitle.textContent = `${parentCategory.title} &bull; ${foundClass.subjects.length} Mata Pelajaran Tersedia (100% Gratis)`;
+    subjectModalSubtitle.textContent = `${parentCategory.title} • ${foundClass.subjects.length} Mata Pelajaran Tersedia (100% Gratis)`;
     subjectBatchDownloadBtn.href = `https://drive.google.com/drive/search?q=${encodeURIComponent(foundClass.name)}`;
 
     if (foundClass.subjects.length === 0) {
@@ -575,11 +575,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileDrawer = document.getElementById('mobile-menu-drawer');
   if (mobileToggleBtn && mobileDrawer) {
     mobileToggleBtn.addEventListener('click', () => {
-      mobileDrawer.classList.toggle('open');
+      const isOpen = mobileDrawer.classList.toggle('open');
+      const icon = mobileToggleBtn.querySelector('i');
+      if (icon) {
+        icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+      }
     });
     mobileDrawer.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         mobileDrawer.classList.remove('open');
+        const icon = mobileToggleBtn.querySelector('i');
+        if (icon) {
+          icon.className = 'fas fa-bars';
+        }
       });
     });
   }
