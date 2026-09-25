@@ -1,0 +1,17 @@
+# Screenshots & Media
+screenshot_*.png
+*.tmp
+
+# Temporary analysis & extraction dumps
+ipas_extracted.txt
+page_titles.txt
+subject_headings.txt
+
+# Scratch scripts
+scratch/
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db

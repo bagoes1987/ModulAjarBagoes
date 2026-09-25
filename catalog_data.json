@@ -1,0 +1,1831 @@
+{
+  "tk": {
+    "title": "Modul Ajar TK / PAUD Deep Learning",
+    "badge": "TK / PAUD",
+    "color": "amber",
+    "desc": "Lengkap untuk TK A & TK B 1 tahun penuh (Semester 1 & 2)",
+    "classes": [
+      {
+        "id": "tk-ab",
+        "name": "TK A & TK B",
+        "desc": "Modul Ajar, RPPM, Prota, Prosem, CP, Raport, Jadwal Harian & Mingguan, Supervisi & Asesmen Awal",
+        "subjects": [
+          {
+            "title": "Modul Ajar TK A Deep Learning",
+            "slug": "modul-ajar-tk-a-deep-learning",
+            "format": "Word (.doc) & PDF",
+            "preview": "https://drive.google.com/file/d/10z5cQkSq83z-XDPlF0iAKa5YoxNwi8e_/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+tk+deep+learning"
+          },
+          {
+            "title": "Modul Ajar TK B Deep Learning",
+            "slug": "modul-ajar-tk-b-deep-learning",
+            "format": "Word (.doc) & PDF",
+            "preview": "https://drive.google.com/file/d/1R7clMGAcgF1wWckgOHKHoO0Va6OQUO5l/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+tk+deep+learning"
+          }
+        ]
+      }
+    ]
+  },
+  "sd": {
+    "title": "Modul Ajar Deep Learning SD",
+    "badge": "Sekolah Dasar",
+    "color": "blue",
+    "desc": "Lengkap Kelas 1 - 6 SD sesuai CP 046 Tahun 2025 (Semester 1 & 2)",
+    "classes": [
+      {
+        "id": "sd-1",
+        "name": "Kelas 1 SD",
+        "count": 70,
+        "desc": "Seluruh mapel lengkap Kelas 1 SD (Matematika, B. Indonesia, IPAS, Pancasila, PJOK, Seni Rupa, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Antropologi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-antropologi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+antropologi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Antropologi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-antropologi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+antropologi+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 1 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-1-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+1+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 10 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Tl Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-tl-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+tl+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Tl Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-tl-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+tl+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 10 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Tl Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-inggris-tl-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+tl+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Tl Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-inggris-tl-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+tl+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Biologi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-biologi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+biologi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Biologi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-biologi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+biologi+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Fisika Kelas 11 Deep Learning",
+            "slug": "modul-ajar-fisika-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+fisika+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Fisika Kelas 12 Deep Learning",
+            "slug": "modul-ajar-fisika-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+fisika+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Geografi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-geografi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+geografi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Geografi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-geografi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+geografi+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPA Kelas 10 Deep Learning",
+            "slug": "modul-ajar-ipa-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipa+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPS Kelas 10 Deep Learning",
+            "slug": "modul-ajar-ips-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ips+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 1 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-1-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+1+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 10 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 11 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 12 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 1 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-1-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+1+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 1 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-1-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+1+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 1 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-1-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+1+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 1 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-1-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+1+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sejarah Kelas 11 Deep Learning",
+            "slug": "modul-ajar-sejarah-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sejarah+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sejarah Kelas 12 Deep Learning",
+            "slug": "modul-ajar-sejarah-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sejarah+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 1 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-1-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+1+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sosiologi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-sosiologi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sosiologi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sosiologi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-sosiologi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sosiologi+kelas+12+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "sd-2",
+        "name": "Kelas 2 SD",
+        "count": 7,
+        "desc": "Seluruh mapel lengkap Kelas 2 SD (Matematika, B. Indonesia, IPAS, Pancasila, PJOK, Seni Rupa, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 2 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-2-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+2+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 2 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-2-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+2+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 2 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-2-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+2+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 2 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-2-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+2+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 2 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-2-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+2+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 2 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-2-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+2+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 2 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-2-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+2+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "sd-3",
+        "name": "Kelas 3 SD",
+        "count": 9,
+        "desc": "Seluruh mapel lengkap Kelas 3 SD (Matematika, B. Indonesia, IPAS, Pancasila, PJOK, Seni Rupa, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 3 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 3 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPAs Kelas 3 Deep Learning",
+            "slug": "modul-ajar-ipas-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipas+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 3 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 3 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 3 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 3 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 3 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+3+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 3 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-3-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+3+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "sd-4",
+        "name": "Kelas 4 SD",
+        "count": 9,
+        "desc": "Seluruh mapel lengkap Kelas 4 SD (Matematika, B. Indonesia, IPAS, Pancasila, PJOK, Seni Rupa, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 4 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 4 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPAs Kelas 4 Deep Learning",
+            "slug": "modul-ajar-ipas-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipas+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 4 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 4 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 4 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 4 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 4 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+4+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 4 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-4-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+4+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "sd-5",
+        "name": "Kelas 5 SD",
+        "count": 9,
+        "desc": "Seluruh mapel lengkap Kelas 5 SD (Matematika, B. Indonesia, IPAS, Pancasila, PJOK, Seni Rupa, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 5 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 5 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPAs Kelas 5 Deep Learning",
+            "slug": "modul-ajar-ipas-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipas+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 5 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 5 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 5 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 5 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 5 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+5+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 5 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-5-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+5+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "sd-6",
+        "name": "Kelas 6 SD",
+        "count": 9,
+        "desc": "Seluruh mapel lengkap Kelas 6 SD (Matematika, B. Indonesia, IPAS, Pancasila, PJOK, Seni Rupa, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 6 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 6 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPAs Kelas 6 Deep Learning",
+            "slug": "modul-ajar-ipas-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipas+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 6 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 6 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 6 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 6 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 6 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+6+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 6 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-6-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+6+deep+learning"
+          }
+        ]
+      }
+    ]
+  },
+  "smp": {
+    "title": "Modul Ajar Deep Learning SMP",
+    "badge": "Sekolah Menengah Pertama",
+    "color": "indigo",
+    "desc": "Lengkap Kelas 7 - 9 SMP Fase D (Semester 1 & 2)",
+    "classes": [
+      {
+        "id": "smp-7",
+        "name": "Kelas 7 SMP",
+        "count": 20,
+        "desc": "Seluruh mapel lengkap Kelas 7 SMP (Matematika, B. Indonesia, IPA, IPS, B. Inggris, Informatika, PPKn, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 7 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 7 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Informatika Kelas 7 Deep Learning",
+            "slug": "modul-ajar-informatika-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+informatika+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPA Kelas 7 Deep Learning",
+            "slug": "modul-ajar-ipa-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipa+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPS Kelas 7 Deep Learning",
+            "slug": "modul-ajar-ips-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ips+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 7 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Matematika Kelas 7 Deep Learning",
+            "slug": "modul-ajar-matematika-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+matematika+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 7 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 7 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 7 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 7 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 7 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 7 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 7 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 7 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 7 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 7 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 7 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+7+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 7 Revisi Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-7-revisi-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+7+revisi+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 7 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-7-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+7+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "smp-8",
+        "name": "Kelas 8 SMP",
+        "count": 20,
+        "desc": "Seluruh mapel lengkap Kelas 8 SMP (Matematika, B. Indonesia, IPA, IPS, B. Inggris, Informatika, PPKn, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 8 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 8 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Informatika Kelas 8 Deep Learning",
+            "slug": "modul-ajar-informatika-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+informatika+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPA Kelas 8 Deep Learning",
+            "slug": "modul-ajar-ipa-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipa+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPS Kelas 8 Deep Learning",
+            "slug": "modul-ajar-ips-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ips+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 8 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Matematika Kelas 8 Deep Learning",
+            "slug": "modul-ajar-matematika-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+matematika+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 8 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 8 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 8 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 8 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 8 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 8 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 8 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 8 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 8 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 8 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 8 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+8+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 8 Revisi Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-8-revisi-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+8+revisi+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 8 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-8-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+8+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "smp-9",
+        "name": "Kelas 9 SMP",
+        "count": 20,
+        "desc": "Seluruh mapel lengkap Kelas 9 SMP (Matematika, B. Indonesia, IPA, IPS, B. Inggris, Informatika, PPKn, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 9 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 9 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Informatika Kelas 9 Deep Learning",
+            "slug": "modul-ajar-informatika-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+informatika+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPA Kelas 9 Deep Learning",
+            "slug": "modul-ajar-ipa-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipa+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPS Kelas 9 Deep Learning",
+            "slug": "modul-ajar-ips-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ips+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPS Kelas 9 Deep Learning Revisi 2025",
+            "slug": "modul-ajar-ips-kelas-9-deep-learning-revisi-2025",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ips+kelas+9+deep+learning+revisi+2025"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 9 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Matematika Kelas 9 Deep Learning",
+            "slug": "modul-ajar-matematika-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+matematika+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 9 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 9 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 9 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 9 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 9 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 9 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 9 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 9 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 9 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 9 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 9 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+9+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 9 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-9-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/1IFNPUmaWv1xgwB8lfckwSNQ62iL_xXrC/view?usp=drive_link",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+9+deep+learning"
+          }
+        ]
+      }
+    ]
+  },
+  "sma": {
+    "title": "Modul Ajar Deep Learning SMA",
+    "badge": "Sekolah Menengah Atas",
+    "color": "purple",
+    "desc": "Lengkap Kelas 10, 11, 12 SMA Mapel Umum & Rumpun Peminatan",
+    "classes": [
+      {
+        "id": "sma-10",
+        "name": "Kelas 10 SMA",
+        "count": 17,
+        "desc": "Seluruh mapel lengkap Kelas 10 SMA Umum & Peminatan (Matematika, Biologi, Fisika, Kimia, Ekonomi, Geografi, Sosiologi, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 10 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 10 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPA Kelas 10 Deep Learning",
+            "slug": "modul-ajar-ipa-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ipa+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar IPS Kelas 10 Deep Learning",
+            "slug": "modul-ajar-ips-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ips+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 10 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 10 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 10 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+10+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 10 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-10-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+10+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "sma-11",
+        "name": "Kelas 11 SMA",
+        "count": 25,
+        "desc": "Seluruh mapel lengkap Kelas 11 SMA Umum & Peminatan (Matematika, Biologi, Fisika, Kimia, Ekonomi, Geografi, Sosiologi, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Antropologi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-antropologi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+antropologi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Tl Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-tl-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+tl+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Tl Kelas 11 Deep Learning",
+            "slug": "modul-ajar-b-inggris-tl-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+tl+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Biologi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-biologi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+biologi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Ekonomi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-ekonomi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ekonomi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Fisika Kelas 11 Deep Learning",
+            "slug": "modul-ajar-fisika-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+fisika+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Geografi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-geografi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+geografi+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 11 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Kimia Kelas 11 Deep Learning",
+            "slug": "modul-ajar-kimia-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+kimia+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 11 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 11 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sejarah Kelas 11 Deep Learning",
+            "slug": "modul-ajar-sejarah-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sejarah+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 11 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+11+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sosiologi Kelas 11 Deep Learning",
+            "slug": "modul-ajar-sosiologi-kelas-11-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sosiologi+kelas+11+deep+learning"
+          }
+        ]
+      },
+      {
+        "id": "sma-12",
+        "name": "Kelas 12 SMA",
+        "count": 25,
+        "desc": "Seluruh mapel lengkap Kelas 12 SMA Umum & Peminatan (Matematika, Biologi, Fisika, Kimia, Ekonomi, Geografi, Sosiologi, dll)",
+        "subjects": [
+          {
+            "title": "Modul Ajar Antropologi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-antropologi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+antropologi+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Indonesia Tl Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-indonesia-tl-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+indonesia+tl+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-inggris-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Bahasa Inggris Tl Kelas 12 Deep Learning",
+            "slug": "modul-ajar-b-inggris-tl-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+b+inggris+tl+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Biologi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-biologi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+biologi+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Ekonomi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-ekonomi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+ekonomi+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Fisika Kelas 12 Deep Learning",
+            "slug": "modul-ajar-fisika-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+fisika+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Geografi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-geografi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+geografi+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Katolik Kelas 12 Deep Learning",
+            "slug": "modul-ajar-katolik-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+katolik+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Kimia Kelas 12 Deep Learning",
+            "slug": "modul-ajar-kimia-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+kimia+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PAI Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pai-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pai+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pak Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pak-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pak+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Pendidikan Pancasila Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pendidikan-pancasila-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pendidikan+pancasila+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar PJOK Kelas 12 Deep Learning",
+            "slug": "modul-ajar-pjok-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+pjok+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Budidaya Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-budidaya-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+budidaya+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Kerajinan Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-kerajinan-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+kerajinan+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Pengolahan Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-pengolahan-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+pengolahan+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Prakarya Rekayasa Kelas 12 Deep Learning",
+            "slug": "modul-ajar-prakarya-rekayasa-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+prakarya+rekayasa+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sejarah Kelas 12 Deep Learning",
+            "slug": "modul-ajar-sejarah-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sejarah+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Musik Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-musik-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+musik+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Rupa Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-rupa-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+rupa+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Tari Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-tari-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+tari+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Seni Teater Kelas 12 Deep Learning",
+            "slug": "modul-ajar-seni-teater-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+seni+teater+kelas+12+deep+learning"
+          },
+          {
+            "title": "Modul Ajar Sosiologi Kelas 12 Deep Learning",
+            "slug": "modul-ajar-sosiologi-kelas-12-deep-learning",
+            "format": "Word (.doc) 100% Editable",
+            "preview": "https://drive.google.com/file/d/19k-AZJSaCdCsd-YZTGM9PYSmxMw2GnvF/preview",
+            "drive": "https://drive.google.com/drive/search?q=modul+ajar+sosiologi+kelas+12+deep+learning"
+          }
+        ]
+      }
+    ]
+  }
+}
