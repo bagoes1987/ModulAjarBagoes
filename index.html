@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Main Stylesheet (Standalone & Bulletproof) -->
-  <link rel="stylesheet" href="styles.css?v=20261002d">
+  <link rel="stylesheet" href="styles.css?v=20261002_smartchips">
 </head>
 <body>
 
@@ -822,52 +822,31 @@
               </div>
             </div>
 
-            <!-- Quick Chip Buttons for Step 2 -->
-            <div style="margin-bottom: 0.85rem; padding: 0.65rem 0.85rem; background: #f1f5f9; border-radius: 0.65rem;">
-              <span style="font-size: 0.75rem; font-weight: 700; color: #475569; margin-bottom: 0.45rem; display: block;">
-                <i class="fas fa-hand-pointer" style="color: #2563eb;"></i> Klik cepat tombol di bawah untuk mengisi elemen mapel pilihan Anda:
-              </span>
-              <div class="element-quick-chips">
-                <button type="button" class="btn-element-chip" data-preset="sma_indo">Bahasa Indonesia</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_mat">Matematika Umum</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_mat_tl">Matematika Tingkat Lanjut</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_fisika">Fisika SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_kimia">Kimia SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_biologi">Biologi SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_ekonomi">Ekonomi SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_sosiologi">Sosiologi SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_geografi">Geografi SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_antropologi">Antropologi SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_sejarah">Sejarah SMA</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_sejarah_tl">Sejarah Tingkat Lanjut</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_inggris">Bahasa Inggris</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_indo_tl">B. Indonesia Tingkat Lanjut</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_inggris_tl">B. Inggris Tingkat Lanjut</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_bahasa_arab">Bahasa Arab</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_bahasa_jepang">Bahasa Jepang</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_infor">Informatika SMA/SMP</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pancasila">Pendidikan Pancasila</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pai">PAI &amp; BP</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pak">Agama Kristen (PAK)</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_katolik">Agama Katolik</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pjok">PJOK</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_kerajinan">PKWU Kerajinan</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_pengolahan">PKWU Pengolahan</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_rekayasa">PKWU Rekayasa</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_budidaya">PKWU Budidaya</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_senirupa">Seni Rupa</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_senimusik">Seni Musik</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_senitari">Seni Tari</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_seniteater">Seni Teater</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_bk">Bimbingan Konseling (BK)</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_ipa">IPA SMP</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_ips">IPS SMP</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_prakarya">Prakarya SMP</button>
-                <button type="button" class="btn-element-chip" data-preset="sd_ipas">IPAS SD</button>
-                <button type="button" class="btn-element-chip" data-preset="sd_mulok">Bahasa Daerah (Mulok)</button>
-                <button type="button" class="btn-element-chip" data-preset="smk_ipas">Projek IPAS SMK</button>
-                <button type="button" class="btn-element-chip" data-preset="smk_pkk">PKK SMK</button>
-                <button type="button" class="btn-element-chip" data-preset="tk_paud">TK / PAUD</button>
+            <!-- Quick Chip Buttons for Step 2 (Filtered dynamically by Jenjang) -->
+            <div id="element-chips-wrapper" style="margin-bottom: 0.85rem; padding: 0.75rem 0.95rem; background: #f8fafc; border: 1.5px solid #dbeafe; border-radius: 0.85rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span style="font-size: 0.75rem; font-weight: 800; color: #1e3a8a; display: flex; align-items: center; gap: 0.35rem;">
+                  <i class="fas fa-hand-pointer" style="color: #2563eb;"></i> Pilihan Mapel Jenjang Terkait (Klik Cepat):
+                </span>
+                <!-- Active mapel badge -->
+                <span id="active-mapel-badge" style="font-size: 0.725rem; font-weight: 700; color: #1e40af; background: #dbeafe; padding: 0.2rem 0.6rem; border-radius: 9999px; border: 1px solid #93c5fd; display: none;">
+                  <i class="fas fa-check-circle" style="color: #2563eb;"></i> Mapel Aktif: <strong id="active-mapel-name">-</strong>
+                </span>
+              </div>
+
+              <!-- Jenjang Filter Tabs (Otomatis menyesuaikan dengan Mapel di atas) -->
+              <div class="element-jenjang-filter-tabs" style="display: flex; gap: 0.35rem; margin-bottom: 0.65rem; flex-wrap: wrap;">
+                <button type="button" class="btn-jenjang-tab" data-filter="sd">🏫 SD / MI</button>
+                <button type="button" class="btn-jenjang-tab" data-filter="smp">🏛️ SMP / MTs</button>
+                <button type="button" class="btn-jenjang-tab" data-filter="sma">🎓 SMA / MA</button>
+                <button type="button" class="btn-jenjang-tab" data-filter="smk">🛠️ SMK</button>
+                <button type="button" class="btn-jenjang-tab" data-filter="tk">🌱 PAUD / TK</button>
+                <button type="button" class="btn-jenjang-tab active" data-filter="all">Semua</button>
+              </div>
+
+              <!-- Dynamic chips container populated cleanly from MAPEL_PRESETS -->
+              <div id="element-quick-chips-container" class="element-quick-chips">
+                <!-- Rendered dynamically by JavaScript -->
               </div>
             </div>
 
@@ -1329,7 +1308,7 @@ Tuliskan 3 alternatif kalimat deskriptif raport yang positif, mengapresiasi pros
   <script src="modules-data.js"></script>
   <script src="cp_atp_data.js"></script>
   <script src="cp_reader_data.js"></script>
-  <script src="mapel_presets_data.js?v=20261002_bskap046"></script>
-  <script src="app.js?v=20261002_bskap046"></script>
+  <script src="mapel_presets_data.js?v=20261002_smartchips"></script>
+  <script src="app.js?v=20261002_smartchips"></script>
 </body>
 </html>

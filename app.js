@@ -751,20 +751,116 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnCopyMaster = document.getElementById('btn-copy-master-prompt');
   const promptCharCount = document.getElementById('prompt-char-count');
   const mgPresetSelect = document.getElementById('mg-preset-select');
-  const elementChips = document.querySelectorAll('.btn-element-chip');
+  const elementChipsContainer = document.getElementById('element-quick-chips-container');
+  const activeMapelBadge = document.getElementById('active-mapel-badge');
+  const activeMapelName = document.getElementById('active-mapel-name');
+  const jenjangTabs = document.querySelectorAll('.btn-jenjang-tab');
 
   let currentMasterPromptText = '';
+  let currentJenjangFilter = 'all';
+  let activePresetKey = '';
 
   // Comprehensive Preset Database for Instant Subject & Element Autofill (loaded from mapel_presets_data.js)
   const MAPEL_PRESETS = (typeof window !== 'undefined' && window.MAPEL_PRESETS) ? window.MAPEL_PRESETS : {};
+
+  function getJenjangFromKey(key) {
+    if (!key) return 'all';
+    if (key.startsWith('sd_')) return 'sd';
+    if (key.startsWith('smp_')) return 'smp';
+    if (key.startsWith('sma_')) return 'sma';
+    if (key.startsWith('smk_')) return 'smk';
+    if (key.startsWith('tk_') || key === 'tk_paud') return 'tk';
+    return 'all';
+  }
+
+  function renderElementChips(filterJenjang = currentJenjangFilter, activeKey = activePresetKey) {
+    if (!elementChipsContainer || typeof MAPEL_PRESETS === 'undefined') return;
+
+    currentJenjangFilter = filterJenjang;
+    activePresetKey = activeKey;
+
+    // Update jenjang tab buttons UI
+    if (jenjangTabs && jenjangTabs.length > 0) {
+      jenjangTabs.forEach(tab => {
+        if (tab.dataset.filter === filterJenjang) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+    }
+
+    // Update active badge
+    if (activeMapelBadge && activeMapelName) {
+      if (activeKey && MAPEL_PRESETS[activeKey]) {
+        activeMapelBadge.style.display = 'inline-flex';
+        activeMapelName.textContent = MAPEL_PRESETS[activeKey].mapel;
+      } else {
+        activeMapelBadge.style.display = 'none';
+      }
+    }
+
+    // Build buttons
+    const keys = Object.keys(MAPEL_PRESETS);
+    let html = '';
+
+    keys.forEach(key => {
+      const p = MAPEL_PRESETS[key];
+      const j = getJenjangFromKey(key);
+
+      // If filtering, skip other jenjang
+      if (filterJenjang !== 'all' && j !== filterJenjang) {
+        return;
+      }
+
+      const isActive = (key === activeKey);
+      const activeClass = isActive ? ' chip-active' : '';
+      const checkIcon = isActive ? '<i class="fas fa-check" style="font-size: 0.65rem; margin-right: 0.2rem;"></i>' : '';
+
+      html += `<button type="button" class="btn-element-chip${activeClass}" data-preset="${key}" data-jenjang="${j}" title="${p.mapel}">
+        ${checkIcon}${p.mapel}
+      </button>`;
+    });
+
+    elementChipsContainer.innerHTML = html;
+
+    // Attach click events to the rendered chips
+    elementChipsContainer.querySelectorAll('.btn-element-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.dataset.preset;
+        if (!key || !MAPEL_PRESETS[key]) return;
+
+        // Select in dropdown and trigger autofill
+        if (mgPresetSelect) {
+          mgPresetSelect.value = key;
+          mgPresetSelect.dispatchEvent(new Event('change'));
+        }
+      });
+    });
+  }
+
+  // Wire up Jenjang filter tab buttons
+  if (jenjangTabs && jenjangTabs.length > 0) {
+    jenjangTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const f = tab.dataset.filter || 'all';
+        renderElementChips(f, activePresetKey);
+      });
+    });
+  }
 
   // Wire up Preset Selector Dropdown
   if (mgPresetSelect) {
     mgPresetSelect.addEventListener('change', (e) => {
       const selectedKey = e.target.value;
-      if (!selectedKey || !MAPEL_PRESETS[selectedKey]) return;
+      if (!selectedKey || !MAPEL_PRESETS[selectedKey]) {
+        if (activeMapelBadge) activeMapelBadge.style.display = 'none';
+        renderElementChips('all', '');
+        return;
+      }
 
       const p = MAPEL_PRESETS[selectedKey];
+      const j = getJenjangFromKey(selectedKey);
 
       document.getElementById('mg-mapel').value = p.mapel;
       document.getElementById('mg-singkatan').value = p.singkatan;
@@ -801,32 +897,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!guruInput.value) guruInput.value = 'Guru Pengampu, S.Pd.';
       if (!kepInput.value) kepInput.value = 'Kepala Sekolah, M.Pd.';
 
+      // Automatically filter Step 2 chips to this jenjang only, and highlight active mapel!
+      renderElementChips(j, selectedKey);
+
       showToast(`Mata pelajaran ${p.mapel} dipilih! Elemen & CP resmi SK 046 langsung terisi.`);
     });
   }
 
-  // Quick chip buttons in Step 2:
-  if (elementChips && elementChips.length > 0) {
-    elementChips.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const key = btn.dataset.preset;
-        if (!key || !MAPEL_PRESETS[key]) return;
-
-        const p = MAPEL_PRESETS[key];
-        document.getElementById('mg-elemen-kode').value = p.elemenKode;
-        
-        // Also sync mapel & singkatan if empty or different
-        const mapelInput = document.getElementById('mg-mapel');
-        const singkatanInput = document.getElementById('mg-singkatan');
-        if (!mapelInput.value || mapelInput.value !== p.mapel) {
-          mapelInput.value = p.mapel;
-          singkatanInput.value = p.singkatan;
-        }
-
-        showToast(`Elemen resmi ${p.mapel} berhasil dipasang.`);
-      });
-    });
-  }
+  // Initial render of element chips
+  renderElementChips('all', '');
 
   // Demo Data Preset (Default: Bahasa Inggris SMP)
   const DEMO_MASTER_DATA = MAPEL_PRESETS.smp_inggris;
@@ -844,6 +923,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('mg-nipkepsek').value = '19720315 199802 2 001';
 
       if (mgPresetSelect) mgPresetSelect.value = 'smp_inggris';
+      renderElementChips('smp', 'smp_inggris');
       const p = MAPEL_PRESETS.smp_inggris;
       document.getElementById('mg-mapel').value = p.mapel;
       document.getElementById('mg-singkatan').value = p.singkatan;
