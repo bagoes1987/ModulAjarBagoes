@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Main Stylesheet (Standalone & Bulletproof) -->
-  <link rel="stylesheet" href="styles.css?v=20261002c">
+  <link rel="stylesheet" href="styles.css?v=20261002d">
 </head>
 <body>
 
@@ -617,46 +617,104 @@
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <select id="mg-preset-select" style="flex: 1; min-width: 260px; padding: 0.75rem 1rem; font-size: 0.9rem; font-weight: 700; color: #1e40af; border: 2px solid #3b82f6; border-radius: 0.75rem; background: white; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.04);">
               <option value="">-- KLIK DI SINI UNTUK MEMILIH MATA PELAJARAN ANDA --</option>
-              <optgroup label="Sekolah Dasar (SD)">
+              
+              <optgroup label="⭐ Sekolah Dasar (SD / MI)">
                 <option value="sd_indo">SD - Bahasa Indonesia (Fase A, B, C)</option>
                 <option value="sd_mat">SD - Matematika (Fase A, B, C)</option>
-                <option value="sd_ipas">SD - IPAS / Ilmu Pengetahuan Alam & Sosial (Fase B, C)</option>
+                <option value="sd_ipas">SD - IPAS / Alam &amp; Sosial (Fase B, C)</option>
                 <option value="sd_pancasila">SD - Pendidikan Pancasila (Fase A, B, C)</option>
                 <option value="sd_pai">SD - Pendidikan Agama Islam / PAI (Fase A, B, C)</option>
+                <option value="sd_pak">SD - Pendidikan Agama Kristen / PAK (Fase A, B, C)</option>
+                <option value="sd_katolik">SD - Pendidikan Agama Katolik (Fase A, B, C)</option>
                 <option value="sd_inggris">SD - Bahasa Inggris (Fase A, B, C)</option>
-                <option value="sd_pjok">SD - PJOK (Fase A, B, C)</option>
+                <option value="sd_pjok">SD - PJOK / Penjasorkes (Fase A, B, C)</option>
                 <option value="sd_senirupa">SD - Seni Rupa (Fase A, B, C)</option>
+                <option value="sd_senimusik">SD - Seni Musik (Fase A, B, C)</option>
+                <option value="sd_senitari">SD - Seni Tari (Fase A, B, C)</option>
+                <option value="sd_seniteater">SD - Seni Teater (Fase A, B, C)</option>
+                <option value="sd_mulok">SD - Bahasa Daerah / Muatan Lokal (Fase A, B, C)</option>
               </optgroup>
-              <optgroup label="SMP / MTs (Fase D)">
+
+              <optgroup label="⭐ SMP / MTs (Fase D - Kelas 7, 8, 9)">
                 <option value="smp_indo">SMP - Bahasa Indonesia (Fase D)</option>
                 <option value="smp_inggris">SMP - Bahasa Inggris (Fase D)</option>
                 <option value="smp_mat">SMP - Matematika (Fase D)</option>
-                <option value="smp_ipa">SMP - Ilmu Pengetahuan Alam / IPA (Fase D)</option>
-                <option value="smp_ips">SMP - Ilmu Pengetahuan Sosial / IPS (Fase D)</option>
-                <option value="smp_pancasila">SMP - Pendidikan Pancasila (Fase D)</option>
-                <option value="smp_pai">SMP - PAI & Budi Pekerti (Fase D)</option>
+                <option value="smp_ipa">SMP - IPA Terpadu (Fase D)</option>
+                <option value="smp_ips">SMP - IPS Terpadu (Fase D)</option>
                 <option value="smp_infor">SMP - Informatika (Fase D)</option>
+                <option value="smp_pancasila">SMP - Pendidikan Pancasila (Fase D)</option>
+                <option value="smp_pai">SMP - PAI &amp; Budi Pekerti (Fase D)</option>
+                <option value="smp_pak">SMP - Pendidikan Agama Kristen (Fase D)</option>
+                <option value="smp_katolik">SMP - Pendidikan Agama Katolik (Fase D)</option>
                 <option value="smp_pjok">SMP - PJOK (Fase D)</option>
                 <option value="smp_senirupa">SMP - Seni Rupa (Fase D)</option>
+                <option value="smp_senimusik">SMP - Seni Musik (Fase D)</option>
+                <option value="smp_senitari">SMP - Seni Tari (Fase D)</option>
+                <option value="smp_seniteater">SMP - Seni Teater (Fase D)</option>
+                <option value="smp_prakarya">SMP - Prakarya (Fase D)</option>
+                <option value="smp_bk">SMP - Bimbingan dan Konseling / BK (Fase D)</option>
               </optgroup>
-              <optgroup label="SMA / SMK / MA (Fase E & F)">
-                <option value="sma_indo">SMA - Bahasa Indonesia (Fase E & F)</option>
-                <option value="sma_inggris">SMA - Bahasa Inggris (Fase E & F)</option>
-                <option value="sma_mat">SMA - Matematika (Fase E & F)</option>
-                <option value="sma_fisika">SMA - Fisika (Fase E & F)</option>
-                <option value="sma_kimia">SMA - Kimia (Fase E & F)</option>
-                <option value="sma_biologi">SMA - Biologi (Fase E & F)</option>
-                <option value="sma_ekonomi">SMA - Ekonomi (Fase E & F)</option>
-                <option value="sma_sosiologi">SMA - Sosiologi (Fase E & F)</option>
-                <option value="sma_geografi">SMA - Geografi (Fase E & F)</option>
-                <option value="sma_sejarah">SMA - Sejarah (Fase E & F)</option>
-                <option value="sma_pancasila">SMA - Pendidikan Pancasila (Fase E & F)</option>
-                <option value="sma_pai">SMA - PAI & Budi Pekerti (Fase E & F)</option>
-                <option value="sma_infor">SMA - Informatika (Fase E & F)</option>
-                <option value="sma_pjok">SMA - PJOK (Fase E & F)</option>
+
+              <optgroup label="⭐ SMA / MA - Mata Pelajaran Umum (Fase E &amp; F)">
+                <option value="sma_indo">SMA - Bahasa Indonesia Umum (Fase E &amp; F)</option>
+                <option value="sma_inggris">SMA - Bahasa Inggris Umum (Fase E &amp; F)</option>
+                <option value="sma_mat">SMA - Matematika Umum (Fase E &amp; F)</option>
+                <option value="sma_pancasila">SMA - Pendidikan Pancasila (Fase E &amp; F)</option>
+                <option value="sma_sejarah">SMA - Sejarah Umum (Fase E &amp; F)</option>
+                <option value="sma_pjok">SMA - PJOK (Fase E &amp; F)</option>
+                <option value="sma_pai">SMA - PAI &amp; Budi Pekerti (Fase E &amp; F)</option>
+                <option value="sma_pak">SMA - Pendidikan Agama Kristen (Fase E &amp; F)</option>
+                <option value="sma_katolik">SMA - Pendidikan Agama Katolik (Fase E &amp; F)</option>
+                <option value="sma_bk">SMA - Bimbingan dan Konseling / BK (Fase E &amp; F)</option>
               </optgroup>
-              <optgroup label="TK / PAUD">
-                <option value="tk_paud">TK / PAUD - Fase Fondasi (Usia 4 - 6 Tahun)</option>
+
+              <optgroup label="🔬 SMA / MA - Peminatan MIPA &amp; Sains (Fase E &amp; F)">
+                <option value="sma_ipa">SMA - IPA Terpadu (Fase E / Kelas 10)</option>
+                <option value="sma_fisika">SMA - Fisika (Fase E &amp; F)</option>
+                <option value="sma_kimia">SMA - Kimia (Fase E &amp; F)</option>
+                <option value="sma_biologi">SMA - Biologi (Fase E &amp; F)</option>
+                <option value="sma_infor">SMA - Informatika (Fase E &amp; F)</option>
+                <option value="sma_mat_tl">SMA - Matematika Tingkat Lanjut (Fase F - Kelas 11 &amp; 12)</option>
+              </optgroup>
+
+              <optgroup label="🌍 SMA / MA - Peminatan IPS &amp; Humaniora (Fase E &amp; F)">
+                <option value="sma_ips">SMA - IPS Terpadu (Fase E / Kelas 10)</option>
+                <option value="sma_sosiologi">SMA - Sosiologi (Fase E &amp; F)</option>
+                <option value="sma_ekonomi">SMA - Ekonomi (Fase E &amp; F)</option>
+                <option value="sma_geografi">SMA - Geografi (Fase E &amp; F)</option>
+                <option value="sma_antropologi">SMA - Antropologi (Fase F - Kelas 11 &amp; 12)</option>
+                <option value="sma_sejarah_tl">SMA - Sejarah Tingkat Lanjut (Fase F - Kelas 11 &amp; 12)</option>
+              </optgroup>
+
+              <optgroup label="🗣️ SMA / MA - Peminatan Bahasa &amp; Budaya (Fase F)">
+                <option value="sma_indo_tl">SMA - Bahasa Indonesia Tingkat Lanjut (Fase F)</option>
+                <option value="sma_inggris_tl">SMA - Bahasa Inggris Tingkat Lanjut (Fase F)</option>
+                <option value="sma_bahasa_arab">SMA - Bahasa Arab (Fase F)</option>
+                <option value="sma_bahasa_jepang">SMA - Bahasa Jepang (Fase F)</option>
+                <option value="sma_bahasa_mandarin">SMA - Bahasa Mandarin (Fase F)</option>
+                <option value="sma_bahasa_jerman">SMA - Bahasa Jerman / Asing Lainnya (Fase F)</option>
+              </optgroup>
+
+              <optgroup label="🎨 SMA / MA - Seni Budaya &amp; PKWU (Fase E &amp; F)">
+                <option value="sma_senirupa">SMA - Seni Rupa (Fase E &amp; F)</option>
+                <option value="sma_senimusik">SMA - Seni Musik (Fase E &amp; F)</option>
+                <option value="sma_senitari">SMA - Seni Tari (Fase E &amp; F)</option>
+                <option value="sma_seniteater">SMA - Seni Teater (Fase E &amp; F)</option>
+                <option value="sma_pkwu_kerajinan">SMA - PKWU: Kerajinan (Fase E &amp; F)</option>
+                <option value="sma_pkwu_rekayasa">SMA - PKWU: Rekayasa (Fase E &amp; F)</option>
+                <option value="sma_pkwu_budidaya">SMA - PKWU: Budidaya (Fase E &amp; F)</option>
+                <option value="sma_pkwu_pengolahan">SMA - PKWU: Pengolahan (Fase E &amp; F)</option>
+              </optgroup>
+
+              <optgroup label="🛠️ SMK / MAK - Vokasi &amp; Kejuruan (Fase E &amp; F)">
+                <option value="smk_ipas">SMK - Projek IPAS (Fase E / Kelas 10)</option>
+                <option value="smk_infor">SMK - Informatika SMK (Fase E / Kelas 10)</option>
+                <option value="smk_kejuruan">SMK - Dasar-Dasar Program Keahlian (Fase E)</option>
+                <option value="smk_pkk">SMK - Projek Kreatif &amp; Kewirausahaan / PKK (Fase F)</option>
+              </optgroup>
+
+              <optgroup label="🌱 PAUD / TK (Fase Fondasi)">
+                <option value="tk_paud">TK / PAUD - Fase Fondasi (Usia 4 - 6 Tahun: TK A &amp; TK B)</option>
               </optgroup>
             </select>
           </div>
@@ -770,18 +828,45 @@
                 <i class="fas fa-hand-pointer" style="color: #2563eb;"></i> Klik cepat tombol di bawah untuk mengisi elemen mapel pilihan Anda:
               </span>
               <div class="element-quick-chips">
-                <button type="button" class="btn-element-chip" data-preset="smp_indo">Bahasa Indonesia</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_mat">Matematika</button>
-                <button type="button" class="btn-element-chip" data-preset="sd_ipas">IPAS / IPA</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_inggris">Bahasa Inggris</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_pancasila">Pancasila</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_pai">PAI</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_infor">Informatika</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_pjok">PJOK</button>
-                <button type="button" class="btn-element-chip" data-preset="smp_senirupa">Seni Rupa</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_fisika">Fisika</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_biologi">Biologi</button>
-                <button type="button" class="btn-element-chip" data-preset="sma_ekonomi">Ekonomi</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_indo">Bahasa Indonesia</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_mat">Matematika Umum</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_mat_tl">Matematika Tingkat Lanjut</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_fisika">Fisika SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_kimia">Kimia SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_biologi">Biologi SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_ekonomi">Ekonomi SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_sosiologi">Sosiologi SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_geografi">Geografi SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_antropologi">Antropologi SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_sejarah">Sejarah SMA</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_sejarah_tl">Sejarah Tingkat Lanjut</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_inggris">Bahasa Inggris</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_indo_tl">B. Indonesia Tingkat Lanjut</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_inggris_tl">B. Inggris Tingkat Lanjut</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_bahasa_arab">Bahasa Arab</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_bahasa_jepang">Bahasa Jepang</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_infor">Informatika SMA/SMP</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pancasila">Pendidikan Pancasila</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pai">PAI &amp; BP</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pak">Agama Kristen (PAK)</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_katolik">Agama Katolik</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pjok">PJOK</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_kerajinan">PKWU Kerajinan</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_pengolahan">PKWU Pengolahan</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_rekayasa">PKWU Rekayasa</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_pkwu_budidaya">PKWU Budidaya</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_senirupa">Seni Rupa</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_senimusik">Seni Musik</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_senitari">Seni Tari</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_seniteater">Seni Teater</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_bk">Bimbingan Konseling (BK)</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_ipa">IPA SMP</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_ips">IPS SMP</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_prakarya">Prakarya SMP</button>
+                <button type="button" class="btn-element-chip" data-preset="sd_ipas">IPAS SD</button>
+                <button type="button" class="btn-element-chip" data-preset="sd_mulok">Bahasa Daerah (Mulok)</button>
+                <button type="button" class="btn-element-chip" data-preset="smk_ipas">Projek IPAS SMK</button>
+                <button type="button" class="btn-element-chip" data-preset="smk_pkk">PKK SMK</button>
                 <button type="button" class="btn-element-chip" data-preset="tk_paud">TK / PAUD</button>
               </div>
             </div>
@@ -1244,6 +1329,7 @@ Tuliskan 3 alternatif kalimat deskriptif raport yang positif, mengapresiasi pros
   <script src="modules-data.js"></script>
   <script src="cp_atp_data.js"></script>
   <script src="cp_reader_data.js"></script>
-  <script src="app.js?v=20261002c"></script>
+  <script src="mapel_presets_data.js?v=20261002d"></script>
+  <script src="app.js?v=20261002d"></script>
 </body>
 </html>
