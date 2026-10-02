@@ -571,7 +571,275 @@
         <span class="badge-label badge-purple">Alat Bantu Modern Guru Abad 21</span>
         <h2 class="section-title">Bonus Spesial: Bank Prompt AI untuk Guru</h2>
         <p class="section-desc">
-          Selesaikan administrasi pembelajaran hanya dalam 3 menit dengan bantuan Artificial Intelligence (ChatGPT, Gemini, Claude, Copilot). Tinggal <strong>klik tombol salin (copy)</strong> lalu tempel di AI favorit Anda!
+          Selesaikan seluruh administrasi pembelajaran hanya dalam hitungan menit dengan bantuan Artificial Intelligence (ChatGPT, Gemini, Claude, DeepSeek). Gunakan <strong>Generator Master 7 Dokumen</strong> di bawah ini atau pilih prompt cepat siap pakai!
+        </p>
+      </div>
+
+      <!-- Master Prompt Generator Interaktif (7 Dokumen Kurikulum Merdeka) -->
+      <div class="master-gen-card">
+        <div class="master-gen-header">
+          <div class="master-gen-badge">
+            <i class="fas fa-bolt"></i> Inovasi Baru Guru Abad 21
+          </div>
+          <h3 class="master-gen-title">
+            Generator Master: 1 Prompt Menghasilkan 7 Dokumen Administrasi Lengkap Sekaligus
+          </h3>
+          <p class="master-gen-desc">
+            Racik perintah raksasa (<em>Mega-Prompt</em>) yang menyuruh AI (ChatGPT / Gemini / DeepSeek / Claude) memproduksi <strong>7 Dokumen Administrasi Kurikulum Merdeka &amp; Deep Learning</strong> secara berurutan dan <strong>konsisten 100%</strong> (Analisis CP &rarr; TP &rarr; ATP &rarr; Prota &rarr; Prosem &rarr; KKTP &rarr; Modul Ajar Deep Learning). Silakan lengkapi formulir di bawah ini atau klik tombol <em>Demo Contoh</em> untuk pengisian cepat:
+          </p>
+
+          <div class="master-gen-quickactions">
+            <button type="button" id="btn-fill-demo" class="btn-demo-data">
+              <i class="fas fa-magic"></i> <span>Isi Otomatis Data Contoh (Demo Cepat)</span>
+            </button>
+            <button type="button" id="btn-reset-form" class="btn-reset-data">
+              <i class="fas fa-undo"></i> <span>Kosongkan Formulir</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- The Interactive Form -->
+        <form id="form-master-generator" class="master-gen-form">
+          <!-- Step 1: Identitas Sekolah & Guru -->
+          <div class="form-section-box">
+            <div class="form-section-title">
+              <span class="step-num">1</span>
+              <div>
+                <h4>Data Identitas Satuan Pendidikan &amp; Guru</h4>
+                <p>Identitas resmi yang akan dipasang pada Kop Dokumen, Nomor Surat, dan Tanda Tangan</p>
+              </div>
+            </div>
+            
+            <div class="form-grid-3">
+              <div class="form-field">
+                <label for="mg-provinsi">Provinsi / Kota <span class="req">*</span></label>
+                <input type="text" id="mg-provinsi" placeholder="Contoh: Provinsi DKI Jakarta" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-dinas">Nama Dinas Pendidikan <span class="req">*</span></label>
+                <input type="text" id="mg-dinas" placeholder="Contoh: Dinas Pendidikan DKI Jakarta" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-sekolah">Satuan Pendidikan (Nama Sekolah) <span class="req">*</span></label>
+                <input type="text" id="mg-sekolah" placeholder="Contoh: SMP Negeri 19 Jakarta" required>
+              </div>
+            </div>
+
+            <div class="form-grid-3" style="margin-top: 1rem;">
+              <div class="form-field" style="grid-column: span 2;">
+                <label for="mg-alamat">Alamat Sekolah <span class="req">*</span></label>
+                <input type="text" id="mg-alamat" placeholder="Contoh: Jl. Bumi No. 21, Kebayoran Baru, Jakarta Selatan" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-tanggal">Kota &amp; Tanggal TTD <span class="req">*</span></label>
+                <input type="text" id="mg-tanggal" placeholder="Contoh: Jakarta, 15 Juli 2026" required>
+              </div>
+            </div>
+
+            <div class="form-grid-4" style="margin-top: 1rem;">
+              <div class="form-field">
+                <label for="mg-mapel">Mata Pelajaran <span class="req">*</span></label>
+                <input type="text" id="mg-mapel" placeholder="Contoh: Bahasa Inggris" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-singkatan">Singkatan Mapel <span class="req">*</span></label>
+                <input type="text" id="mg-singkatan" placeholder="Contoh: BING" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-fase">Fase / Kelas <span class="req">*</span></label>
+                <input type="text" id="mg-fase" placeholder="Contoh: Fase D / Kelas 8" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-tapel">Tahun Pelajaran <span class="req">*</span></label>
+                <input type="text" id="mg-tapel" placeholder="Contoh: 2026/2027" required>
+              </div>
+            </div>
+
+            <div class="form-grid-3" style="margin-top: 1rem;">
+              <div class="form-field">
+                <label for="mg-alokasi-total">Alokasi Waktu Total (Tahun) <span class="req">*</span></label>
+                <input type="text" id="mg-alokasi-total" placeholder="Contoh: 144 JP / Tahun" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-jp-minggu">JP per Minggu <span class="req">*</span></label>
+                <input type="text" id="mg-jp-minggu" placeholder="Contoh: 4 JP / Minggu" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-jp-pertemuan">JP per Pertemuan Modul Ajar <span class="req">*</span></label>
+                <input type="text" id="mg-jp-pertemuan" placeholder="Contoh: 2 JP @ 40 Menit" required>
+              </div>
+            </div>
+
+            <div class="form-grid-4" style="margin-top: 1rem;">
+              <div class="form-field">
+                <label for="mg-guru">Nama Guru Pengampu <span class="req">*</span></label>
+                <input type="text" id="mg-guru" placeholder="Contoh: Ahmad Bagoes, S.Pd." required>
+              </div>
+              <div class="form-field">
+                <label for="mg-nipguru">NIP Guru</label>
+                <input type="text" id="mg-nipguru" placeholder="Opsional / strip (-)">
+              </div>
+              <div class="form-field">
+                <label for="mg-kepsek">Nama Kepala Sekolah <span class="req">*</span></label>
+                <input type="text" id="mg-kepsek" placeholder="Contoh: Dra. Hj. Nur Endah, M.Pd." required>
+              </div>
+              <div class="form-field">
+                <label for="mg-nipkepsek">NIP Kepala Sekolah</label>
+                <input type="text" id="mg-nipkepsek" placeholder="Opsional / strip (-)">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Elemen CP & Kode Elemen -->
+          <div class="form-section-box">
+            <div class="form-section-title">
+              <span class="step-num">2</span>
+              <div>
+                <h4>Elemen CP &amp; Singkatan Kode Elemen</h4>
+                <p>Format baris: [Nomor] | [Kode 2-4 Huruf] | [Nama Elemen Lengkap]</p>
+              </div>
+            </div>
+            <div class="form-field">
+              <textarea id="mg-elemen-kode" rows="3" style="font-family: monospace; font-size: 0.85rem;" placeholder="Contoh:&#10;1 | LIST | Menyimak-Berbicara (Listening-Speaking)&#10;2 | READ | Membaca-Memirsa (Reading-Viewing)&#10;3 | WRITE | Menulis-Mempresentasikan (Writing-Presenting)" required></textarea>
+            </div>
+          </div>
+
+          <!-- Step 3: Capaian Pembelajaran (CP) SK BSKAP 046 -->
+          <div class="form-section-box">
+            <div class="form-section-title">
+              <span class="step-num">3</span>
+              <div>
+                <h4>Naskah Capaian Pembelajaran (CP SK 046)</h4>
+                <p>Kutipan teks CP Umum dan CP Elemen dari naskah regulasi</p>
+              </div>
+            </div>
+            <div class="form-field" style="margin-bottom: 1rem;">
+              <label for="mg-cp-umum">CP Umum / Rasional Mata Pelajaran <span class="req">*</span></label>
+              <textarea id="mg-cp-umum" rows="3" placeholder="Tuliskan rasional atau CP umum mata pelajaran pada fase ini..." required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="mg-cp-elemen">CP Per Elemen <span class="req">*</span></label>
+              <textarea id="mg-cp-elemen" rows="4" style="font-family: monospace; font-size: 0.85rem;" placeholder="Tuliskan rumusan CP untuk masing-masing elemen pada fase ini..." required></textarea>
+            </div>
+          </div>
+
+          <!-- Step 4: Modul Ajar Deep Learning (TP Pertama) -->
+          <div class="form-section-box">
+            <div class="form-section-title">
+              <span class="step-num">4</span>
+              <div>
+                <h4>Data Modul Ajar Deep Learning (Khusus TP Pertama)</h4>
+                <p>Parameter untuk penyusunan Dokumen 7 (Skenario Mindful, Meaningful, Joyful)</p>
+              </div>
+            </div>
+            
+            <div class="form-grid-3">
+              <div class="form-field">
+                <label for="mg-kode-ma">Kode TP Pertama <span class="req">*</span></label>
+                <input type="text" id="mg-kode-ma" placeholder="Contoh: BING-D-READ-001" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-model-ma">Model Pembelajaran <span class="req">*</span></label>
+                <select id="mg-model-ma" required>
+                  <option value="Discovery Learning" selected>Discovery Learning</option>
+                  <option value="Problem Based Learning (PBL)">Problem Based Learning (PBL)</option>
+                  <option value="Project Based Learning (PjBL)">Project Based Learning (PjBL)</option>
+                  <option value="Inkuiri Terbimbing">Inkuiri Terbimbing</option>
+                  <option value="Teaching at The Right Level (TaRL)">Teaching at The Right Level (TaRL)</option>
+                  <option value="Experiential Learning">Experiential Learning</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="mg-moda-ma">Moda Pembelajaran <span class="req">*</span></label>
+                <select id="mg-moda-ma" required>
+                  <option value="Tatap Muka" selected>Tatap Muka (Luring)</option>
+                  <option value="Blended Learning / Hybrid">Blended Learning / Hybrid</option>
+                  <option value="Daring Terbimbing">Daring Terbimbing</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-3" style="margin-top: 1rem;">
+              <div class="form-field">
+                <label for="mg-tema-ma">Tema / Topik Pembelajaran <span class="req">*</span></label>
+                <input type="text" id="mg-tema-ma" placeholder="Contoh: Narrative Text (Folklore & Moral Values)" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-produk-ma">Produk / Proyek Akhir Siswa <span class="req">*</span></label>
+                <input type="text" id="mg-produk-ma" placeholder="Contoh: Buku Cerita Mini Bergambar (Storybook)" required>
+              </div>
+              <div class="form-field">
+                <label for="mg-sumber-ma">Sumber Belajar Utama <span class="req">*</span></label>
+                <input type="text" id="mg-sumber-ma" placeholder="Contoh: Buku Siswa & Guru Kemdikbud, Video YouTube" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="master-gen-submit">
+            <button type="submit" class="btn-submit-master">
+              <i class="fas fa-rocket"></i>
+              <span>Racik &amp; Buat Prompt Master (7 Dokumen)</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Result Box (Hidden until generated) -->
+        <div id="master-gen-result" class="master-gen-result" style="display: none;">
+          <div class="result-head-banner">
+            <div class="result-badge">
+              <i class="fas fa-check-circle"></i> Prompt Master Siap Digunakan!
+            </div>
+            <div class="result-actions">
+              <button type="button" id="btn-copy-master-prompt" class="btn-copy-master">
+                <i class="fas fa-copy"></i>
+                <span>Salin Prompt Master</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cara Pakai Guide -->
+          <div class="usage-steps-banner">
+            <div class="usage-step-item">
+              <div class="step-circle">1</div>
+              <div class="step-text">Klik tombol <strong>Salin Prompt Master</strong> di atas</div>
+            </div>
+            <div class="usage-step-item">
+              <div class="step-circle">2</div>
+              <div class="step-text">Buka <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a> / <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> / <a href="https://chat.deepseek.com" target="_blank" rel="noopener">DeepSeek</a></div>
+            </div>
+            <div class="usage-step-item">
+              <div class="step-circle">3</div>
+              <div class="step-text"><strong>Tempel (Paste)</strong> prompt &amp; tekan Enter. AI akan membuat 7 dokumen berurutan!</div>
+            </div>
+          </div>
+
+          <!-- Output Box Display -->
+          <div class="prompt-output-box">
+            <div class="prompt-output-info">
+              <span><i class="fas fa-file-code"></i> Teks Prompt Sistem Master (Siap Kirim ke AI):</span>
+              <span id="prompt-char-count" style="font-size: 0.75rem; color: #94a3b8;">0 karakter</span>
+            </div>
+            <pre id="master-prompt-display" class="master-prompt-pre"></pre>
+          </div>
+
+          <div style="margin-top: 1.25rem; text-align: center;">
+            <button type="button" onclick="document.getElementById('btn-copy-master-prompt').click()" class="btn-primary" style="padding: 0.75rem 2rem; font-weight: 700; border-radius: 9999px;">
+              <i class="fas fa-copy"></i> Salin Prompt Master Sekarang
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Header Pembatas untuk Prompt Cepat Satuan -->
+      <div style="text-align: center; margin-bottom: 2rem; margin-top: 1rem;">
+        <span class="badge-label badge-blue" style="font-size: 0.75rem;"><i class="fas fa-bolt"></i> Pilihan Prompt Cepat Satuan</span>
+        <h3 style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin-top: 0.4rem;">
+          Bank Prompt Spesifik &bull; Langsung Pakai per Dokumen
+        </h3>
+        <p style="font-size: 0.85rem; color: #64748b; max-width: 600px; margin: 0.25rem auto 0;">
+          Jika Anda hanya membutuhkan modul ajar saja, soal asesmen HOTS, atau LKPD diferensiasi secara terpisah:
         </p>
       </div>
 

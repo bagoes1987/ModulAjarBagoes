@@ -740,6 +740,388 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ==============================================================
+  // MASTER PROMPT GENERATOR (7 DOKUMEN KURIKULUM MERDEKA)
+  // ==============================================================
+  const formMaster = document.getElementById('form-master-generator');
+  const btnFillDemo = document.getElementById('btn-fill-demo');
+  const btnResetForm = document.getElementById('btn-reset-form');
+  const masterGenResult = document.getElementById('master-gen-result');
+  const masterPromptDisplay = document.getElementById('master-prompt-display');
+  const btnCopyMaster = document.getElementById('btn-copy-master-prompt');
+  const promptCharCount = document.getElementById('prompt-char-count');
+
+  let currentMasterPromptText = '';
+
+  // Demo Data Preset
+  const DEMO_MASTER_DATA = {
+    provinsi: 'Provinsi DKI Jakarta',
+    dinas: 'Dinas Pendidikan Provinsi DKI Jakarta',
+    sekolah: 'SMP Negeri 19 Jakarta',
+    alamat: 'Jl. Bumi No. 21, Kebayoran Baru, Jakarta Selatan',
+    tanggal: 'Jakarta, 15 Juli 2026',
+    mapel: 'Bahasa Inggris',
+    singkatan: 'BING',
+    fase: 'Fase D / Kelas 8',
+    tapel: '2026/2027',
+    alokasiTotal: '144 JP / Tahun',
+    jpMinggu: '4 JP / Minggu',
+    jpPertemuan: '2 JP @ 40 Menit',
+    guru: 'Ahmad Bagoes, S.Pd.',
+    nipGuru: '19870512 201101 1 008',
+    kepsek: 'Dra. Hj. Nur Endah, M.Pd.',
+    nipKepsek: '19720315 199802 2 001',
+    elemenKode: `1 | LIST | Menyimak-Berbicara (Listening-Speaking)
+2 | READ | Membaca-Memirsa (Reading-Viewing)
+3 | WRITE | Menulis-Mempresentasikan (Writing-Presenting)`,
+    cpUmum: `Pada akhir Fase D, peserta didik menggunakan teks lisan, tulisan dan visual dalam bahasa Inggris untuk berinteraksi dan berkomunikasi dalam konteks yang lebih beragam serta dalam situasi formal dan informal. Peserta didik dapat menggunakan berbagai jenis teks seperti narasi, deskripsi, prosedur, teks khusus (pesan singkat, iklan) dan teks otentik menjadi rujukan utama dalam mempelajari bahasa Inggris di fase ini. Peserta didik menggunakan bahasa Inggris untuk berdiskusi dan menyampaikan keinginan/perasaan. Pemahaman mereka terhadap teks tulisan semakin berkembang dan keterampilan inferensi mulai tampak ketika memahami informasi tersirat. Mereka memproduksi teks tulisan dan visual dalam bahasa Inggris yang terstruktur dengan kosakata yang lebih beragam.`,
+    cpElemen: `Elemen Menyimak - Berbicara:
+Peserta didik menggunakan bahasa Inggris untuk berinteraksi dan saling bertukar ide, pengalaman, minat, pendapat dan pandangan dengan guru, teman sebaya dan orang lain dalam berbagai macam konteks familiar yang formal dan informal.
+
+Elemen Membaca - Memirsa:
+Peserta didik membaca dan merespons teks familiar dan tidak familiar yang mengandung struktur yang telah dipelajari dan kosakata yang familiar secara mandiri. Mereka mencari dan mengevaluasi ide utama dan informasi spesifik dalam berbagai jenis teks.
+
+Elemen Menulis - Mempresentasikan:
+Peserta didik mengomunikasikan ide dan pengalaman mereka melalui paragraf sederhana dan terstruktur, menunjukkan perkembangan dalam penggunaan kosakata spesifik dan struktur kalimat sederhana. Menggunakan contoh, mereka membuat perencanaan, menulis, dan menyajikan teks informasi, imajinasi dan persuasi.`,
+    kodeMA: 'BING-D-READ-001',
+    modelMA: 'Discovery Learning',
+    modaMA: 'Tatap Muka',
+    temaMA: 'Narrative Text (Folklore & Moral Values)',
+    produkMA: 'Buku Cerita Bergambar Sederhana (Illustrated Mini Storybook)',
+    sumberMA: 'Buku Siswa & Guru English for Nusantara Kelas VIII Kemdikbud, Video Dongeng Rakyat YouTube, Lembar Cerita Bergambar'
+  };
+
+  if (btnFillDemo) {
+    btnFillDemo.addEventListener('click', () => {
+      document.getElementById('mg-provinsi').value = DEMO_MASTER_DATA.provinsi;
+      document.getElementById('mg-dinas').value = DEMO_MASTER_DATA.dinas;
+      document.getElementById('mg-sekolah').value = DEMO_MASTER_DATA.sekolah;
+      document.getElementById('mg-alamat').value = DEMO_MASTER_DATA.alamat;
+      document.getElementById('mg-tanggal').value = DEMO_MASTER_DATA.tanggal;
+      document.getElementById('mg-mapel').value = DEMO_MASTER_DATA.mapel;
+      document.getElementById('mg-singkatan').value = DEMO_MASTER_DATA.singkatan;
+      document.getElementById('mg-fase').value = DEMO_MASTER_DATA.fase;
+      document.getElementById('mg-tapel').value = DEMO_MASTER_DATA.tapel;
+      document.getElementById('mg-alokasi-total').value = DEMO_MASTER_DATA.alokasiTotal;
+      document.getElementById('mg-jp-minggu').value = DEMO_MASTER_DATA.jpMinggu;
+      document.getElementById('mg-jp-pertemuan').value = DEMO_MASTER_DATA.jpPertemuan;
+      document.getElementById('mg-guru').value = DEMO_MASTER_DATA.guru;
+      document.getElementById('mg-nipguru').value = DEMO_MASTER_DATA.nipGuru;
+      document.getElementById('mg-kepsek').value = DEMO_MASTER_DATA.kepsek;
+      document.getElementById('mg-nipkepsek').value = DEMO_MASTER_DATA.nipKepsek;
+      document.getElementById('mg-elemen-kode').value = DEMO_MASTER_DATA.elemenKode;
+      document.getElementById('mg-cp-umum').value = DEMO_MASTER_DATA.cpUmum;
+      document.getElementById('mg-cp-elemen').value = DEMO_MASTER_DATA.cpElemen;
+      document.getElementById('mg-kode-ma').value = DEMO_MASTER_DATA.kodeMA;
+      document.getElementById('mg-model-ma').value = DEMO_MASTER_DATA.modelMA;
+      document.getElementById('mg-moda-ma').value = DEMO_MASTER_DATA.modaMA;
+      document.getElementById('mg-tema-ma').value = DEMO_MASTER_DATA.temaMA;
+      document.getElementById('mg-produk-ma').value = DEMO_MASTER_DATA.produkMA;
+      document.getElementById('mg-sumber-ma').value = DEMO_MASTER_DATA.sumberMA;
+
+      showToast('Data contoh (demo) berhasil diisikan ke formulir!');
+    });
+  }
+
+  if (btnResetForm && formMaster) {
+    btnResetForm.addEventListener('click', () => {
+      formMaster.reset();
+      if (masterGenResult) masterGenResult.style.display = 'none';
+      showToast('Formulir telah dikosongkan.');
+    });
+  }
+
+  function generateMasterPrompt(data) {
+    return `Anda adalah Konsultan Ahli Kurikulum Merdeka & Pengembang Pembelajaran Deep Learning (Pembelajaran Mendalam).
+Tugas Anda adalah membuat **PERANGKAT ADMINISTRASI PEMBELAJARAN LENGKAP** yang terdiri dari 7 DOKUMEN RESMI secara berurutan dan KONSISTEN 100% dalam format HTML profesional siap cetak (A4), berdasarkan parameter data resmi di bawah ini:
+
+---
+
+## ========================================
+##   [INPUT RESMI - DATA ADMINISTRASI]
+## ========================================
+
+### --- BLOK 1: DATA IDENTITAS SATUAN PENDIDIKAN & GURU ---
+- Nama Provinsi / Kota          : ${data.provinsi}
+- Nama Dinas Pendidikan         : ${data.dinas}
+- Satuan Pendidikan (Sekolah)   : ${data.sekolah}
+- Alamat Sekolah                : ${data.alamat}
+- Mata Pelajaran                : ${data.mapel}
+- Singkatan Mata Pelajaran      : ${data.singkatan}
+- Fase / Kelas                  : ${data.fase}
+- Tahun Pelajaran               : ${data.tapel}
+- Alokasi Waktu Total           : ${data.alokasiTotal}
+- JP per Minggu                 : ${data.jpMinggu}
+- JP per Pertemuan (Modul Ajar) : ${data.jpPertemuan}
+- Nama Guru Pengampu            : ${data.guru}
+- NIP Guru                      : ${data.nipGuru || '-'}
+- Nama Kepala Sekolah           : ${data.kepsek}
+- NIP Kepala Sekolah            : ${data.nipKepsek || '-'}
+- Kota & Tanggal Pengesahan/TTD : ${data.tanggal}
+
+### --- BLOK 2: ELEMEN CP & KODE ELEMEN ---
+${data.elemenKode}
+
+### --- BLOK 3: CAPAIAN PEMBELAJARAN (CP) SK BSKAP 046/H/KR/2025 ---
+**CP Umum / Rasional Mata Pelajaran:**
+${data.cpUmum}
+
+**CP Per Elemen:**
+${data.cpElemen}
+
+### --- BLOK 4: DISTRIBUSI TP & SEMESTER (OTOMATISASI AI) ---
+[AI: Susun seluruh TP secara proporsional. Bagi rata alokasi JP untuk Semester 1 (Ganjil) dan Semester 2 (Genap) sehingga totalnya tepat sama dengan ${data.alokasiTotal}]
+
+### --- BLOK 5: KALENDER PENDIDIKAN & MINGGU EFEKTIF (OTOMATISASI AI) ---
+[AI: Buatkan kalender minggu efektif nasional 12 bulan (Semester 1 & Semester 2) tahun ajaran ${data.tapel}. Hitung minggu kalender, minggu tidak efektif (MPLS, PTS, PAS/PAT, Libur Semester), dan minggu efektif belajar. Gunakan angka minggu efektif ini secara KONSISTEN di Dokumen 4 (Prota) dan Dokumen 5 (Prosem).]
+
+### --- BLOK 6: RENTANG KRITERIA KETERCAPAIAN (KKTP) ---
+- Level 1 - Mulai Berkembang (MB) : 0 - 55   | Predikat D (Perlu Bimbingan Khusus)
+- Level 2 - Layak (v Ambang KKTP) : 56 - 70  | Predikat C (Tuntas Standar Minimal)
+- Level 3 - Cakap                 : 71 - 85  | Predikat B (Menguasai Mandiri)
+- Level 4 - Mahir                 : 86 - 100 | Predikat A (Istimewa & Berbagi Praktik)
+
+### --- BLOK 7: DATA MODUL AJAR DEEP LEARNING (TP PERTAMA) ---
+- Kode TP yang dibuat Modul Ajarnya : ${data.kodeMA}
+- Model Pembelajaran                 : ${data.modelMA}
+- Moda Pembelajaran                  : ${data.modaMA}
+- Tema / Topik Pembelajaran          : ${data.temaMA}
+- Produk / Proyek Akhir Siswa        : ${data.produkMA}
+- Sumber Belajar Utama               : ${data.sumberMA}
+
+---
+
+## ========================================
+##   [INSTRUKSI PRODUKSI 7 DOKUMEN SECARA BERURUTAN]
+## ========================================
+
+Hasilkan ketujuh dokumen berikut secara BERURUTAN. Setiap satu dokumen selesai, lanjutkan ke dokumen berikutnya secara berantai. Data antar dokumen HARUS KONSISTEN 100% (kode TP, rumusan kalimat TP, alokasi JP, dan materi pokok tidak boleh ada perbedaan).
+
+---
+
+### DOKUMEN 1 - ANALISIS CAPAIAN PEMBELAJARAN (CP)
+**Kode Dokumen: ADM-CP-${data.singkatan}-${data.fase.replace(/[^a-zA-Z0-9]/g, '')}**
+Orientasi: A4 Portrait
+Struktur Dokumen:
+1. KOP SEKOLAH LENGKAP & IDENTITAS (Provinsi, Dinas, Sekolah, Mapel, Fase/Kelas, Guru, NIP).
+2. RASIONAL MATA PELAJARAN: Tabel 3 kolom (No | Uraian | Deskripsi) menguraikan pentingnya mapel, kaitan dengan 8 Dimensi Profil Lulusan, dan orientasi pembelajaran kontekstual.
+3. TUJUAN MATA PELAJARAN: Tabel 3 kolom (No | Tujuan | Indikator Umum) dengan KKO terukur.
+4. KARAKTERISTIK MAPEL & ELEMEN CP: Tabel 4 kolom (No | Elemen | Deskripsi Elemen | Cakupan Konten Utama 5-7 topik).
+5. CAPAIAN PEMBELAJARAN FASE: Tabel memuat CP utuh, Kompetensi Kunci (bullet), dan Materi Pokok.
+6. PENJABARAN KKO BERJENJANG: Tabel 3 kolom merinci KKO C2 -> C4/C5 per elemen serta Arah TP operasional.
+7. KETERKAITAN 8 DIMENSI PROFIL LULUSAN: Pemetaan checklist dimensi profil yang paling relevan.
+8. TANDA TANGAN: Mengetahui Kepala Sekolah (${data.kepsek}) di kiri dan Guru Mata Pelajaran (${data.guru}) di kanan.
+
+---
+
+### DOKUMEN 2 - TUJUAN PEMBELAJARAN (TP)
+**Kode Dokumen: ADM-TP-${data.singkatan}-${data.fase.replace(/[^a-zA-Z0-9]/g, '')}**
+Orientasi: A4 Portrait
+Struktur Dokumen:
+1. IDENTITAS LENGKAP & PANDUAN FORMAT KODE TP: [SINGKATAN]-[FASE]-[ELEMEN]-[NOMOR 3 DIGIT] (Contoh: ${data.kodeMA}).
+2. DAFTAR TUJUAN PEMBELAJARAN: Tabel 6 kolom (No | Kode TP | Elemen CP | Rumusan Tujuan Pembelajaran diawali 'Peserta didik mampu...' | Aspek Kompetensi Pengetahuan/Keterampilan/Sikap | Alokasi JP). KKO berjenjang C2-C5.
+3. REKAPITULASI ALOKASI WAKTU PER ELEMEN: Tabel 5 kolom (No | Elemen | Jumlah TP | Total JP | Persentase %). Baris TOTAL wajib berjumlah 100% dan tepat sama dengan ${data.alokasiTotal}.
+4. TANDA TANGAN resmi Kepsek & Guru.
+
+---
+
+### DOKUMEN 3 - ALUR TUJUAN PEMBELAJARAN (ATP)
+**Kode Dokumen: ADM-ATP-${data.singkatan}-${data.fase.replace(/[^a-zA-Z0-9]/g, '')}**
+Orientasi: A4 Landscape
+Struktur Dokumen:
+1. IDENTITAS LENGKAP.
+2. DIAGRAM ALUR PEMBELAJARAN: Bagan alur berurutan kotak-kotak [TP-001] -> [TP-002] -> [TP-003] dst.
+3. TABEL MATRIKS ALUR TP (9 Kolom): No | Kode TP (identik Dok 2) | Elemen CP | Rumusan TP | Materi Pokok Konkret (3-5 topik dipisah koma) | Kompetensi & Level Bloom | Profil Lulusan Terkait | Alokasi JP | Pembagian Semester (1 atau 2).
+4. REKAPITULASI SEMESTER: Total JP Semester 1 & Semester 2.
+5. TANDA TANGAN resmi Kepsek & Guru.
+
+---
+
+### DOKUMEN 4 - PROGRAM TAHUNAN (PROTA)
+**Kode Dokumen: ADM-PROTA-${data.singkatan}-${data.fase.replace(/[^a-zA-Z0-9]/g, '')}**
+Orientasi: A4 Portrait
+Struktur Dokumen:
+1. IDENTITAS LENGKAP & ALOKASI WAKTU (${data.alokasiTotal} - ${data.jpMinggu}).
+2. TABEL DISTRIBUSI MINGGU EFEKTIF (12 Bulan): Kolom Semester, Bulan, Minggu Kalender, Minggu Tidak Efektif, Minggu Efektif, Total JP, Keterangan (MPLS, PTS, PAS, Libur). Hitung Subtotal per semester dan Total 1 Tahun + Alokasi Jam Cadangan.
+3. TABEL RENCANA PROTA: Kelompok Semester 1 dan Semester 2 memuat Kode TP, Rumusan TP & Materi Pokok, Elemen, dan Alokasi JP.
+4. TANDA TANGAN resmi Kepsek & Guru.
+
+---
+
+### DOKUMEN 5 - PROGRAM SEMESTER (PROSEM)
+**Kode Dokumen: ADM-PROSEM-${data.singkatan}-${data.fase.replace(/[^a-zA-Z0-9]/g, '')}-S1 & S2**
+Orientasi: A4 Landscape
+Hasilkan 2 Bagian Matriks (Semester 1 Ganjil & Semester 2 Genap):
+1. HEADER IDENTITAS & LEGENDA WARNA:
+   - Biru (#d0e4f7): JP Aktif Pembelajaran
+   - Merah (#ffd6d6): Libur Semester / Nasional
+   - Kuning (#fff3cd): Penilaian Tengah Semester (PTS)
+   - Hijau (#d4edda): Penilaian Akhir Semester (PAS / PAT)
+   - Abu-abu (#f0f0f0): Belum Dialokasikan / Cadangan
+2. TABEL MATRIKS MINGGUAN: Kolom Kode TP, Materi Pokok, JP, dan pembagian kolom per minggu (Bulan -> M1, M2, M3, M4, M5). Isi angka JP pada minggu efektif dan tandai pekan asesmen/libur sesuai legenda warna.
+3. TANDA TANGAN resmi Kepsek & Guru.
+
+---
+
+### DOKUMEN 6 - KRITERIA KETERCAPAIAN TUJUAN PEMBELAJARAN (KKTP)
+**Kode Dokumen: ADM-KKTP-${data.singkatan}-${data.fase.replace(/[^a-zA-Z0-9]/g, '')}**
+Orientasi: A4 Landscape
+Struktur Dokumen:
+1. DASAR HUKUM: Permendikbudristek No. 21 Tahun 2022 tentang Standar Penilaian Pendidikan.
+2. DESKRIPSI 4 LEVEL CAPAIAN: Tabel Level 1 (Mulai Berkembang 0-55), Level 2 (Layak / Ambang Batas KKTP 56-70), Level 3 (Cakap 71-85), Level 4 (Mahir 86-100) beserta tindak lanjutnya.
+3. RUBRIK KKTP PER TP: Tabel 8 kolom (No | Kode TP | Tujuan Pembelajaran | IKTP Indikator Ketercapaian Terukur | Deskriptor MB | Deskriptor Layak | Deskriptor Cakap | Deskriptor Mahir) untuk setiap TP.
+4. TANDA TANGAN resmi Kepsek & Guru.
+
+---
+
+### DOKUMEN 7 - MODUL AJAR DEEP LEARNING (UNTUK TP: ${data.kodeMA})
+**Kode Dokumen: ADM-MA-${data.singkatan}-${data.fase.replace(/[^a-zA-Z0-9]/g, '')}**
+Orientasi: A4 Portrait
+Susun modul ajar komprehensif berbasis Pembelajaran Mendalam (Deep Learning) dengan 3 Bagian Utama:
+
+BAGIAN A - INFORMASI UMUM:
+1. Identitas Modul (Nama Penyusun: ${data.guru}, Satuan Pendidikan: ${data.sekolah}, Mapel: ${data.mapel}, Fase/Kelas: ${data.fase}, Alokasi: ${data.jpPertemuan}, Model: ${data.modelMA}, Moda: ${data.modaMA}, Tahun: ${data.tapel}).
+2. Identifikasi Kesiapan Peserta Didik (Pemetaan asesmen awal & prasyarat).
+3. Karakteristik Materi (${data.temaMA}, tingkat kesulitan, dan kebermaknaan riil).
+4. Tujuan Pembelajaran (KKO Bloom terukur dikaitkan dengan produk ${data.produkMA}).
+5. Kompetensi Awal & Cara Pengecekan.
+6. Dimensi Profil Lulusan yang ditumbuhkan.
+7. Sarana & Prasarana Digital & Non-Digital.
+8. Target Peserta Didik & Rencana Diferensiasi (Reguler, Kesulitan Belajar, Mahir/Berbakat).
+
+BAGIAN B - KOMPONEN INTI DEEP LEARNING:
+1. Pemahaman Bermakna (Mindful & Meaningful insight).
+2. Pertanyaan Pemantik (3 variasi pertanyaan pemantik terbuka non-hafalan).
+3. Asesmen Diagnostik (Non-Kognitif emosional & Kognitif prasyarat + 5 butir soal diagnostik).
+4. Skenario Kegiatan Pembelajaran:
+   Hitung jumlah pertemuan = ceil(JP TP / ${data.jpPertemuan}).
+   Untuk SETIAP PERTEMUAN, buat tabel 4 kolom sinkron (Aktivitas Guru vs Aktivitas Siswa) yang menerapkan sintak ${data.modelMA} dalam 3 pilar Deep Learning:
+   - Pembuka (15 Menit) -> Mindful (Membangkitkan kesadaran penuh, fokus, apersepsi kontekstual)
+   - Inti -> Meaningful (Eksplorasi mendalam, investigasi kasus, kerja kolaboratif kelompok menyusun produk ${data.produkMA})
+   - Penutup (15 Menit) -> Joyful (Presentasi santai, apresiasi positif teman sebaya, refleksi emosi belajar, penarikan simpulan)
+5. Asesmen Formatif (Observasi diskusi, lembar ceklis proses, contoh soal formatif).
+6. Asesmen Sumatif (Tugas proyek akhir ${data.produkMA} bobot 60% & unjuk kerja 40%).
+7. Program Remedial & Pengayaan terukur.
+8. Refleksi Guru & Refleksi Peserta Didik.
+
+BAGIAN C - LAMPIRAN LENGKAP:
+1. Lampiran 1: Lembar Kerja Peserta Didik (LKPD) siap pakai (Stimulus, Instruksi Misi, Tabel Hasil Kerja, Pertanyaan Analisis).
+2. Lampiran 2: Rubrik Penilaian Formatif per pertemuan (Skala 1-4).
+3. Lampiran 3: Rubrik Penilaian Sumatif (5 soal esai x 20 poin = 100 poin lengkap dengan pedoman penskoran).
+4. Lampiran 4: Glosarium istilah materi ${data.temaMA}.
+5. Lampiran 5: Daftar Pustaka referensi buku Kemdikbud & sumber valid lainnya.
+6. TANDA TANGAN resmi Kepala Sekolah & Guru Pengampu.
+
+---
+
+## ========================================
+##   KETENTUAN OUTPUT HTML & CETAK PROFESIONAL
+## ========================================
+- Hasilkan kode HTML lengkap dan rapi dengan CSS tersemat (embedded style).
+- Gunakan styling modern Kurikulum Merdeka (header tabel biru tua \`#1a3a5c\`, font bersih sans-serif, border halus, sel tabel terisi penuh tanpa sel kosong).
+- Siap cetak PDF via browser (Ctrl + P) dengan rule \`@media print\` yang rapi dan \`page-break-inside: avoid\`.
+- Lengkapi setiap dokumen dengan KOP SEKOLAH resmi dan NOMOR DOKUMEN di kanan atas.
+
+Mulai dengan memproduksi DOKUMEN 1 (Analisis CP). Setelah selesai, beri tanda [DOKUMEN 1 SELESAI (OK)] dan langsung lanjutkan ke Dokumen 2, Dokumen 3, hingga Dokumen 7 selesai tuntas.`;
+  }
+
+  if (formMaster) {
+    formMaster.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const data = {
+        provinsi: document.getElementById('mg-provinsi').value.trim(),
+        dinas: document.getElementById('mg-dinas').value.trim(),
+        sekolah: document.getElementById('mg-sekolah').value.trim(),
+        alamat: document.getElementById('mg-alamat').value.trim(),
+        tanggal: document.getElementById('mg-tanggal').value.trim(),
+        mapel: document.getElementById('mg-mapel').value.trim(),
+        singkatan: document.getElementById('mg-singkatan').value.trim().toUpperCase(),
+        fase: document.getElementById('mg-fase').value.trim(),
+        tapel: document.getElementById('mg-tapel').value.trim(),
+        alokasiTotal: document.getElementById('mg-alokasi-total').value.trim(),
+        jpMinggu: document.getElementById('mg-jp-minggu').value.trim(),
+        jpPertemuan: document.getElementById('mg-jp-pertemuan').value.trim(),
+        guru: document.getElementById('mg-guru').value.trim(),
+        nipGuru: document.getElementById('mg-nipguru').value.trim(),
+        kepsek: document.getElementById('mg-kepsek').value.trim(),
+        nipKepsek: document.getElementById('mg-nipkepsek').value.trim(),
+        elemenKode: document.getElementById('mg-elemen-kode').value.trim(),
+        cpUmum: document.getElementById('mg-cp-umum').value.trim(),
+        cpElemen: document.getElementById('mg-cp-elemen').value.trim(),
+        kodeMA: document.getElementById('mg-kode-ma').value.trim(),
+        modelMA: document.getElementById('mg-model-ma').value,
+        modaMA: document.getElementById('mg-moda-ma').value,
+        temaMA: document.getElementById('mg-tema-ma').value.trim(),
+        produkMA: document.getElementById('mg-produk-ma').value.trim(),
+        sumberMA: document.getElementById('mg-sumber-ma').value.trim()
+      };
+
+      currentMasterPromptText = generateMasterPrompt(data);
+
+      if (masterPromptDisplay) {
+        masterPromptDisplay.textContent = currentMasterPromptText;
+      }
+
+      if (promptCharCount) {
+        const words = currentMasterPromptText.trim().split(/\s+/).length;
+        promptCharCount.textContent = `${currentMasterPromptText.length.toLocaleString('id-ID')} karakter (${words.toLocaleString('id-ID')} kata)`;
+      }
+
+      if (masterGenResult) {
+        masterGenResult.style.display = 'block';
+        masterGenResult.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      showToast('Prompt Master 7 Dokumen berhasil dibuat! Silakan salin tombol di bawah.');
+    });
+  }
+
+  if (btnCopyMaster) {
+    btnCopyMaster.addEventListener('click', () => {
+      if (!currentMasterPromptText) return;
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(currentMasterPromptText).then(() => {
+          animateCopySuccess();
+        }).catch(() => {
+          fallbackCopyText(currentMasterPromptText);
+        });
+      } else {
+        fallbackCopyText(currentMasterPromptText);
+      }
+    });
+  }
+
+  function fallbackCopyText(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try {
+      document.execCommand('copy');
+      animateCopySuccess();
+    } catch (err) {
+      alert('Gagal menyalin otomatis. Silakan blok dan salin secara manual.');
+    }
+    document.body.removeChild(ta);
+  }
+
+  function animateCopySuccess() {
+    if (!btnCopyMaster) return;
+    const oldHtml = btnCopyMaster.innerHTML;
+    btnCopyMaster.classList.add('copied');
+    btnCopyMaster.innerHTML = '<i class="fas fa-check"></i> <span>Tersalin ke Clipboard!</span>';
+    showToast('Prompt Master disalin! Silakan tempel (paste) di ChatGPT atau Gemini.');
+
+    setTimeout(() => {
+      btnCopyMaster.classList.remove('copied');
+      btnCopyMaster.innerHTML = oldHtml;
+    }, 2800);
+  }
+
   // Initial render
   renderGradeCards();
   renderCpAtp('tk');
