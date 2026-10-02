@@ -1604,8 +1604,54 @@ Elemen Dasar-Dasar Literasi & STEAM: Menyimak cerita dongeng, mengenali fonik hu
   }
 
   function generateMasterPrompt(data) {
+    const isWordStep = data.outputFormat === 'word_step' || !data.outputFormat;
+    const isWordAll = data.outputFormat === 'word_all';
+
+    let introText = '';
+    let footerText = '';
+
+    if (isWordStep) {
+      introText = `Tugas Anda adalah membuat **PERANGKAT ADMINISTRASI PEMBELAJARAN LENGKAP** yang terdiri dari 7 DOKUMEN RESMI Kurikulum Merdeka & Deep Learning secara berurutan dan KONSISTEN 100% dalam format **TEKS & TABEL MARKDOWN RAPI (SIAP SALIN LANGSUNG KE MICROSOFT WORD)**, berdasarkan parameter data resmi di bawah ini:`;
+      footerText = `## ========================================
+##   KETENTUAN OUTPUT: TABEL MS WORD & MODE BERTAHAP (ANTI TERPOTONG)
+## ========================================
+
+PANDUAN PENYAJIAN AI (WAJIB DIIKUTI):
+1. **DILARANG MENGGUNAKAN KODE HTML / CSS** (Jangan berikan tag <div>, <style>, margin, padding, font-size, dsb). Gunakan format teks dan TABEL MARKDOWN standar yang bersih, rapi, dan mudah disalin-tempel (copy-paste) langsung ke Microsoft Word atau Google Docs.
+2. **METODE PRODUKSI BERTAHAP (STEP-BY-STEP):**
+   - Pada respons pertama ini, buatkan **DOKUMEN 1 (Analisis Capaian Pembelajaran - CP)** secara LENGKAP, DETAIL, DAN TUNTAS.
+   - Jangan buru-buru memproduksi Dokumen 2 sampai 7 sekaligus agar respons Anda tidak terpotong (truncated) di tengah jalan karena batas memori karakter AI.
+   - Setelah seluruh tabel dan isi Dokumen 1 selesai, akhiri dengan menuliskan:
+     ---
+     **✅ DOKUMEN 1 (ANALISIS CP) SELESAI TUNTAS.**
+     👉 *Ketik **"LANJUT"** agar saya segera memproduksi Dokumen 2 (Tujuan Pembelajaran - TP).*
+     ---
+   - Tunggu pengguna mengetik kata "LANJUT", baru Anda memproduksi Dokumen 2, dan demikian seterusnya hingga Dokumen 7 selesai tuntas.
+
+Silakan mulai sekarang dengan memproduksi **DOKUMEN 1 (Analisis CP)** secara lengkap dan mendalam!`;
+    } else if (isWordAll) {
+      introText = `Tugas Anda adalah membuat **PERANGKAT ADMINISTRASI PEMBELAJARAN LENGKAP** yang terdiri dari 7 DOKUMEN RESMI Kurikulum Merdeka & Deep Learning secara berurutan dan KONSISTEN 100% dalam format **TEKS & TABEL MARKDOWN RAPI (SIAP SALIN LANGSUNG KE MICROSOFT WORD)**, berdasarkan parameter data resmi di bawah ini:`;
+      footerText = `## ========================================
+##   KETENTUAN OUTPUT: TEKS & TABEL MARKDOWN MS WORD
+## ========================================
+1. Tampilkan ketujuh dokumen dalam format teks dan TABEL MARKDOWN rapi yang siap di-copas langsung ke Microsoft Word.
+2. Dilarang menggunakan kode HTML/CSS mentah (seperti <style>, margin, font-size).
+3. Hasilkan Dokumen 1 sampai Dokumen 7 secara berurutan dan tuntas.`;
+    } else {
+      introText = `Tugas Anda adalah membuat **PERANGKAT ADMINISTRASI PEMBELAJARAN LENGKAP** yang terdiri dari 7 DOKUMEN RESMI secara berurutan dan KONSISTEN 100% dalam format HTML profesional siap cetak (A4), berdasarkan parameter data resmi di bawah ini:`;
+      footerText = `## ========================================
+##   KETENTUAN OUTPUT HTML & CETAK PROFESIONAL
+## ========================================
+- Hasilkan kode HTML lengkap dan rapi dengan CSS tersemat (embedded style).
+- Gunakan styling modern Kurikulum Merdeka (header tabel biru tua \`#1a3a5c\`, font bersih sans-serif, border halus, sel tabel terisi penuh tanpa sel kosong).
+- Siap cetak PDF via browser (Ctrl + P) dengan rule \`@media print\` yang rapi dan \`page-break-inside: avoid\`.
+- Lengkapi setiap dokumen dengan KOP SEKOLAH resmi dan NOMOR DOKUMEN di kanan atas.
+
+Mulai dengan memproduksi DOKUMEN 1 (Analisis CP). Setelah selesai, beri tanda [DOKUMEN 1 SELESAI (OK)] dan langsung lanjutkan ke Dokumen 2, Dokumen 3, hingga Dokumen 7 selesai tuntas.`;
+    }
+
     return `Anda adalah Konsultan Ahli Kurikulum Merdeka & Pengembang Pembelajaran Deep Learning (Pembelajaran Mendalam).
-Tugas Anda adalah membuat **PERANGKAT ADMINISTRASI PEMBELAJARAN LENGKAP** yang terdiri dari 7 DOKUMEN RESMI secara berurutan dan KONSISTEN 100% dalam format HTML profesional siap cetak (A4), berdasarkan parameter data resmi di bawah ini:
+\${introText}
 
 ---
 
@@ -1786,15 +1832,7 @@ BAGIAN C - LAMPIRAN LENGKAP:
 
 ---
 
-## ========================================
-##   KETENTUAN OUTPUT HTML & CETAK PROFESIONAL
-## ========================================
-- Hasilkan kode HTML lengkap dan rapi dengan CSS tersemat (embedded style).
-- Gunakan styling modern Kurikulum Merdeka (header tabel biru tua \`#1a3a5c\`, font bersih sans-serif, border halus, sel tabel terisi penuh tanpa sel kosong).
-- Siap cetak PDF via browser (Ctrl + P) dengan rule \`@media print\` yang rapi dan \`page-break-inside: avoid\`.
-- Lengkapi setiap dokumen dengan KOP SEKOLAH resmi dan NOMOR DOKUMEN di kanan atas.
-
-Mulai dengan memproduksi DOKUMEN 1 (Analisis CP). Setelah selesai, beri tanda [DOKUMEN 1 SELESAI (OK)] dan langsung lanjutkan ke Dokumen 2, Dokumen 3, hingga Dokumen 7 selesai tuntas.`;
+${footerText}`;
   }
 
   if (formMaster) {
@@ -1826,7 +1864,8 @@ Mulai dengan memproduksi DOKUMEN 1 (Analisis CP). Setelah selesai, beri tanda [D
         modaMA: document.getElementById('mg-moda-ma').value,
         temaMA: document.getElementById('mg-tema-ma').value.trim(),
         produkMA: document.getElementById('mg-produk-ma').value.trim(),
-        sumberMA: document.getElementById('mg-sumber-ma').value.trim()
+        sumberMA: document.getElementById('mg-sumber-ma').value.trim(),
+        outputFormat: document.getElementById('mg-output-format') ? document.getElementById('mg-output-format').value : 'word_step'
       };
 
       currentMasterPromptText = generateMasterPrompt(data);
