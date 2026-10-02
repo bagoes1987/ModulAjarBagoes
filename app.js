@@ -750,74 +750,846 @@ document.addEventListener('DOMContentLoaded', () => {
   const masterPromptDisplay = document.getElementById('master-prompt-display');
   const btnCopyMaster = document.getElementById('btn-copy-master-prompt');
   const promptCharCount = document.getElementById('prompt-char-count');
+  const mgPresetSelect = document.getElementById('mg-preset-select');
+  const elementChips = document.querySelectorAll('.btn-element-chip');
 
   let currentMasterPromptText = '';
 
-  // Demo Data Preset
-  const DEMO_MASTER_DATA = {
-    provinsi: 'Provinsi DKI Jakarta',
-    dinas: 'Dinas Pendidikan Provinsi DKI Jakarta',
-    sekolah: 'SMP Negeri 19 Jakarta',
-    alamat: 'Jl. Bumi No. 21, Kebayoran Baru, Jakarta Selatan',
-    tanggal: 'Jakarta, 15 Juli 2026',
-    mapel: 'Bahasa Inggris',
-    singkatan: 'BING',
-    fase: 'Fase D / Kelas 8',
-    tapel: '2026/2027',
-    alokasiTotal: '144 JP / Tahun',
-    jpMinggu: '4 JP / Minggu',
-    jpPertemuan: '2 JP @ 40 Menit',
-    guru: 'Ahmad Bagoes, S.Pd.',
-    nipGuru: '19870512 201101 1 008',
-    kepsek: 'Dra. Hj. Nur Endah, M.Pd.',
-    nipKepsek: '19720315 199802 2 001',
-    elemenKode: `1 | LIST | Menyimak-Berbicara (Listening-Speaking)
+  // Comprehensive Preset Database for Instant Subject & Element Autofill
+  const MAPEL_PRESETS = {
+    sd_indo: {
+      mapel: 'Bahasa Indonesia',
+      singkatan: 'BIND',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '216 JP / Tahun',
+      jpMinggu: '6 JP / Minggu',
+      jpPertemuan: '2 JP @ 35 Menit',
+      elemenKode: `1 | SIMAK | Menyimak
+2 | BACA | Membaca dan Memirsa
+3 | BICARA | Berbicara dan Mempresentasikan
+4 | TULIS | Menulis`,
+      cpUmum: `Pada akhir Fase B, peserta didik memiliki kemampuan berbahasa untuk berkomunikasi dan bernalar, sesuai dengan tujuan, konteks sosial, akademis, dan dunia kerja. Peserta didik mampu memahami, mengolah, dan menginterpretasi informasi paparan tentang topik yang beragam dan karya sastra. Peserta didik mampu berpartisipasi aktif dalam diskusi, mempresentasikan, dan menanggapi informasi nonfiksi dan fiksi yang dipaparkan.`,
+      cpElemen: `Elemen Menyimak:
+Peserta didik mampu memahami ide pokok suatu pesan lisan, informasi dari media audio, teks aural, dan instruksi lisan yang berkaitan dengan tujuan berkomunikasi.
+
+Elemen Membaca dan Memirsa:
+Peserta didik mampu memahami pesan dan informasi tentang kehidupan sehari-hari, teks narasi, dan puisi anak dalam bentuk cetak atau elektronik serta membaca kata-kata baru dengan fasih.
+
+Elemen Berbicara dan Mempresentasikan:
+Peserta didik mampu berbicara dengan pilihan kata dan sikap santun, menggunakan volume dan intonasi tepat, serta aktif mengajukan dan menanggapi pertanyaan dalam diskusi.
+
+Elemen Menulis:
+Peserta didik mampu menulis teks narasi, teks deskripsi, teks rekon, teks prosedur, dan teks eksposisi dengan rangkaian kalimat beragam dan informasi rinci akurat.`,
+      kodeMA: 'BIND-B-BACA-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Teks Narasi Cerita Rakyat Nusantara dan Nilai Budi Pekerti',
+      produkMA: 'Buku Komik Cerita Bergambar Sederhana Berisi Pesan Moral',
+      sumberMA: 'Buku Siswa Bahasa Indonesia Kelas IV Kemdikbudristek, Buku Cerita Perpustakaan'
+    },
+    sd_mat: {
+      mapel: 'Matematika',
+      singkatan: 'MAT',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 35 Menit',
+      elemenKode: `1 | BIL | Bilangan
+2 | ALJ | Aljabar
+3 | UKUR | Pengukuran
+4 | GEO | Geometri
+5 | DATA | Analisis Data dan Peluang`,
+      cpUmum: `Pada akhir Fase B, peserta didik menunjukkan pemahaman dan intuisi bilangan (number sense) pada bilangan cacah sampai 10.000. Mereka dapat melakukan operasi penjumlahan, pengurangan, perkalian, dan pembagian bilangan cacah sampai 100 dengan berbagai strategi kontekstual.`,
+      cpElemen: `Elemen Bilangan: Menyelesaikan operasi hitung bilangan cacah sampai 10.000, pecahan senilai, dan desimal persepuluhan.
+Elemen Aljabar: Mengidentifikasi dan mengembangkan pola bilangan membesar dan mengecil.
+Elemen Pengukuran: Mengukur panjang dan berat benda menggunakan satuan baku (cm, m, gram, kg).
+Elemen Geometri: Mendeskripsikan ciri-ciri berbagai bentuk bangun datar (segi empat, segitiga) dan menyusun komposisi bentuk.
+Elemen Analisis Data: Mengurutkan, menyajikan, dan menginterpretasi data dalam bentuk tabel dan diagram batang.`,
+      kodeMA: 'MAT-B-BIL-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Operasi Perkalian dan Pembagian Bilangan Cacah dalam Jual-Beli',
+      produkMA: 'Papan Permainan Matematika Kartu Hitung Cepat',
+      sumberMA: 'Buku Siswa Matematika Kelas IV Kemdikbudristek, Blok Dienes, Uang Mainan'
+    },
+    sd_ipas: {
+      mapel: 'IPAS (Ilmu Pengetahuan Alam dan Sosial)',
+      singkatan: 'IPAS',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 35 Menit',
+      elemenKode: `1 | SAINS | Pemahaman IPAS (Sains & Sosial)
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase B, peserta didik mengamati fenomena dan peristiwa secara sederhana menggunakan pancaindra, mencatat hasil pengamatannya, serta mencari persamaan dan perbedaannya. Peserta didik mengidentifikasi wujud zat, bentuk energi, siklus hidup makhluk hidup, serta kearifan lokal daerahnya.`,
+      cpElemen: `Elemen Pemahaman IPAS: Peserta didik memahami bentuk dan fungsi bagian tubuh tumbuhan, wujud zat dan perubahannya, bentuk dan sumber energi, gaya dan gerak, serta keragaman sosial budaya di lingkungan tempat tinggal.
+Elemen Keterampilan Proses: Mengamati, mempertanyakan dan memprediksi, merencanakan dan melakukan penyelidikan, memproses data, mengevaluasi dan refleksi, serta mengomunikasikan hasil penyelidikan ilmiah.`,
+      kodeMA: 'IPAS-B-SAINS-001',
+      modelMA: 'Inkuiri Terbimbing',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Bagian Tubuh Tumbuhan dan Fungsinya Bagi Kelangsungan Hidup',
+      produkMA: 'Herbarium Daun dan Laporan Pengamatan Kapilaritas Air pada Batang',
+      sumberMA: 'Buku IPAS Kelas IV Kemdikbudristek, Tanaman Sekitar Sekolah, Kaca Pembesar'
+    },
+    sd_pancasila: {
+      mapel: 'Pendidikan Pancasila',
+      singkatan: 'PANCA',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '144 JP / Tahun',
+      jpMinggu: '4 JP / Minggu',
+      jpPertemuan: '2 JP @ 35 Menit',
+      elemenKode: `1 | PANCA | Pancasila
+2 | UUD | Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+3 | BHINNEKA | Bhinneka Tunggal Ika
+4 | NKRI | Negara Kesatuan Republik Indonesia`,
+      cpUmum: `Pada akhir Fase B, peserta didik memahami makna sila-sila Pancasila dan penerapannya dalam kehidupan sehari-hari di sekolah dan masyarakat; memahami hak dan kewajiban; serta menghargai keberagaman suku dan budaya nusantara.`,
+      cpElemen: `Elemen Pancasila: Menerapkan nilai-nilai luhur Pancasila dalam gotong royong dan musyawarah kelas.
+Elemen UUD 1945: Melaksanakan aturan di sekolah dan membedakan hak serta kewajiban sebagai warga sekolah.
+Elemen Bhinneka Tunggal Ika: Menghargai perbedaan suku bangsa, agama, dan bahasa daerah teman sebaya.
+Elemen NKRI: Menunjukkan sikap kerja sama menjaga kebersihan dan kerukunan lingkungan desa/sekolah.`,
+      kodeMA: 'PANCA-B-PANCA-001',
+      modelMA: 'Project Based Learning (PjBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Penerapan Nilai-Nilai Pancasila dalam Gotong Royong Lingkungan Sekolah',
+      produkMA: 'Pohon Kebaikan Pancasila (Poster Aksi Nyata Kolaboratif Siswa)',
+      sumberMA: 'Buku Pendidikan Pancasila Kelas IV Kemdikbudristek, Lembar Refleksi'
+    },
+    sd_pai: {
+      mapel: 'Pendidikan Agama Islam dan Budi Pekerti',
+      singkatan: 'PAI',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 35 Menit',
+      elemenKode: `1 | QURAN | Al-Qur'an dan Hadis
+2 | AKIDAH | Akidah
+3 | AKHLAK | Akhlak
+4 | FIKIH | Fikih
+5 | SEJARAH | Sejarah Peradaban Islam`,
+      cpUmum: `Pada akhir Fase B, peserta didik mampu membaca surah-surah pendek Al-Qur'an dengan tartil, memahami Asmaulhusna, membiasakan akhlak mulia, memahami rukun shalat, dan meneladani kisah Nabi.`,
+      cpElemen: `Elemen Al-Qur'an & Hadis: Membaca Q.S. At-Tin dan Al-Alaq dengan tartil serta memahami pesan pokoknya.
+Elemen Akidah: Memahami Asmaulhusna Al-Malik, Al-Quddus, As-Salam.
+Elemen Akhlak: Membiasakan sikap tolong-menolong dan menghargai keragaman.
+Elemen Fikih: Memahami tata cara bersuci dari hadas dan shalat fardhu berjamaah.
+Elemen Sejarah: Meneladani kisah perjuangan Nabi Muhammad saw. saat hijrah ke Madinah.`,
+      kodeMA: 'PAI-B-QURAN-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Membaca dan Memahami Kandungan Surah At-Tin',
+      produkMA: 'Mushaf Mini Tartil Bergambar dan Peta Konsep Makna Ayat',
+      sumberMA: 'Buku PAI SD Kelas IV Kemdikbudristek, Audio Murottal Tajwid'
+    },
+    sd_inggris: {
+      mapel: 'Bahasa Inggris',
+      singkatan: 'BING',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 35 Menit',
+      elemenKode: `1 | LIST | Menyimak - Berbicara (Listening - Speaking)
+2 | READ | Membaca - Memirsa (Reading - Viewing)
+3 | WRITE | Menulis - Mempresentasikan (Writing - Presenting)`,
+      cpUmum: `Pada akhir Fase B, peserta didik memahami dan merespons teks lisan dan visual sederhana dalam bahasa Inggris tentang diri sendiri, ruang kelas, dan aktivitas sehari-hari menggunakan ungkapan komunikatif ramah anak.`,
+      cpElemen: `Elemen Menyimak - Berbicara: Berinteraksi menyapa, berpamitan, dan menyebutkan aktivitas rutin sehari-hari.
+Elemen Membaca - Memirsa: Merespons teks visual pendek bergambar dengan kosakata dasar akurat.
+Elemen Menulis - Mempresentasikan: Menulis kata dan kalimat pendek bahasa Inggris dibantu ilustrasi gambar.`,
+      kodeMA: 'BING-B-LIST-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Daily Activities & Classroom Objects in English',
+      produkMA: 'Flashcard Bergambar My Daily Routine & Mini Pocket Book',
+      sumberMA: 'Buku My Next Words Kelas IV Kemdikbudristek, Kartu Bergambar Flashcard'
+    },
+    sd_pjok: {
+      mapel: 'PJOK',
+      singkatan: 'PJOK',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 35 Menit',
+      elemenKode: `1 | GERAK | Terampil Bergerak
+2 | BELAJAR | Belajar Melalui Gerak
+3 | AKTIF | Bergaya Hidup Aktif
+4 | SEHAT | Memilih Hidup Sehat`,
+      cpUmum: `Pada akhir Fase B, peserta didik memodifikasi keterampilan gerak dasar lokomotor, non-lokomotor, dan manipulatif dalam permainan kasti dan bola sederhana, serta membiasakan pola hidup bersih sehat.`,
+      cpElemen: `Elemen Terampil Bergerak: Mempraktikkan variasi gerak melempar, menangkap, dan memukul bola kecil.
+Elemen Belajar Melalui Gerak: Menumbuhkan sportivitas, kejujuran, dan kerjasama regu.
+Elemen Bergaya Hidup Aktif: Membiasakan pemanasan dan pendinginan teratur.
+Elemen Memilih Hidup Sehat: Memahami makanan bergizi seimbang dan kebersihan diri.`,
+      kodeMA: 'PJOK-B-GERAK-001',
+      modelMA: 'Experiential Learning',
+      modaMA: 'Tatap Muka (Praktik Lapangan)',
+      temaMA: 'Variasi Gerak Dasar Manipulatif dalam Permainan Kasti Tradisional',
+      produkMA: 'Jurnal Portofolio Kebugaran Fisik dan Ceklis Sportivitas Regu',
+      sumberMA: 'Buku Guru PJOK SD Kelas IV Kemdikbudristek, Bola Kasti, Pemukul Kayu'
+    },
+    sd_senirupa: {
+      mapel: 'Seni Rupa',
+      singkatan: 'SRUP',
+      fase: 'Fase B / Kelas 4',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 35 Menit',
+      elemenKode: `1 | ALAMI | Mengalami (Experiencing)
+2 | CIPTA | Menciptakan (Creating)
+3 | REFLEKSI | Merefleksikan (Reflecting)
+4 | BERPIKIR | Berpikir dan Bekerja Artistik
+5 | DAMPAK | Berdampak (Impacting)`,
+      cpUmum: `Pada akhir Fase B, peserta didik menuangkan unsur-unsur rupa (garis, bentuk, tekstur, ruang, dan warna) melalui eksplorasi media alami dan buatan dengan teknik cetak atau kolase kreatif.`,
+      cpElemen: `Elemen Mengalami: Mengamati pola tekstur alam sekitar. Elemen Menciptakan: Membuat karya cetak atau lukis tekstur alami. Elemen Merefleksikan: Menceritakan proses berkarya. Elemen Berdampak: Menghargai keindahan lingkungan hidup.`,
+      kodeMA: 'SRUP-B-CIPTA-001',
+      modelMA: 'Project Based Learning (PjBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Eksplorasi Tekstur Daun Alami dengan Teknik Cetak Ecoprint Kertas',
+      produkMA: 'Karya Cetak Seni Rupa Tekstur Ecoprint pada Kertas Daur Ulang',
+      sumberMA: 'Buku Seni Rupa SD Kelas IV Kemdikbudristek, Daun Alami Bertekstur'
+    },
+    smp_indo: {
+      mapel: 'Bahasa Indonesia',
+      singkatan: 'BIND',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '216 JP / Tahun',
+      jpMinggu: '6 JP / Minggu',
+      jpPertemuan: '2 JP @ 40 Menit',
+      elemenKode: `1 | SIMAK | Menyimak
+2 | BACA | Membaca dan Memirsa
+3 | BICARA | Berbicara dan Mempresentasikan
+4 | TULIS | Menulis`,
+      cpUmum: `Pada akhir Fase D, peserta didik memiliki kemampuan berbahasa untuk berkomunikasi dan bernalar sesuai dengan tujuan, konteks sosial, dan akademis. Peserta didik mampu menganalisis teks deskripsi, narasi, prosedur, laporan observasi, dan karya sastra secara kritis dan terstruktur.`,
+      cpElemen: `Elemen Menyimak: Menganalisis dan mengevaluasi informasi gagasan akurat dari teks aural/lisan (fiksi dan nonfiksi).
+Elemen Membaca dan Memirsa: Menemukan makna tersurat dan tersirat dalam teks deskripsi, narasi, dan eksposisi visual.
+Elemen Berbicara dan Mempresentasikan: Menyampaikan gagasan secara runtut, santun, dan menggunakan gestur tepat dalam diskusi kelas.
+Elemen Menulis: Menulis teks deskripsi, narasi, dan laporan hasil observasi logis dan kreatif dengan ejaan baku.`,
+      kodeMA: 'BIND-D-BACA-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Menjelajah Keindahan Destinasi Wisata Lokal Lewat Teks Deskripsi Otentik',
+      produkMA: 'Brosur Panduan Wisata Lokal Bergambar Lengkap dengan Deskripsi Rinci',
+      sumberMA: 'Buku Siswa Bahasa Indonesia Kelas VII Kemdikbudristek, Video Apersepsi Alam'
+    },
+    smp_inggris: {
+      mapel: 'Bahasa Inggris',
+      singkatan: 'BING',
+      fase: 'Fase D / Kelas 8',
+      alokasiTotal: '144 JP / Tahun',
+      jpMinggu: '4 JP / Minggu',
+      jpPertemuan: '2 JP @ 40 Menit',
+      elemenKode: `1 | LIST | Menyimak-Berbicara (Listening-Speaking)
 2 | READ | Membaca-Memirsa (Reading-Viewing)
 3 | WRITE | Menulis-Mempresentasikan (Writing-Presenting)`,
-    cpUmum: `Pada akhir Fase D, peserta didik menggunakan teks lisan, tulisan dan visual dalam bahasa Inggris untuk berinteraksi dan berkomunikasi dalam konteks yang lebih beragam serta dalam situasi formal dan informal. Peserta didik dapat menggunakan berbagai jenis teks seperti narasi, deskripsi, prosedur, teks khusus (pesan singkat, iklan) dan teks otentik menjadi rujukan utama dalam mempelajari bahasa Inggris di fase ini. Peserta didik menggunakan bahasa Inggris untuk berdiskusi dan menyampaikan keinginan/perasaan. Pemahaman mereka terhadap teks tulisan semakin berkembang dan keterampilan inferensi mulai tampak ketika memahami informasi tersirat. Mereka memproduksi teks tulisan dan visual dalam bahasa Inggris yang terstruktur dengan kosakata yang lebih beragam.`,
-    cpElemen: `Elemen Menyimak - Berbicara:
-Peserta didik menggunakan bahasa Inggris untuk berinteraksi dan saling bertukar ide, pengalaman, minat, pendapat dan pandangan dengan guru, teman sebaya dan orang lain dalam berbagai macam konteks familiar yang formal dan informal.
-
-Elemen Membaca - Memirsa:
-Peserta didik membaca dan merespons teks familiar dan tidak familiar yang mengandung struktur yang telah dipelajari dan kosakata yang familiar secara mandiri. Mereka mencari dan mengevaluasi ide utama dan informasi spesifik dalam berbagai jenis teks.
-
-Elemen Menulis - Mempresentasikan:
-Peserta didik mengomunikasikan ide dan pengalaman mereka melalui paragraf sederhana dan terstruktur, menunjukkan perkembangan dalam penggunaan kosakata spesifik dan struktur kalimat sederhana. Menggunakan contoh, mereka membuat perencanaan, menulis, dan menyajikan teks informasi, imajinasi dan persuasi.`,
-    kodeMA: 'BING-D-READ-001',
-    modelMA: 'Discovery Learning',
-    modaMA: 'Tatap Muka',
-    temaMA: 'Narrative Text (Folklore & Moral Values)',
-    produkMA: 'Buku Cerita Bergambar Sederhana (Illustrated Mini Storybook)',
-    sumberMA: 'Buku Siswa & Guru English for Nusantara Kelas VIII Kemdikbud, Video Dongeng Rakyat YouTube, Lembar Cerita Bergambar'
+      cpUmum: `Pada akhir Fase D, peserta didik menggunakan teks lisan, tulisan dan visual dalam bahasa Inggris untuk berinteraksi dan berkomunikasi dalam konteks yang lebih beragam serta dalam situasi formal dan informal. Peserta didik memahami informasi tersirat dan memproduksi teks narasi, deskripsi, dan prosedur dengan kosakata beragam.`,
+      cpElemen: `Elemen Menyimak - Berbicara: Berinteraksi dan saling bertukar ide, pengalaman, dan pandangan dalam situasi percakapan formal dan informal.
+Elemen Membaca - Memirsa: Membaca dan mengevaluasi ide utama serta informasi spesifik dalam teks narasi dan eksposisi.
+Elemen Menulis - Mempresentasikan: Mengomunikasikan ide melalui paragraf terstruktur dan mempresentasikan teks imajinatif atau informatif.`,
+      kodeMA: 'BING-D-READ-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Narrative Text: Indonesian Folklore and Moral Dilemma',
+      produkMA: 'Buku Cerita Mini Bergambar Sederhana (Illustrated Mini Storybook)',
+      sumberMA: 'Buku English for Nusantara Kelas VIII Kemdikbudristek, Video Animasi Folklore YouTube'
+    },
+    smp_mat: {
+      mapel: 'Matematika',
+      singkatan: 'MAT',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 40 Menit',
+      elemenKode: `1 | BIL | Bilangan
+2 | ALJ | Aljabar
+3 | UKUR | Pengukuran
+4 | GEO | Geometri
+5 | DATA | Analisis Data dan Peluang`,
+      cpUmum: `Pada akhir Fase D, peserta didik dapat menyelesaikan masalah kontekstual dengan mengoperasikan efisien bilangan bulat, pecahan, bilangan berpangkat dan akar; memodelkan situasi nyata dengan aljabar linier; menganalisis sifat bangun geometri dan teorema Pythagoras; serta menyajikan data statistik dan peluang.`,
+      cpElemen: `Elemen Bilangan: Menerapkan operasi aritmetika pada bilangan bulat, pecahan, dan rasional dalam pemecahan masalah kontekstual.
+Elemen Aljabar: Menggunakan variabel, suku, dan koefisien untuk menyelesaikan persamaan dan pertidaksamaan linier satu variabel.
+Elemen Geometri: Memahami jaring-jaring bangun ruang, luas permukaan, volume, dan teorema Pythagoras.
+Elemen Analisis Data: Mengumpulkan, menyajikan, dan menginterpretasikan data dalam diagram batang, garis, dan lingkaran.`,
+      kodeMA: 'MAT-D-BIL-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Operasi Bilangan Bulat dan Pecahan dalam Perencanaan Anggaran Finansial Siswa',
+      produkMA: 'Laporan Analisis Perhitungan Anggaran Keuangan Acara Sekolah',
+      sumberMA: 'Buku Matematika SMP Kelas VII Kemdikbudristek, LKPD Eksplorasi Kontekstual'
+    },
+    smp_ipa: {
+      mapel: 'Ilmu Pengetahuan Alam (IPA)',
+      singkatan: 'IPA',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 40 Menit',
+      elemenKode: `1 | SAINS | Pemahaman IPA
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase D, peserta didik memahami proses identifikasi zat dan perubahannya, pengukuran presisi, organisasi kehidupan dari sel hingga organisme, interaksi ekosistem, gerak dan gaya, suhu dan kalor, serta struktur bumi dan tata surya.`,
+      cpElemen: `Elemen Pemahaman IPA: Memahami konsep pengukuran besaran, wujud zat dan perubahannya, sel sebagai unit struktural, interaksi antar komponen ekosistem, suhu, kalor, serta gerak lurus dan gaya.
+Elemen Keterampilan Proses: Merencanakan dan melaksanakan penyelidikan laboratorium ilmiah, mengumpulkan dan menganalisis data, serta menarik kesimpulan berbasis bukti empiris.`,
+      kodeMA: 'IPA-D-SAINS-001',
+      modelMA: 'Inkuiri Terbimbing',
+      modaMA: 'Tatap Muka (Praktikum Laboratorium)',
+      temaMA: 'Pengukuran Besaran Pokok dan Turunan Menggunakan Alat Ukur Presisi',
+      produkMA: 'Laporan Ilmiah Praktikum Pengukuran Massa Jenis Zat Padat dan Cair',
+      sumberMA: 'Buku IPA Kelas VII Kemdikbudristek, Jangka Sorong, Neraca Ohaus, Gelas Kimia'
+    },
+    smp_ips: {
+      mapel: 'Ilmu Pengetahuan Sosial (IPS)',
+      singkatan: 'IPS',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '144 JP / Tahun',
+      jpMinggu: '4 JP / Minggu',
+      jpPertemuan: '2 JP @ 40 Menit',
+      elemenKode: `1 | SOSIAL | Pemahaman Konsep IPS
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase D, peserta didik memahami konektivitas antarruang di nusantara, pengaruh kondisi geografis terhadap aktivitas ekonomi dan sosial budaya, interaksi antar pelaku ekonomi, serta dinamika perubahan sosial masyarakat Indonesia.`,
+      cpElemen: `Elemen Pemahaman Konsep: Mengidentifikasi letak astronomis dan geografis Indonesia, keanekaragaman sumber daya alam maritim, permintaan dan penawaran pasar, serta interaksi sosial antar wilayah.
+Elemen Keterampilan Proses: Observasi lapangan, wawancara pelaku usaha lokal, dan pembuatan peta tematik sebaran komoditas.`,
+      kodeMA: 'IPS-D-SOSIAL-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Peluang Konektivitas Antarruang dan Potensi Ekonomi Maritim Indonesia',
+      produkMA: 'Peta Tematik Sebaran Potensi Ekonomi Maritim Daerah dan Rekomendasi Solusi',
+      sumberMA: 'Buku Siswa IPS Kelas VII Kemdikbudristek, Atlas Geografi Indonesia'
+    },
+    smp_pancasila: {
+      mapel: 'Pendidikan Pancasila',
+      singkatan: 'PANCA',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 40 Menit',
+      elemenKode: `1 | PANCA | Pancasila
+2 | UUD | Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+3 | BHINNEKA | Bhinneka Tunggal Ika
+4 | NKRI | Negara Kesatuan Republik Indonesia`,
+      cpUmum: `Pada akhir Fase D, peserta didik menganalisis kronologi sejarah perumusan dan penetapan Pancasila sebagai dasar negara; menginternalisasi nilai-nilai luhur Pancasila; menaati norma sosial dan hukum; menghargai keberagaman budaya nusantara; serta menjaga keutuhan wilayah NKRI.`,
+      cpElemen: `Elemen Pancasila: Menelaah komitmen kebangsaan para tokoh pendiri bangsa dalam perumusan Pancasila.
+Elemen UUD 1945: Memahami kedudukan norma, hak dan kewajiban warga negara, dan tata hukum Indonesia.
+Elemen Bhinneka Tunggal Ika: Menghargai keragaman budaya dan suku bangsa dalam bingkai integrasi nasional.
+Elemen NKRI: Memahami batas wilayah kedaulatan NKRI dan mempraktikkan bela negara di lingkungan sekolah.`,
+      kodeMA: 'PANCA-D-PANCA-001',
+      modelMA: 'Project Based Learning (PjBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Sejarah Perumusan dan Penetapan Pancasila sebagai Dasar Negara',
+      produkMA: 'Mading Interaktif Profil Tokoh BPUPKI & Komitmen Kebangsaan',
+      sumberMA: 'Buku Pendidikan Pancasila Kelas VII Kemdikbudristek, Arsip Dokumenter Sejarah'
+    },
+    smp_pai: {
+      mapel: 'Pendidikan Agama Islam dan Budi Pekerti',
+      singkatan: 'PAI',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 40 Menit',
+      elemenKode: `1 | QURAN | Al-Qur'an dan Hadis
+2 | AKIDAH | Akidah
+3 | AKHLAK | Akhlak
+4 | FIKIH | Fikih
+5 | SEJARAH | Sejarah Peradaban Islam`,
+      cpUmum: `Pada akhir Fase D, peserta didik memahami ayat Al-Qur'an tentang ilmu pengetahuan dan toleransi; mengimani malaikat dan kitab-kitab Allah; membiasakan perilaku ikhlas, sabar, dan pemaaf; memahami thaharah dan shalat jamak qashar; serta meneladani masa keemasan daulah Islam.`,
+      cpElemen: `Elemen Al-Qur'an & Hadis: Membaca Q.S. An-Nisa/4: 59 dan An-Nahl/16: 64 dengan kaidah tajwid yang benar.
+Elemen Akidah: Meneladani sifat mulia malaikat dan mengokohkan keimanan pada kitab suci Al-Qur'an.
+Elemen Akhlak: Menerapkan sikap tawadhu, amanah, dan menghormati sesama manusia.
+Elemen Fikih: Mempraktikkan tata cara bersuci dari hadas besar/kecil dan shalat sunnah.
+Elemen Sejarah: Menganalisis sejarah daulah Bani Umayyah di Damaskus dalam kemajuan peradaban.`,
+      kodeMA: 'PAI-D-QURAN-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Kewajiban Menuntut Ilmu dan Mengamalkannya Sesuai Al-Qur\'an',
+      produkMA: 'Resume Analisis Tajwid dan Peta Konsep Adab Menuntut Ilmu',
+      sumberMA: 'Buku PAI SMP Kelas VII Kemdikbudristek, Mushaf Al-Qur\'an dan Terjemah'
+    },
+    smp_infor: {
+      mapel: 'Informatika',
+      singkatan: 'INFOR',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 40 Menit',
+      elemenKode: `1 | BK | Berpikir Komputasional (BK)
+2 | TIK | Teknologi Informasi dan Komunikasi (TIK)
+3 | SK | Sistem Komputer (SK)
+4 | JKI | Jaringan Komputer dan Internet (JKI)
+5 | AD | Analisis Data (AD)
+6 | AP | Algoritma dan Pemrograman (AP)
+7 | DSI | Dampak Sosial Informatika (DSI)
+8 | PLB | Praktik Lintas Bidang (PLB)`,
+      cpUmum: `Pada akhir Fase D, peserta didik mampu menerapkan 4 pilar berpikir komputasional (dekomposisi, pola, abstraksi, algoritma) untuk menyelesaikan persoalan komputasi; memanfaatkan aplikasi perkantoran kolaboratif; memahami komponen komputer dan internet; serta membuat program visual blok interaktif.`,
+      cpElemen: `Elemen BK: Menerapkan logika komputasional dalam kehidupan sehari-hari. Elemen TIK: Menggunakan aplikasi pengolah dokumen dan lembar sebar bersama. Elemen SK: Memahami fungsi CPU, memori, media penyimpanan. Elemen AP: Membuat game edukasi visual menggunakan Scratch.`,
+      kodeMA: 'INFOR-D-BK-001',
+      modelMA: 'Project Based Learning (PjBL)',
+      modaMA: 'Tatap Muka (Laboratorium Komputer)',
+      temaMA: 'Penerapan 4 Pilar Berpikir Komputasional dalam Pemecahan Masalah Logika',
+      produkMA: 'Diagram Alir (Flowchart) dan Algoritma Solusi Masalah Nyata',
+      sumberMA: 'Buku Informatika SMP Kelas VII Kemdikbudristek, Platform Scratch / Bebras'
+    },
+    smp_pjok: {
+      mapel: 'PJOK',
+      singkatan: 'PJOK',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 40 Menit',
+      elemenKode: `1 | GERAK | Terampil Bergerak
+2 | BELAJAR | Belajar Melalui Gerak
+3 | AKTIF | Bergaya Hidup Aktif
+4 | SEHAT | Memilih Hidup Sehat`,
+      cpUmum: `Pada akhir Fase D, peserta didik menganalisis dan mempraktikkan keterampilan gerak spesifik bola besar, bola kecil, atletik, dan bela diri; menyusun program latihan kebugaran jasmani mandiri; serta memahami pola hidup sehat terhindar dari zat berbahaya.`,
+      cpElemen: `Elemen Terampil Bergerak: Mempraktikkan keterampilan passing, servis, smash bola voli dan shooting basket.
+Elemen Belajar Melalui Gerak: Mengembangkan kepemimpinan, kepatuhan strategi regu, dan sportivitas.
+Elemen Bergaya Hidup Aktif: Membiasakan pemanasan, pendinginan, dan jadwal olahraga mandiri.
+Elemen Memilih Hidup Sehat: Memahami bahaya narkoba, rokok, dan pola makan sehat bergizi seimbang.`,
+      kodeMA: 'PJOK-D-GERAK-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka (Praktik Lapangan)',
+      temaMA: 'Keterampilan Gerak Spesifik Passing Bawah dan Atas Bola Voli',
+      produkMA: 'Jurnal Evaluasi Diri Rekaman Gerak dan Ceklis Ketepatan Passing',
+      sumberMA: 'Buku Guru PJOK SMP Kelas VII Kemdikbudristek, Bola Voli, Net'
+    },
+    smp_senirupa: {
+      mapel: 'Seni Rupa',
+      singkatan: 'SRUP',
+      fase: 'Fase D / Kelas 7',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 40 Menit',
+      elemenKode: `1 | ALAMI | Mengalami (Experiencing)
+2 | CIPTA | Menciptakan (Creating)
+3 | REFLEKSI | Merefleksikan (Reflecting)
+4 | BERPIKIR | Berpikir dan Bekerja Artistik
+5 | DAMPAK | Berdampak (Impacting)`,
+      cpUmum: `Pada akhir Fase D, peserta didik menuangkan pengamatan visual ke dalam karya seni rupa dua dimensi dan tiga dimensi dengan menerapkan prinsip komposisi, proporsi, perspektif, dan gelap terang secara kreatif.`,
+      cpElemen: `Elemen Mengalami: Mengamati objek alam dan budaya visual. Elemen Menciptakan: Menggambar perspektif satu titik hilang. Elemen Merefleksikan: Menganalisis nilai estetis karya sendiri dan karya teman. Elemen Berdampak: Membuat karya visual poster kepedulian lingkungan.`,
+      kodeMA: 'SRUP-D-CIPTA-001',
+      modelMA: 'Project Based Learning (PjBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Menggambar Perspektif Satu Titik Hilang Koridor Sekolah',
+      produkMA: 'Gambar Perspektif Arsitektural Sekolah Format A3 Arsiran Gradasi',
+      sumberMA: 'Buku Seni Rupa SMP Kelas VII Kemdikbudristek, Kertas Gambar, Pensil B'
+    },
+    sma_indo: {
+      mapel: 'Bahasa Indonesia',
+      singkatan: 'BIND',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '144 JP / Tahun',
+      jpMinggu: '4 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | SIMAK | Menyimak
+2 | BACA | Membaca dan Memirsa
+3 | BICARA | Berbicara dan Mempresentasikan
+4 | TULIS | Menulis`,
+      cpUmum: `Pada akhir Fase E, peserta didik memiliki kemampuan berbahasa untuk berkomunikasi dan bernalar secara kritis, objektif, dan persuasif. Peserta didik mampu mengevaluasi informasi dan menulis teks laporan hasil observasi (LHO), teks eksposisi, negosiasi, biografi, dan puisi dengan kaidah bahasa baku.`,
+      cpElemen: `Elemen Menyimak: Menganalisis akurasi fakta dan data dalam teks laporan hasil observasi lisan.
+Elemen Membaca dan Memirsa: Mengevaluasi bias informasi dan gagasan utama dalam teks nonfiksi dan sastra.
+Elemen Berbicara dan Mempresentasikan: Menyajikan presentasi dan negosiasi secara runtut dan berbasis bukti empiris.
+Elemen Menulis: Menulis laporan hasil observasi (LHO) objektif dan teks negosiasi formal yang memecahkan konflik.`,
+      kodeMA: 'BIND-E-TULIS-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Penyusunan Teks Laporan Hasil Observasi (LHO) Keanekaragaman Hayati',
+      produkMA: 'Laporan Ilmiah Populer Hasil Observasi Lingkungan Sekolah',
+      sumberMA: 'Buku Cerdas Cergas Berbahasa Indonesia Kelas X Kemdikbudristek, Lingkungan Kampus Sekolah'
+    },
+    sma_inggris: {
+      mapel: 'Bahasa Inggris',
+      singkatan: 'BING',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | LIST | Menyimak-Berbicara (Listening-Speaking)
+2 | READ | Membaca-Memirsa (Reading-Viewing)
+3 | WRITE | Menulis-Mempresentasikan (Writing-Presenting)`,
+      cpUmum: `Pada akhir Fase E, peserta didik menggunakan teks lisan, tulisan dan visual dalam bahasa Inggris untuk berkomunikasi sesuai dengan situasi, tujuan, dan pemirsa. Peserta didik mampu mempertahankan argumen dalam teks eksposisi, recount, report, dan teks otentik.`,
+      cpElemen: `Elemen Menyimak - Berbicara: Berinteraksi mengenai isu sosial terkini dan menyampaikan presentasi formal.
+Elemen Membaca - Memirsa: Menganalisis ide pokok, tujuan penulis, dan inferensi tersirat dari teks eksposisi analitis.
+Elemen Menulis - Mempresentasikan: Menulis teks recount peristiwa bersejarah dan teks deskripsi komparatif dengan tata bahasa akurat.`,
+      kodeMA: 'BING-E-READ-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Descriptive Text on Inspiring World Figures & Heroes',
+      produkMA: 'Infografis Biografi Digital Tokoh Inspiratif Dunia',
+      sumberMA: 'Buku Bahasa Inggris Work in Progress Kelas X Kemdikbudristek, Artikel Wawancara Online'
+    },
+    sma_mat: {
+      mapel: 'Matematika',
+      singkatan: 'MAT',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '144 JP / Tahun',
+      jpMinggu: '4 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | BIL | Bilangan
+2 | ALJ | Aljabar dan Fungsi
+3 | GEO | Geometri
+4 | DATA | Analisis Data dan Peluang`,
+      cpUmum: `Pada akhir Fase E, peserta didik dapat menggeneralisasi sifat operasi eksponen dan logaritma; menerapkan barisan dan deret aritmetika-geometri; memodelkan masalah dengan SPLTV dan SPtLDV; memahami konsep trigonometri segitiga siku-siku; serta menganalisis data distribusi dan peluang majemuk.`,
+      cpElemen: `Elemen Bilangan: Menggeneralisasi sifat eksponen dan logaritma pada fenomena pertumbuhan dan peluruhan.
+Elemen Aljabar dan Fungsi: Menyelesaikan SPLTV dan memodelkan fenomena nyata dengan fungsi kuadrat.
+Elemen Geometri: Menggunakan perbandingan trigonometri (sinus, kosinus, tangen) pada segitiga siku-siku dalam pengukuran jarak.
+Elemen Analisis Data: Menginterpretasi diagram pencar bivariat, ukuran pemusatan data kelompok, dan peluang majemuk.`,
+      kodeMA: 'MAT-E-BIL-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Eksponen dan Logaritma dalam Pemodelan Bunga Majemuk dan Pertumbuhan Mikroorganisme',
+      produkMA: 'Kalkulator Simulasi Pertumbuhan Keuangan dan Laporan Analisis Grafik',
+      sumberMA: 'Buku Matematika SMA Kelas X Kemdikbudristek, Software GeoGebra'
+    },
+    sma_fisika: {
+      mapel: 'Fisika',
+      singkatan: 'FIS',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | FISIKA | Pemahaman Fisika
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami konsep pengukuran besaran, angka penting, metode ilmiah, energi terbarukan dan dampaknya terhadap lingkungan, serta pemanasan global dan solusi penanggulangannya.`,
+      cpElemen: `Elemen Pemahaman Fisika: Memahami hakikat fisika, pengukuran dan ketidakpastian, energi terbarukan (solar, angin, biomassa), dan dampak pemanasan global.
+Elemen Keterampilan Proses: Merancang eksperimen terukur, mengolah data matematis, dan mengomunikasikan purwarupa energi ramah lingkungan.`,
+      kodeMA: 'FIS-E-FISIKA-001',
+      modelMA: 'Project Based Learning (PjBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Pemanfaatan Energi Terbarukan: Rancang Bangun Purwarupa Sel Surya Sederhana',
+      produkMA: 'Miniatur Charger Tenaga Surya (Solar Charger) Ramah Lingkungan',
+      sumberMA: 'Buku Fisika SMA Kelas X Kemdikbudristek, Panel Surya Mini 5V, Multimeter'
+    },
+    sma_kimia: {
+      mapel: 'Kimia',
+      singkatan: 'KIM',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | KIMIA | Pemahaman Kimia
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami struktur atom, tabel periodik unsur, hukum-hukum dasar kimia, konsep mol, reaksi kimia dalam kehidupan sehari-hari, dan penerapan 12 prinsip kimia hijau (green chemistry) untuk pelestarian lingkungan.`,
+      cpElemen: `Elemen Pemahaman Kimia: Memahami lambang unsur, konfigurasi elektron, ikatan kimia, hukum Lavoisier, Proust, dan prinsip Green Chemistry.
+Elemen Keterampilan Proses: Praktikum reaksi asam basa, penimbangan stoikiometri, dan observasi produk ramah lingkungan.`,
+      kodeMA: 'KIM-E-KIMIA-001',
+      modelMA: 'Inkuiri Terbimbing',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Penerapan 12 Prinsip Kimia Hijau dalam Pengurangan Sampah Plastik Rumah Tangga',
+      produkMA: 'Bioplastik dari Pati Singkong dan Laporan Uji Biodegradasi',
+      sumberMA: 'Buku Kimia SMA Kelas X Kemdikbudristek, Pati Singkong, Gliserol'
+    },
+    sma_biologi: {
+      mapel: 'Biologi',
+      singkatan: 'BIO',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | BIOLOGI | Pemahaman Biologi
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami keanekaragaman hayati tingkat gen, jenis, dan ekosistem serta peranannya; struktur virus dan peranannya dalam bioteknologi; daur biogeokimia ekosistem; serta upaya pelestarian lingkungan hidup.`,
+      cpElemen: `Elemen Pemahaman Biologi: Mengidentifikasi keanekaragaman flora-fauna nusantara garis Wallace-Weber, replikasi virus, interaksi ekosistem, dan pencemaran lingkungan.
+Elemen Keterampilan Proses: Pengamatan mikroskopis, survei keanekaragaman vegetasi sekolah, dan kampanye konservasi.`,
+      kodeMA: 'BIO-E-BIOLOGI-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Keanekaragaman Hayati Indonesia dan Ancaman Kepunahan Satwa Endemik',
+      produkMA: 'E-Booklet Katalog Satwa Endemik Terancam Punah dan Strategi Konservasi',
+      sumberMA: 'Buku Biologi SMA Kelas X Kemdikbudristek, Database IUCN Red List'
+    },
+    sma_ekonomi: {
+      mapel: 'Ekonomi',
+      singkatan: 'EKO',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | EKONOMI | Pemahaman Konsep Ekonomi
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami konsep kelangkaan, skala prioritas kebutuhan, biaya peluang, sistem ekonomi, pelaku ekonomi, hukum permintaan dan penawaran, serta literasi perbankan dan keuangan inklusif.`,
+      cpElemen: `Elemen Pemahaman Konsep: Menganalisis motif dan prinsip ekonomi, kurva permintaan-penawaran, peran OJK dan BI, serta produk investasi legal.
+Elemen Keterampilan Proses: Riset pasar harga kebutuhan pokok dan penyusunan rencana keuangan pribadi mandiri.`,
+      kodeMA: 'EKO-E-EKONOMI-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Analisis Kelangkaan dan Skala Prioritas Pengelolaan Keuangan Remaja di Era Digital',
+      produkMA: 'Buku Rencana Anggaran Keuangan Pribadi (Personal Financial Plan Sheet)',
+      sumberMA: 'Buku Ekonomi SMA Kelas X Kemdikbudristek, Modul Literasi Keuangan OJK'
+    },
+    sma_sosiologi: {
+      mapel: 'Sosiologi',
+      singkatan: 'SOS',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | SOSIOLOGI | Pemahaman Konsep Sosiologi
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami fungsi sosiologi sebagai ilmu pengkaji masyarakat, interaksi sosial, pembentukan identitas diri, tindakan sosial, dan gejala sosial di era digital.`,
+      cpElemen: `Elemen Pemahaman: Mengidentifikasi karakteristik masyarakat, faktor pendorong interaksi sosial, serta diferensiasi sosial.
+Elemen Proses: Observasi lapangan interaksi remaja, wawancara mendalam, dan penulisan artikel studi kasus sosial.`,
+      kodeMA: 'SOS-E-SOSIOLOGI-001',
+      modelMA: 'Inkuiri Terbimbing',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Dinamika Interaksi Sosial Remaja dan Fenomena FOMO di Media Sosial',
+      produkMA: 'Laporan Studi Kasus Mini Sosiologis Interaksi Virtual Siswa',
+      sumberMA: 'Buku Sosiologi SMA Kelas X Kemdikbudristek, Jurnal Fenomena Sosial Remaja'
+    },
+    sma_geografi: {
+      mapel: 'Geografi',
+      singkatan: 'GEO',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | GEOGRAFI | Pemahaman Geografi
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami konsep dasar ilmu geografi, peta, penginderaan jauh, Sistem Informasi Geografis (SIG), penelitian geografi, serta fenomena geosfer dan mitigasi bencana alam.`,
+      cpElemen: `Elemen Pemahaman: Memahami 10 konsep esensial geografi, 4 prinsip geografi, pembacaan kontur peta, dan mitigasi bencana alam.
+Elemen Proses: Pembuatan peta tematik dasar, analisis citra Google Earth, dan laporan kerawanan bencana.`,
+      kodeMA: 'GEO-E-GEOGRAFI-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Mitigasi Bencana Alam Gempa Bumi dan Tanah Longsor Berbasis Analisis Keruangan',
+      produkMA: 'Peta Tematik Jalur Evakuasi dan Titik Kumpul Aman Bencana Sekolah',
+      sumberMA: 'Buku Geografi SMA Kelas X Kemdikbudristek, Peta Rupa Bumi Indonesia (BIG)'
+    },
+    sma_sejarah: {
+      mapel: 'Sejarah',
+      singkatan: 'SEJ',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | SEJARAH | Pemahaman Konsep Sejarah
+2 | PROSES | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami konsep dasar ilmu sejarah (manusia, ruang, waktu, diakronik, sinkronik), historiografi, jejak masa lampau, dan asal-usul nenek moyang bangsa Indonesia.`,
+      cpElemen: `Elemen Pemahaman: Memahami kausalitas peristiwa masa lalu dan 4 tahapan metode sejarah (heuristik, verifikasi, interpretasi, historiografi).
+Elemen Proses: Wawancara saksi sejarah lokal, kunjungan cagar budaya, dan penulisan esai sejarah keluarga.`,
+      kodeMA: 'SEJ-E-SEJARAH-001',
+      modelMA: 'Inkuiri Terbimbing',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Penelusuran Jejak Sejarah Lokal dan Asal-Usul Penamaan Kampung / Desa',
+      produkMA: 'Artikel Historiografi Mini Sejarah Lokal Berbasis Wawancara Tetua Adat',
+      sumberMA: 'Buku Sejarah SMA Kelas X Kemdikbudristek, Arsip Sejarah Daerah'
+    },
+    sma_pancasila: {
+      mapel: 'Pendidikan Pancasila',
+      singkatan: 'PANCA',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | PANCA | Pancasila
+2 | UUD | Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+3 | BHINNEKA | Bhinneka Tunggal Ika
+4 | NKRI | Negara Kesatuan Republik Indonesia`,
+      cpUmum: `Pada akhir Fase E, peserta didik menganalisis gagasan para pendiri bangsa tentang dasar negara; kedudukan Pancasila sebagai ideologi terbuka; hierarki peraturan perundang-undangan; keragaman identitas; serta sengketa batas wilayah NKRI.`,
+      cpElemen: `Elemen Pancasila: Menganalisis gagasan perumus Pancasila dan aktualisasi nilai Pancasila menangkal intoleransi.
+Elemen UUD 1945: Menganalisis pasal-pasal hak asasi manusia dan mekanisme uji materi MK.
+Elemen Bhinneka Tunggal Ika: Mengikis stereotip dan prasangka budaya melalui dialog lintas identitas.
+Elemen NKRI: Menganalisis kedaulatan laut kepulauan Indonesia (UNCLOS 1982) dan diplomasi perbatasan.`,
+      kodeMA: 'PANCA-E-PANCA-001',
+      modelMA: 'Problem Based Learning (PBL)',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Aktualisasi Nilai-Nilai Pancasila dalam Menangkal Radikalisme dan Intoleransi Pelajar',
+      produkMA: 'Podcast Diskusi Kritis atau Video Kampanye Moderasi Beragama',
+      sumberMA: 'Buku Pendidikan Pancasila SMA Kelas X Kemdikbudristek, Media Aktual'
+    },
+    sma_pai: {
+      mapel: 'Pendidikan Agama Islam dan Budi Pekerti',
+      singkatan: 'PAI',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | QURAN | Al-Qur'an dan Hadis
+2 | AKIDAH | Akidah
+3 | AKHLAK | Akhlak
+4 | FIKIH | Fikih
+5 | SEJARAH | Sejarah Peradaban Islam`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami ayat Al-Qur'an tentang kontrol diri (mujahadah an-nafs), husnuzan, ukhuwah; mengimani 77 cabang iman (syu'abul iman); menghindarkan akhlak tercela; memahami transaksi muamalah kontemporer; serta sejarah masuknya Islam di nusantara.`,
+      cpElemen: `Elemen Al-Qur'an & Hadis: Menganalisis Q.S. Al-Hujurat/49: 10 dan 12 tentang ukhuwah dan husnuzan dengan tartil.
+Elemen Akidah: Memahami cabang iman (syu'abul iman) dan implementasinya menjaga integritas moral.
+Elemen Akhlak: Menghindari perilaku foya-foya, riya, sum'ah, takabur, dan hasad.
+Elemen Fikih: Memahami transaksi bank syariah, asuransi syariah, dan koperasi syariah.
+Elemen Sejarah: Menganalisis jalur masuknya Islam ke nusantara melalui dakwah damai Wali Songo.`,
+      kodeMA: 'PAI-E-QURAN-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka',
+      temaMA: 'Kajian Ayat Kontrol Diri (Mujahadah An-Nafs) dan Persaudaraan Sejati di Era Digital',
+      produkMA: 'Karya Kaligrafi Digital Makna Ayat dan Lembar Komitmen Perilaku Terpuji',
+      sumberMA: 'Buku PAI dan Budi Pekerti SMA Kelas X Kemdikbudristek, Mushaf Tajwid'
+    },
+    sma_infor: {
+      mapel: 'Informatika',
+      singkatan: 'INFOR',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '72 JP / Tahun',
+      jpMinggu: '2 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | BK | Berpikir Komputasional (BK)
+2 | TIK | Teknologi Informasi dan Komunikasi (TIK)
+3 | SK | Sistem Komputer (SK)
+4 | JKI | Jaringan Komputer dan Internet (JKI)
+5 | AD | Analisis Data (AD)
+6 | AP | Algoritma dan Pemrograman (AP)
+7 | DSI | Dampak Sosial Informatika (DSI)
+8 | PLB | Praktik Lintas Bidang (PLB)`,
+      cpUmum: `Pada akhir Fase E, peserta didik memahami strategi algoritmik standar (searching, sorting); memanfaatkan integrasi aplikasi perkantoran tingkat lanjut; memahami interaksi hardware dan OS; keamanan data jaringan; visualisasi data; serta membangun program prosedural menggunakan bahasa Python.`,
+      cpElemen: `Elemen BK: Menerapkan algoritma bubble sort, selection sort, binary search pada persoalan nyata.
+Elemen TIK: Integrasi aplikasi office (Mail Merge, Link Chart) dan cloud storage.
+Elemen AD: Pengumpulan data, data cleaning, dan visualisasi data menggunakan spreadsheet/Python.
+Elemen AP: Membuat kode program Python untuk memecahkan persoalan matematika dan logika.`,
+      kodeMA: 'INFOR-E-AP-001',
+      modelMA: 'Project Based Learning (PjBL)',
+      modaMA: 'Tatap Muka (Laboratorium Komputer)',
+      temaMA: 'Dasar Pemrograman Bahasa Python: Struktur Kontrol Percabangan dan Perulangan',
+      produkMA: 'Aplikasi Skrip Python Sederhana Sistem Rekap Nilai Siswa',
+      sumberMA: 'Buku Informatika SMA Kelas X Kemdikbudristek, Platform Google Colab'
+    },
+    sma_pjok: {
+      mapel: 'PJOK',
+      singkatan: 'PJOK',
+      fase: 'Fase E / Kelas 10',
+      alokasiTotal: '108 JP / Tahun',
+      jpMinggu: '3 JP / Minggu',
+      jpPertemuan: '3 JP @ 45 Menit',
+      elemenKode: `1 | GERAK | Terampil Bergerak
+2 | BELAJAR | Belajar Melalui Gerak
+3 | AKTIF | Bergaya Hidup Aktif
+4 | SEHAT | Memilih Hidup Sehat`,
+      cpUmum: `Pada akhir Fase E, peserta didik mengevaluasi dan mempraktikkan keterampilan gerak kompleks olahraga invasi, net, dan beladiri; merancang program peningkatan derajat kebugaran jasmani mandiri; serta menganalisis pencegahan penyakit menular dan pergaulan bebas.`,
+      cpElemen: `Elemen Terampil Bergerak: Mengevaluasi taktik penyerangan dan pertahanan pada permainan bola basket dan bulu tangkis.
+Elemen Belajar Melalui Gerak: Menginternalisasi nilai fair play, kepemimpinan tim, dan sportivitas.
+Elemen Bergaya Hidup Aktif: Menyusun agenda latihan kardio dan kekuatan otot 3 kali seminggu.
+Elemen Memilih Hidup Sehat: Menganalisis bahaya seks bebas, narkoba, dan pentingnya kesehatan mental remaja.`,
+      kodeMA: 'PJOK-E-GERAK-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka (Praktik Lapangan)',
+      temaMA: 'Evaluasi Taktik Penyerangan dan Pola Bertahan Formasi Permainan Bola Basket',
+      produkMA: 'Diagram Taktik Permainan Regu dan Rekaman Analisis Pertandingan Mandiri',
+      sumberMA: 'Buku Guru PJOK SMA Kelas X Kemdikbudristek, Bola Basket, Papan Taktik'
+    },
+    tk_paud: {
+      mapel: 'Pendidikan Anak Usia Dini (PAUD / TK)',
+      singkatan: 'PAUD',
+      fase: 'Fase Fondasi (Usia 4 - 6 Tahun)',
+      alokasiTotal: '900 Menit / Minggu',
+      jpMinggu: '30 Jam Pelajaran / Minggu',
+      jpPertemuan: '150 Menit / Hari',
+      elemenKode: `1 | AGAMA | Nilai Agama dan Budi Pekerti
+2 | DIRI | Jati Diri
+3 | STEAM | Dasar-Dasar Literasi, Matematika, Sains, Teknologi, Rekayasa, dan Seni`,
+      cpUmum: `Pada akhir Fase Fondasi, anak menunjukkan kegemaran belajar melalui bermain; mengenal konsep Tuhan Yang Maha Esa dan menghargai ciptaan-Nya; mengenali emosi diri dan kemandirian motorik; serta memiliki rasa ingin tahu, dasar literasi-keaksaraan awal, pemahaman numerasi dasar, dan daya cipta seni yang menggembirakan.`,
+      cpElemen: `Elemen Nilai Agama dan Budi Pekerti: Anak percaya kepada Tuhan YME, mempraktikkan doa harian, menjaga kebersihan diri dan alam, serta menyayangi sesama teman.
+Elemen Jati Diri: Mengenali karakteristik diri dan emosi, koordinasi gerak motorik kasar dan halus, mandiri memakai sepatu/pakaian sendiri, dan bangga sebagai anak Indonesia.
+Elemen Dasar-Dasar Literasi & STEAM: Menyimak cerita dongeng, mengenali fonik huruf dan angka, mengamati fenomena sains alam sekitar, serta mengekspresikan imajinasi melalui lukisan atau bahan loose parts.`,
+      kodeMA: 'PAUD-F-STEAM-001',
+      modelMA: 'Discovery Learning',
+      modaMA: 'Tatap Muka (Pendekatan Bermain)',
+      temaMA: 'Aku Sayang Bumi: Eksplorasi Tanaman Hias dan Warna-Warni Bunga',
+      produkMA: 'Karya Kolase Bunga Segar dan Hasil Penanaman Bibit dalam Pot Daur Ulang',
+      sumberMA: 'Panduan Kurikulum Merdeka PAUD Kemdikbudristek, Tanaman Sekitar Taman Sekolah, Bahan Loose Parts'
+    }
   };
+
+  // Wire up Preset Selector Dropdown
+  if (mgPresetSelect) {
+    mgPresetSelect.addEventListener('change', (e) => {
+      const selectedKey = e.target.value;
+      if (!selectedKey || !MAPEL_PRESETS[selectedKey]) return;
+
+      const p = MAPEL_PRESETS[selectedKey];
+
+      document.getElementById('mg-mapel').value = p.mapel;
+      document.getElementById('mg-singkatan').value = p.singkatan;
+      document.getElementById('mg-fase').value = p.fase;
+      document.getElementById('mg-alokasi-total').value = p.alokasiTotal;
+      document.getElementById('mg-jp-minggu').value = p.jpMinggu;
+      document.getElementById('mg-jp-pertemuan').value = p.jpPertemuan;
+      document.getElementById('mg-elemen-kode').value = p.elemenKode;
+      document.getElementById('mg-cp-umum').value = p.cpUmum;
+      document.getElementById('mg-cp-elemen').value = p.cpElemen;
+      document.getElementById('mg-kode-ma').value = p.kodeMA;
+      document.getElementById('mg-model-ma').value = p.modelMA;
+      document.getElementById('mg-moda-ma').value = p.modaMA;
+      document.getElementById('mg-tema-ma').value = p.temaMA;
+      document.getElementById('mg-produk-ma').value = p.produkMA;
+      document.getElementById('mg-sumber-ma').value = p.sumberMA;
+
+      // Ensure school info has standard defaults if still empty
+      const provInput = document.getElementById('mg-provinsi');
+      const dinasInput = document.getElementById('mg-dinas');
+      const sekInput = document.getElementById('mg-sekolah');
+      const almInput = document.getElementById('mg-alamat');
+      const tglInput = document.getElementById('mg-tanggal');
+      const tapelInput = document.getElementById('mg-tapel');
+      const guruInput = document.getElementById('mg-guru');
+      const kepInput = document.getElementById('mg-kepsek');
+
+      if (!provInput.value) provInput.value = 'Provinsi DKI Jakarta';
+      if (!dinasInput.value) dinasInput.value = 'Dinas Pendidikan Provinsi DKI Jakarta';
+      if (!sekInput.value) sekInput.value = selectedKey.startsWith('sd_') ? 'SD Negeri 01 Pagi' : (selectedKey.startsWith('sma_') ? 'SMA Negeri 1 Jakarta' : (selectedKey === 'tk_paud' ? 'TK Melati Indah' : 'SMP Negeri 19 Jakarta'));
+      if (!almInput.value) almInput.value = 'Jl. Pendidikan No. 10, Jakarta';
+      if (!tglInput.value) tglInput.value = 'Jakarta, 15 Juli 2026';
+      if (!tapelInput.value) tapelInput.value = '2026/2027';
+      if (!guruInput.value) guruInput.value = 'Guru Pengampu, S.Pd.';
+      if (!kepInput.value) kepInput.value = 'Kepala Sekolah, M.Pd.';
+
+      showToast(`Mata pelajaran ${p.mapel} dipilih! Elemen & CP resmi SK 046 langsung terisi.`);
+    });
+  }
+
+  // Quick chip buttons in Step 2:
+  if (elementChips && elementChips.length > 0) {
+    elementChips.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.dataset.preset;
+        if (!key || !MAPEL_PRESETS[key]) return;
+
+        const p = MAPEL_PRESETS[key];
+        document.getElementById('mg-elemen-kode').value = p.elemenKode;
+        
+        // Also sync mapel & singkatan if empty or different
+        const mapelInput = document.getElementById('mg-mapel');
+        const singkatanInput = document.getElementById('mg-singkatan');
+        if (!mapelInput.value || mapelInput.value !== p.mapel) {
+          mapelInput.value = p.mapel;
+          singkatanInput.value = p.singkatan;
+        }
+
+        showToast(`Elemen resmi ${p.mapel} berhasil dipasang.`);
+      });
+    });
+  }
+
+  // Demo Data Preset (Default: Bahasa Inggris SMP)
+  const DEMO_MASTER_DATA = MAPEL_PRESETS.smp_inggris;
 
   if (btnFillDemo) {
     btnFillDemo.addEventListener('click', () => {
-      document.getElementById('mg-provinsi').value = DEMO_MASTER_DATA.provinsi;
-      document.getElementById('mg-dinas').value = DEMO_MASTER_DATA.dinas;
-      document.getElementById('mg-sekolah').value = DEMO_MASTER_DATA.sekolah;
-      document.getElementById('mg-alamat').value = DEMO_MASTER_DATA.alamat;
-      document.getElementById('mg-tanggal').value = DEMO_MASTER_DATA.tanggal;
-      document.getElementById('mg-mapel').value = DEMO_MASTER_DATA.mapel;
-      document.getElementById('mg-singkatan').value = DEMO_MASTER_DATA.singkatan;
-      document.getElementById('mg-fase').value = DEMO_MASTER_DATA.fase;
-      document.getElementById('mg-tapel').value = DEMO_MASTER_DATA.tapel;
-      document.getElementById('mg-alokasi-total').value = DEMO_MASTER_DATA.alokasiTotal;
-      document.getElementById('mg-jp-minggu').value = DEMO_MASTER_DATA.jpMinggu;
-      document.getElementById('mg-jp-pertemuan').value = DEMO_MASTER_DATA.jpPertemuan;
-      document.getElementById('mg-guru').value = DEMO_MASTER_DATA.guru;
-      document.getElementById('mg-nipguru').value = DEMO_MASTER_DATA.nipGuru;
-      document.getElementById('mg-kepsek').value = DEMO_MASTER_DATA.kepsek;
-      document.getElementById('mg-nipkepsek').value = DEMO_MASTER_DATA.nipKepsek;
-      document.getElementById('mg-elemen-kode').value = DEMO_MASTER_DATA.elemenKode;
-      document.getElementById('mg-cp-umum').value = DEMO_MASTER_DATA.cpUmum;
-      document.getElementById('mg-cp-elemen').value = DEMO_MASTER_DATA.cpElemen;
-      document.getElementById('mg-kode-ma').value = DEMO_MASTER_DATA.kodeMA;
-      document.getElementById('mg-model-ma').value = DEMO_MASTER_DATA.modelMA;
-      document.getElementById('mg-moda-ma').value = DEMO_MASTER_DATA.modaMA;
-      document.getElementById('mg-tema-ma').value = DEMO_MASTER_DATA.temaMA;
-      document.getElementById('mg-produk-ma').value = DEMO_MASTER_DATA.produkMA;
-      document.getElementById('mg-sumber-ma').value = DEMO_MASTER_DATA.sumberMA;
+      document.getElementById('mg-provinsi').value = 'Provinsi DKI Jakarta';
+      document.getElementById('mg-dinas').value = 'Dinas Pendidikan Provinsi DKI Jakarta';
+      document.getElementById('mg-sekolah').value = 'SMP Negeri 19 Jakarta';
+      document.getElementById('mg-alamat').value = 'Jl. Bumi No. 21, Kebayoran Baru, Jakarta Selatan';
+      document.getElementById('mg-tanggal').value = 'Jakarta, 15 Juli 2026';
+      document.getElementById('mg-guru').value = 'Ahmad Bagoes, S.Pd.';
+      document.getElementById('mg-nipguru').value = '19870512 201101 1 008';
+      document.getElementById('mg-kepsek').value = 'Dra. Hj. Nur Endah, M.Pd.';
+      document.getElementById('mg-nipkepsek').value = '19720315 199802 2 001';
+
+      if (mgPresetSelect) mgPresetSelect.value = 'smp_inggris';
+      const p = MAPEL_PRESETS.smp_inggris;
+      document.getElementById('mg-mapel').value = p.mapel;
+      document.getElementById('mg-singkatan').value = p.singkatan;
+      document.getElementById('mg-fase').value = p.fase;
+      document.getElementById('mg-tapel').value = '2026/2027';
+      document.getElementById('mg-alokasi-total').value = p.alokasiTotal;
+      document.getElementById('mg-jp-minggu').value = p.jpMinggu;
+      document.getElementById('mg-jp-pertemuan').value = p.jpPertemuan;
+      document.getElementById('mg-elemen-kode').value = p.elemenKode;
+      document.getElementById('mg-cp-umum').value = p.cpUmum;
+      document.getElementById('mg-cp-elemen').value = p.cpElemen;
+      document.getElementById('mg-kode-ma').value = p.kodeMA;
+      document.getElementById('mg-model-ma').value = p.modelMA;
+      document.getElementById('mg-moda-ma').value = p.modaMA;
+      document.getElementById('mg-tema-ma').value = p.temaMA;
+      document.getElementById('mg-produk-ma').value = p.produkMA;
+      document.getElementById('mg-sumber-ma').value = p.sumberMA;
 
       showToast('Data contoh (demo) berhasil diisikan ke formulir!');
     });

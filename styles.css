@@ -1065,6 +1065,31 @@ button, select, input {
   color: #334155;
 }
 
+.element-quick-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.btn-element-chip {
+  background: white;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-element-chip:hover {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  transform: translateY(-1px);
+}
+
 /* Form Section Boxes */
 .form-section-box {
   background: #f8fafc;

@@ -598,6 +598,70 @@
           </div>
         </div>
 
+        <!-- Selector Cepat Otomatis (Pilih Mapel Langsung Terisi Lengkap) -->
+        <div class="preset-selector-card" style="background: linear-gradient(135deg, #eff6ff, #f0fdf4); border: 2px solid #93c5fd; border-radius: 1.25rem; padding: 1.25rem 1.5rem; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.08);">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+            <div style="width: 2.25rem; height: 2.25rem; background: #2563eb; color: white; border-radius: 0.65rem; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">
+              <i class="fas fa-magic"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.05rem; font-weight: 800; color: #1e3a8a; margin: 0;">
+                Tinggal Pilih Mapel Anda (Elemen &amp; CP Langsung Terisi Otomatis!)
+              </h4>
+              <p style="font-size: 0.8rem; color: #475569; margin: 0.2rem 0 0;">
+                Bebas repot! Cukup pilih mata pelajaran Anda di bawah ini, maka <strong>Elemen Resmi, Kode Elemen, Naskah CP SK 046, dan Alokasi Jam</strong> akan langsung terpasang otomatis:
+              </p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <select id="mg-preset-select" style="flex: 1; min-width: 260px; padding: 0.75rem 1rem; font-size: 0.9rem; font-weight: 700; color: #1e40af; border: 2px solid #3b82f6; border-radius: 0.75rem; background: white; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.04);">
+              <option value="">-- KLIK DI SINI UNTUK MEMILIH MATA PELAJARAN ANDA --</option>
+              <optgroup label="Sekolah Dasar (SD)">
+                <option value="sd_indo">SD - Bahasa Indonesia (Fase A, B, C)</option>
+                <option value="sd_mat">SD - Matematika (Fase A, B, C)</option>
+                <option value="sd_ipas">SD - IPAS / Ilmu Pengetahuan Alam & Sosial (Fase B, C)</option>
+                <option value="sd_pancasila">SD - Pendidikan Pancasila (Fase A, B, C)</option>
+                <option value="sd_pai">SD - Pendidikan Agama Islam / PAI (Fase A, B, C)</option>
+                <option value="sd_inggris">SD - Bahasa Inggris (Fase A, B, C)</option>
+                <option value="sd_pjok">SD - PJOK (Fase A, B, C)</option>
+                <option value="sd_senirupa">SD - Seni Rupa (Fase A, B, C)</option>
+              </optgroup>
+              <optgroup label="SMP / MTs (Fase D)">
+                <option value="smp_indo">SMP - Bahasa Indonesia (Fase D)</option>
+                <option value="smp_inggris">SMP - Bahasa Inggris (Fase D)</option>
+                <option value="smp_mat">SMP - Matematika (Fase D)</option>
+                <option value="smp_ipa">SMP - Ilmu Pengetahuan Alam / IPA (Fase D)</option>
+                <option value="smp_ips">SMP - Ilmu Pengetahuan Sosial / IPS (Fase D)</option>
+                <option value="smp_pancasila">SMP - Pendidikan Pancasila (Fase D)</option>
+                <option value="smp_pai">SMP - PAI & Budi Pekerti (Fase D)</option>
+                <option value="smp_infor">SMP - Informatika (Fase D)</option>
+                <option value="smp_pjok">SMP - PJOK (Fase D)</option>
+                <option value="smp_senirupa">SMP - Seni Rupa (Fase D)</option>
+              </optgroup>
+              <optgroup label="SMA / SMK / MA (Fase E & F)">
+                <option value="sma_indo">SMA - Bahasa Indonesia (Fase E & F)</option>
+                <option value="sma_inggris">SMA - Bahasa Inggris (Fase E & F)</option>
+                <option value="sma_mat">SMA - Matematika (Fase E & F)</option>
+                <option value="sma_fisika">SMA - Fisika (Fase E & F)</option>
+                <option value="sma_kimia">SMA - Kimia (Fase E & F)</option>
+                <option value="sma_biologi">SMA - Biologi (Fase E & F)</option>
+                <option value="sma_ekonomi">SMA - Ekonomi (Fase E & F)</option>
+                <option value="sma_sosiologi">SMA - Sosiologi (Fase E & F)</option>
+                <option value="sma_geografi">SMA - Geografi (Fase E & F)</option>
+                <option value="sma_sejarah">SMA - Sejarah (Fase E & F)</option>
+                <option value="sma_pancasila">SMA - Pendidikan Pancasila (Fase E & F)</option>
+                <option value="sma_pai">SMA - PAI & Budi Pekerti (Fase E & F)</option>
+                <option value="sma_infor">SMA - Informatika (Fase E & F)</option>
+                <option value="sma_pjok">SMA - PJOK (Fase E & F)</option>
+              </optgroup>
+              <optgroup label="TK / PAUD">
+                <option value="tk_paud">TK / PAUD - Fase Fondasi (Usia 4 - 6 Tahun)</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
         <!-- The Interactive Form -->
         <form id="form-master-generator" class="master-gen-form">
           <!-- Step 1: Identitas Sekolah & Guru -->
@@ -694,13 +758,36 @@
           <div class="form-section-box">
             <div class="form-section-title">
               <span class="step-num">2</span>
-              <div>
+              <div style="flex: 1;">
                 <h4>Elemen CP &amp; Singkatan Kode Elemen</h4>
-                <p>Format baris: [Nomor] | [Kode 2-4 Huruf] | [Nama Elemen Lengkap]</p>
+                <p>Format: [Nomor] | [Kode Singkatan 2-4 Huruf] | [Nama Elemen Resmi SK 046]</p>
               </div>
             </div>
+
+            <!-- Quick Chip Buttons for Step 2 -->
+            <div style="margin-bottom: 0.85rem; padding: 0.65rem 0.85rem; background: #f1f5f9; border-radius: 0.65rem;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: #475569; margin-bottom: 0.45rem; display: block;">
+                <i class="fas fa-hand-pointer" style="color: #2563eb;"></i> Klik cepat tombol di bawah untuk mengisi elemen mapel pilihan Anda:
+              </span>
+              <div class="element-quick-chips">
+                <button type="button" class="btn-element-chip" data-preset="smp_indo">Bahasa Indonesia</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_mat">Matematika</button>
+                <button type="button" class="btn-element-chip" data-preset="sd_ipas">IPAS / IPA</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_inggris">Bahasa Inggris</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_pancasila">Pancasila</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_pai">PAI</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_infor">Informatika</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_pjok">PJOK</button>
+                <button type="button" class="btn-element-chip" data-preset="smp_senirupa">Seni Rupa</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_fisika">Fisika</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_biologi">Biologi</button>
+                <button type="button" class="btn-element-chip" data-preset="sma_ekonomi">Ekonomi</button>
+                <button type="button" class="btn-element-chip" data-preset="tk_paud">TK / PAUD</button>
+              </div>
+            </div>
+
             <div class="form-field">
-              <textarea id="mg-elemen-kode" rows="3" style="font-family: monospace; font-size: 0.85rem;" placeholder="Contoh:&#10;1 | LIST | Menyimak-Berbicara (Listening-Speaking)&#10;2 | READ | Membaca-Memirsa (Reading-Viewing)&#10;3 | WRITE | Menulis-Mempresentasikan (Writing-Presenting)" required></textarea>
+              <textarea id="mg-elemen-kode" rows="4" style="font-family: monospace; font-size: 0.85rem;" placeholder="Pilih dari tombol di atas atau ketik format:&#10;1 | SIMAK | Menyimak&#10;2 | BACA | Membaca dan Memirsa&#10;3 | BICARA | Berbicara dan Mempresentasikan&#10;4 | TULIS | Menulis" required></textarea>
             </div>
           </div>
 
