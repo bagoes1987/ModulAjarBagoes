@@ -45,18 +45,27 @@ Peserta didik mampu menulis teks narasi, teks deskripsi, teks rekon, teks prosed
 3 | UKUR | Pengukuran
 4 | GEO | Geometri
 5 | DATA | Analisis Data dan Peluang`,
-      cpUmum: `Pada akhir Fase B, peserta didik menunjukkan pemahaman dan intuisi bilangan (number sense) pada bilangan cacah sampai 10.000. Mereka dapat melakukan operasi penjumlahan, pengurangan, perkalian, dan pembagian bilangan cacah sampai 100 dengan berbagai strategi kontekstual.`,
-      cpElemen: `Elemen Bilangan: Menyelesaikan operasi hitung bilangan cacah sampai 10.000, pecahan senilai, dan desimal persepuluhan.
-Elemen Aljabar: Mengidentifikasi dan mengembangkan pola bilangan membesar dan mengecil.
-Elemen Pengukuran: Mengukur panjang dan berat benda menggunakan satuan baku (cm, m, gram, kg).
-Elemen Geometri: Mendeskripsikan ciri-ciri berbagai bentuk bangun datar (segi empat, segitiga) dan menyusun komposisi bentuk.
-Elemen Analisis Data: Mengurutkan, menyajikan, dan menginterpretasi data dalam bentuk tabel dan diagram batang.`,
-      kodeMA: 'MAT-B-BIL-001',
+      cpUmum: `Pada akhir Fase B, murid menunjukkan pemahaman dan intuisi bilangan (number sense) pada bilangan cacah sampai 10.000; menyelesaikan operasi penjumlahan dan pengurangan sampai 1.000 serta perkalian dan pembagian sampai 100; pecahan senilai dan desimal; menemukan nilai tidak diketahui dalam kalimat matematika dan pola bilangan; mengukur panjang, berat, luas, dan volume dengan satuan baku; mendeskripsikan serta menyusun bangun datar; serta mengurutkan, menyajikan, dan menginterpretasi data dalam bentuk tabel dan diagram batang.`,
+      cpElemen: `Elemen Bilangan:
+Menunjukkan pemahaman dan intuisi bilangan (number sense) pada bilangan cacah sampai 10.000; membaca, menulis, membandingkan, dan mengurutkan bilangan; menentukan dan menggunakan nilai tempat; melakukan komposisi dan dekomposisi bilangan cacah sampai 10.000. Murid dapat melakukan dan menyelesaikan masalah operasi bilangan penjumlahan dan pengurangan bilangan cacah sampai 1.000; melakukan dan menyelesaikan masalah operasi perkalian dan pembagian bilangan cacah sampai 100 dengan bantuan benda konkret, gambar dan simbol; mengenal kelipatan dan faktor. Murid dapat melakukan perbandingan dan pengurutan pecahan dengan pembilang satu dan antar pecahan dengan penyebut yang sama; mengenal dan dapat menerapkan pecahan senilai, memiliki intuisi pecahan dan desimal, serta dapat menentukan pecahan sebagai desimal dan persen.
+
+Elemen Aljabar:
+Menemukan nilai yang tidak diketahui dalam kalimat matematika yang melibatkan penjumlahan dan pengurangan pada bilangan cacah sampai 100, dengan menggunakan sifat-sifat bilangan dan operasinya. Murid dapat mengidentifikasi, meniru, dan mengembangkan pola gambar atau objek sederhana dan pola bilangan membesar dan mengecil yang dapat melibatkan penjumlahan dan pengurangan pada bilangan cacah sampai 100.
+
+Elemen Pengukuran:
+Mengukur panjang dan berat benda menggunakan satuan baku; menentukan hubungan antar-satuan baku panjang (cm, m) dan antar-satuan berat (g, kg); serta mengukur dan mengestimasi luas dan volume menggunakan satuan tidak baku dan satuan baku berupa bilangan cacah.
+
+Elemen Geometri:
+Mendeskripsikan ciri berbagai bentuk bangun datar (segiempat, segitiga, segi banyak); menyusun (komposisi) dan mengurai (dekomposisi) berbagai bangun datar dengan lebih dari satu cara jika memungkinkan.
+
+Elemen Analisis Data dan Peluang:
+Mengurutkan, membandingkan, menyajikan, menganalisis dan menginterpretasi data dalam bentuk tabel, diagram gambar, piktogram, dan diagram batang (skala satu satuan).`,
+      kodeMA: 'MAT-B-BIL-001' ,
       modelMA: 'Problem Based Learning (PBL)',
       modaMA: 'Tatap Muka',
       temaMA: 'Operasi Perkalian dan Pembagian Bilangan Cacah dalam Jual-Beli',
       produkMA: 'Papan Permainan Matematika Kartu Hitung Cepat',
-      sumberMA: 'Buku Siswa Matematika Kelas IV Kemdikbudristek, Blok Dienes, Uang Mainan'
+      sumberMA: 'Buku Siswa Matematika Kelas IV Kemendikdasmen SK BSKAP 046/2025, Uang Mainan'
     },
     sd_ipas: {
       mapel: 'IPAS (Ilmu Pengetahuan Alam dan Sosial)',
@@ -65,17 +74,20 @@ Elemen Analisis Data: Mengurutkan, menyajikan, dan menginterpretasi data dalam b
       alokasiTotal: '180 JP / Tahun',
       jpMinggu: '5 JP / Minggu',
       jpPertemuan: '2 JP @ 35 Menit',
-      elemenKode: `1 | SAINS | Pemahaman IPAS (Sains & Sosial)
+      elemenKode: `1 | SAINS | Pemahaman IPAS
 2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase B, peserta didik mengamati fenomena dan peristiwa secara sederhana menggunakan pancaindra, mencatat hasil pengamatannya, serta mencari persamaan dan perbedaannya. Peserta didik mengidentifikasi wujud zat, bentuk energi, siklus hidup makhluk hidup, serta kearifan lokal daerahnya.`,
-      cpElemen: `Elemen Pemahaman IPAS: Peserta didik memahami bentuk dan fungsi bagian tubuh tumbuhan, wujud zat dan perubahannya, bentuk dan sumber energi, gaya dan gerak, serta keragaman sosial budaya di lingkungan tempat tinggal.
-Elemen Keterampilan Proses: Mengamati, mempertanyakan dan memprediksi, merencanakan dan melakukan penyelidikan, memproses data, mengevaluasi dan refleksi, serta mengomunikasikan hasil penyelidikan ilmiah.`,
+      cpUmum: `Pada akhir Fase B, murid memiliki kemampuan menjelaskan bentuk dan fungsi pancaindra; menganalisis siklus hidup makhluk hidup dan upaya pelestariannya; menghasilkan solusi untuk masalah yang berkaitan dengan pelestarian sumber daya alam sebagai upaya mitigasi perubahan iklim; menyimpulkan proses perubahan wujud zat; menjelaskan sumber dan bentuk energi, serta proses perubahan bentuk energi dalam kehidupan sehari-hari; membedakan jenis gaya dan pengaruhnya terhadap arah, gerak, dan bentuk benda; menjelaskan peran, tugas, dan tanggung jawab serta interaksi sosial yang terjadi di sekitar tempat tinggal dan sekolah; mengenali letak kabupaten/kota dan provinsi tempat tinggalnya dengan menggunakan peta konvensional/digital; mengklasifikasikan ragam bentang alam dan keterkaitannya dengan profesi masyarakat, ragam budaya serta upaya untuk melestarikannya; menganalisis sejarah masyarakat di lingkungan tempat tinggal; menjelaskan nilai mata uang dan fungsinya, serta cara mengelola keuangan secara bijak; serta menerapkan keterampilan proses ilmiah.`,
+      cpElemen: `Elemen Pemahaman IPAS:
+Menjelaskan bentuk dan fungsi pancaindra; menganalisis siklus hidup makhluk hidup dan upaya pelestariannya; menghasilkan solusi untuk masalah pelestarian sumber daya alam mitigasi perubahan iklim; menyimpulkan proses perubahan wujud zat; menjelaskan sumber dan bentuk energi serta perubahannya; membedakan jenis gaya dan pengaruhnya terhadap gerak dan bentuk benda; menjelaskan peran dan interaksi sosial di lingkungan tempat tinggal dan sekolah; mengenali letak kabupaten/kota dan provinsi melalui peta; mengklasifikasikan ragam bentang alam, profesi masyarakat, dan pelestarian budaya lokal; menganalisis sejarah lokal; serta menjelaskan nilai mata uang dan literasi keuangan dasar.
+
+Elemen Keterampilan Proses:
+Menerapkan keterampilan proses yang meliputi: mengamati fenomena dan peristiwa secara sederhana menggunakan pancaindra; mempertanyakan dan memprediksi hal yang diselidiki; merencanakan dan melakukan penyelidikan terarah; memproses, merekonstruksi data hasil pengamatan ke dalam tabel dan grafik; mengevaluasi dan merefleksikan proses penyelidikan; serta mengomunikasikan hasil penyelidikan secara lisan dan tertulis.`,
       kodeMA: 'IPAS-B-SAINS-001',
       modelMA: 'Inkuiri Terbimbing',
       modaMA: 'Tatap Muka',
-      temaMA: 'Bagian Tubuh Tumbuhan dan Fungsinya Bagi Kelangsungan Hidup',
-      produkMA: 'Herbarium Daun dan Laporan Pengamatan Kapilaritas Air pada Batang',
-      sumberMA: 'Buku IPAS Kelas IV Kemdikbudristek, Tanaman Sekitar Sekolah, Kaca Pembesar'
+      temaMA: 'Bentuk dan Fungsi Bagian Tubuh Tumbuhan serta Hubungannya dengan Kelangsungan Hidup',
+      produkMA: 'Herbarium Mini Kreatif dan Laporan Sederhana Penyelidikan Air pada Tumbuhan',
+      sumberMA: 'Buku Siswa IPAS SD Kelas IV Kemendikdasmen SK BSKAP 046/2025, Tanaman Lingkungan Sekolah'
     },
     sd_pancasila: {
       mapel: 'Pendidikan Pancasila',
@@ -267,15 +279,18 @@ Elemen Analisis Data: Mengumpulkan, menyajikan, dan menginterpretasikan data dal
       jpPertemuan: '2 JP @ 40 Menit',
       elemenKode: `1 | SAINS | Pemahaman IPA
 2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase D, peserta didik memahami proses identifikasi zat dan perubahannya, pengukuran presisi, organisasi kehidupan dari sel hingga organisme, interaksi ekosistem, gerak dan gaya, suhu dan kalor, serta struktur bumi dan tata surya.`,
-      cpElemen: `Elemen Pemahaman IPA: Memahami konsep pengukuran besaran, wujud zat dan perubahannya, sel sebagai unit struktural, interaksi antar komponen ekosistem, suhu, kalor, serta gerak lurus dan gaya.
-Elemen Keterampilan Proses: Merencanakan dan melaksanakan penyelidikan laboratorium ilmiah, mengumpulkan dan menganalisis data, serta menarik kesimpulan berbasis bukti empiris.`,
+      cpUmum: `Pada akhir Fase D, murid memiliki kemampuan menelaah hasil identifikasi makhluk hidup sesuai dengan karakteristiknya; menganalisis klasifikasi, sifat, dan perubahan materi; menganalisis sistem organisasi kehidupan, fungsi, serta kelainan atau gangguan yang muncul pada sistem organ; menganalisis interaksi antar makhluk hidup dan lingkungannya dalam merancang upaya-upaya untuk mencegah dan mengatasi perubahan iklim; menganalisis pewarisan sifat; membuat bioteknologi konvensional di lingkungan sekitarnya; menerapkan pengukuran terhadap aspek fisis dalam kehidupan sehari-hari; menganalisis ragam gerak, gaya, dan tekanan; menganalisis hubungan usaha dan energi; menganalisis pengaruh kalor dan perpindahannya terhadap perubahan suhu; menganalisis gelombang dan pemanfaatannya dalam kehidupan sehari-hari; menganalisis gejala kemagnetan dan kelistrikan untuk menyelesaikan tantangan yang dihadapi dalam kehidupan sehari-hari termasuk pemanfaatan sumber energi listrik ramah lingkungan; menganalisis posisi relatif bumi-bulan-matahari dalam sistem tata surya untuk menjelaskan fenomena alam dan perubahan iklim; serta mengevaluasi keputusan yang tepat untuk menghindari zat aditif dan adiktif yang membahayakan dirinya dan lingkungan.`,
+      cpElemen: `Elemen Pemahaman IPA:
+Menelaah identifikasi makhluk hidup; menganalisis klasifikasi materi; sistem organisasi kehidupan dan gangguan organ; interaksi ekosistem dan upaya mitigasi perubahan iklim; pewarisan sifat; pembuatan bioteknologi konvensional; pengukuran fisis; gerak, gaya, dan tekanan; usaha dan energi; pengaruh kalor dan suhu; gelombang dan pemanfaatannya; kelistrikan dan kemagnetan ramah lingkungan; tata surya dan fenomena alam; serta bahaya zat aditif dan adiktif.
+
+Elemen Keterampilan Proses:
+Menerapkan keterampilan proses yang meliputi: mengamati fenomena dan karakteristik objek; mempertanyakan dan memprediksi masalah ilmiah; merencanakan dan melaksanakan prosedur penyelidikan laboratorium terarah; memproses, menganalisis data dalam bentuk tabel, grafik, dan model; mengevaluasi sumber ketidakpastian dan kesimpulan; serta mengomunikasikan hasil penyelidikan secara saintifik.`,
       kodeMA: 'IPA-D-SAINS-001',
       modelMA: 'Inkuiri Terbimbing',
       modaMA: 'Tatap Muka (Praktikum Laboratorium)',
-      temaMA: 'Pengukuran Besaran Pokok dan Turunan Menggunakan Alat Ukur Presisi',
-      produkMA: 'Laporan Ilmiah Praktikum Pengukuran Massa Jenis Zat Padat dan Cair',
-      sumberMA: 'Buku IPA Kelas VII Kemdikbudristek, Jangka Sorong, Neraca Ohaus, Gelas Kimia'
+      temaMA: 'Pengukuran Aspek Fisis serta Klasifikasi dan Karakteristik Wujud Materi',
+      produkMA: 'Laporan Praktikum Pengukuran Presisi dan Analisis Sifat Materi di Lingkungan',
+      sumberMA: 'Buku Siswa IPA SMP Kelas VII Kemendikdasmen SK BSKAP 046/2025, Alat Peraga Laboratorium IPA'
     },
     smp_ips: {
       mapel: 'Ilmu Pengetahuan Sosial (IPS)',
@@ -284,17 +299,20 @@ Elemen Keterampilan Proses: Merencanakan dan melaksanakan penyelidikan laborator
       alokasiTotal: '144 JP / Tahun',
       jpMinggu: '4 JP / Minggu',
       jpPertemuan: '2 JP @ 40 Menit',
-      elemenKode: `1 | SOSIAL | Pemahaman Konsep IPS
+      elemenKode: `1 | KON | Pemahaman Konsep
 2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase D, peserta didik memahami konektivitas antarruang di nusantara, pengaruh kondisi geografis terhadap aktivitas ekonomi dan sosial budaya, interaksi antar pelaku ekonomi, serta dinamika perubahan sosial masyarakat Indonesia.`,
-      cpElemen: `Elemen Pemahaman Konsep: Mengidentifikasi letak astronomis dan geografis Indonesia, keanekaragaman sumber daya alam maritim, permintaan dan penawaran pasar, serta interaksi sosial antar wilayah.
-Elemen Keterampilan Proses: Observasi lapangan, wawancara pelaku usaha lokal, dan pembuatan peta tematik sebaran komoditas.`,
-      kodeMA: 'IPS-D-SOSIAL-001',
+      cpUmum: `Pada akhir Fase D, murid memiliki kemampuan menjelaskan keberagaman kondisi geografis Indonesia, konektivitas antarruang terhadap upaya pemanfaatan dan pelestarian potensi sumber daya alam, faktor aktivitas manusia terhadap perubahan iklim dan potensi bencana alam; memprediksi dampak perubahan iklim terhadap kehidupan ekonomi, sosial, budaya masyarakat serta merefleksikan pola adaptasi terhadap perubahan iklim dan upaya mitigasi bencana untuk menunjang sustainable development goals (SDGs) dalam konteks lokal, regional, dan global; mengidentifikasi upaya masyarakat dalam memenuhi kebutuhannya melalui kegiatan ekonomi, harga, pasar, lembaga keuangan, perdagangan internasional; menelaah peran masyarakat dan negara dalam mendorong pertumbuhan ekonomi di era digital, serta potensi Indonesia menjadi negara maju; mengelaborasi proses interaksi sosial, lembaga sosial, dinamika sosial dan perubahan sistem sosial budaya dalam masyarakat yang majemuk untuk mewujudkan integrasi bangsa dengan prinsip kebhinekaan; menjelaskan konsep dasar ilmu sejarah yaitu manusia, ruang, waktu, kronologi, perubahan; menganalisis keterhubungan antara masa lampau, masa kini, dan masa yang akan datang ketika mempelajari sejarah lokal dan toponimi wilayah serta berbagai peristiwa penting terkait asal-usul nenek moyang dan jalur rempah nusantara.`,
+      cpElemen: `Elemen Pemahaman Konsep:
+Menjelaskan kondisi geografis Indonesia, konektivitas antarruang, dan pelestarian SDA; memprediksi dampak perubahan iklim dan mitigasi bencana menunjang SDGs; kegiatan ekonomi, pasar, dan peran ekonomi digital; interaksi sosial dan integrasi bangsa dalam masyarakat majemuk; serta konsep dasar sejarah lokal, toponimi, dan jalur rempah nusantara.
+
+Elemen Keterampilan Proses:
+Mengamati fenomena sosial-geografis secara sistematis; menanya dan merumuskan hipotesis sosial; mengumpulkan data dari sumber primer; berkolaborasi mengolah dan menguji informasi melalui studi kasus nyata; mengevaluasi kesimpulan; menyajikan hasil penyelidikan dengan media informasi yang tepat; dan menyusun rencana tindak lanjut kolaboratif.`,
+      kodeMA: 'IPS-D-KONSEP-001',
       modelMA: 'Problem Based Learning (PBL)',
       modaMA: 'Tatap Muka',
-      temaMA: 'Peluang Konektivitas Antarruang dan Potensi Ekonomi Maritim Indonesia',
-      produkMA: 'Peta Tematik Sebaran Potensi Ekonomi Maritim Daerah dan Rekomendasi Solusi',
-      sumberMA: 'Buku Siswa IPS Kelas VII Kemdikbudristek, Atlas Geografi Indonesia'
+      temaMA: 'Konektivitas Antarruang dan Pemanfaatan Sumber Daya Alam dalam Menunjang SDGs',
+      produkMA: 'Peta Tematik Potensi Geografis Lokal dan Gagasan Aksi Pelestarian Lingkungan Hidup',
+      sumberMA: 'Buku Siswa IPS SMP Kelas VII Kemendikdasmen SK BSKAP 046/2025, Atlas Indonesia'
     },
     smp_pancasila: {
       mapel: 'Pendidikan Pancasila',
@@ -351,22 +369,20 @@ Elemen Sejarah: Menganalisis sejarah daulah Bani Umayyah di Damaskus dalam kemaj
       alokasiTotal: '72 JP / Tahun',
       jpMinggu: '2 JP / Minggu',
       jpPertemuan: '2 JP @ 40 Menit',
-      elemenKode: `1 | BK | Berpikir Komputasional (BK)
-2 | TIK | Teknologi Informasi dan Komunikasi (TIK)
-3 | SK | Sistem Komputer (SK)
-4 | JKI | Jaringan Komputer dan Internet (JKI)
-5 | AD | Analisis Data (AD)
-6 | AP | Algoritma dan Pemrograman (AP)
-7 | DSI | Dampak Sosial Informatika (DSI)
-8 | PLB | Praktik Lintas Bidang (PLB)`,
-      cpUmum: `Pada akhir Fase D, peserta didik mampu menerapkan 4 pilar berpikir komputasional (dekomposisi, pola, abstraksi, algoritma) untuk menyelesaikan persoalan komputasi; memanfaatkan aplikasi perkantoran kolaboratif; memahami komponen komputer dan internet; serta membuat program visual blok interaktif.`,
-      cpElemen: `Elemen BK: Menerapkan logika komputasional dalam kehidupan sehari-hari. Elemen TIK: Menggunakan aplikasi pengolah dokumen dan lembar sebar bersama. Elemen SK: Memahami fungsi CPU, memori, media penyimpanan. Elemen AP: Membuat game edukasi visual menggunakan Scratch.`,
+      elemenKode: `1 | BK | Berpikir Komputasional
+2 | LD | Literasi Digital`,
+      cpUmum: `Pada akhir Fase D, murid memiliki kemampuan menerapkan berpikir komputasional untuk problem dalam kehidupan sehari-hari maupun dalam menghadapi masalah komputasi; memahami konsep himpunan data terstruktur dalam kehidupan sehari-hari; memahami konsep lembar kerja pengolah data; menerapkan berpikir komputasional dalam menyelesaikan persoalan yang mengandung himpunan data berstruktur sederhana dengan volume kecil; serta menuliskan sekumpulan instruksi dengan menggunakan sekumpulan kosakata terbatas atau simbol dalam format pseudocode; memahami cara kerja mesin pencari, kualitas informasi digital, membedakan fakta dan hoaks, pengolah dokumen dan presentasi, arsitektur komputer dan jaringan, serta keamanan data pribadi di dunia digital.`,
+      cpElemen: `Elemen Berpikir Komputasional:
+Menerapkan berpikir komputasional untuk problem dalam kehidupan sehari-hari maupun masalah komputasi; memahami konsep himpunan data terstruktur dan lembar kerja pengolah data; menyelesaikan persoalan himpunan data berstruktur sederhana volume kecil; serta menuliskan sekumpulan instruksi dalam format pseudocode.
+
+Elemen Literasi Digital:
+Memahami cara kerja mesin pencari internet; memilah fakta, opini, dan hoaks; memanfaatkan perangkat teknologi pengolah dokumen, lembar kerja, dan presentasi; mendeskripsikan komponen dan cara kerja komputer; memahami konsep konektivitas jaringan kabel/nirkabel; memproduksi konten digital positif; serta menerapkan keamanan kata sandi, perlindungan data pribadi, dan etika mindfulness di dunia digital.`,
       kodeMA: 'INFOR-D-BK-001',
-      modelMA: 'Project Based Learning (PjBL)',
+      modelMA: 'Problem Based Learning (PBL)',
       modaMA: 'Tatap Muka (Laboratorium Komputer)',
-      temaMA: 'Penerapan 4 Pilar Berpikir Komputasional dalam Pemecahan Masalah Logika',
-      produkMA: 'Diagram Alir (Flowchart) dan Algoritma Solusi Masalah Nyata',
-      sumberMA: 'Buku Informatika SMP Kelas VII Kemdikbudristek, Platform Scratch / Bebras'
+      temaMA: 'Penerapan Berpikir Komputasional Melalui Notasi Pseudocode dan Literasi Keamanan Digital',
+      produkMA: 'Rancangan Solusi Algoritma Pseudocode Logika Komputasi dan Infografis Privasi Digital',
+      sumberMA: 'Buku Siswa Informatika SMP Kelas VII Kemendikdasmen SK BSKAP 046/2025, Komputer/Perangkat Lab'
     },
     smp_pjok: {
       mapel: 'PJOK',
@@ -482,116 +498,134 @@ Elemen Analisis Data: Menginterpretasi diagram pencar bivariat, ukuran pemusatan
     sma_fisika: {
       mapel: 'Fisika',
       singkatan: 'FIS',
-      fase: 'Fase E / Kelas 10',
-      alokasiTotal: '108 JP / Tahun',
-      jpMinggu: '3 JP / Minggu',
-      jpPertemuan: '3 JP @ 45 Menit',
-      elemenKode: `1 | FISIKA | Pemahaman Fisika
-2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase E, peserta didik memahami konsep pengukuran besaran, angka penting, metode ilmiah, energi terbarukan dan dampaknya terhadap lingkungan, serta pemanasan global dan solusi penanggulangannya.`,
-      cpElemen: `Elemen Pemahaman Fisika: Memahami hakikat fisika, pengukuran dan ketidakpastian, energi terbarukan (solar, angin, biomassa), dan dampak pemanasan global.
-Elemen Keterampilan Proses: Merancang eksperimen terukur, mengolah data matematis, dan mengomunikasikan purwarupa energi ramah lingkungan.`,
-      kodeMA: 'FIS-E-FISIKA-001',
-      modelMA: 'Project Based Learning (PjBL)',
+      fase: 'Fase F / Kelas 11 - 12',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | FIS | Pemahaman Fisika
+2 | PROS | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase F, murid memiliki kemampuan menganalisis hubungan gerak dan gaya serta pemanfaatannya untuk menjelaskan fenomena alam, desain, atau rekayasa struktur; membuat karya yang menunjukkan penerapan hukum fluida dalam kehidupan sehari-hari; menganalisis konsep kalor dan termodinamika serta penerapannya untuk mengidentifikasi fenomena perubahan iklim; menganalisis gejala gelombang dan penerapannya dalam kehidupan sehari-hari; mengevaluasi rangkaian listrik; menganalisis fenomena elektromagnetik; menganalisis teori dasar fisika modern dan pengaruhnya terhadap perkembangan teknologi; serta menerapkan teori dasar digital dalam kehidupan sehari-hari; dan menerapkan keterampilan proses ilmiah.`,
+      cpElemen: `Elemen Pemahaman Fisika:
+Menganalisis hubungan gerak dan gaya serta pemanfaatannya untuk menjelaskan fenomena alam, desain, atau rekayasa struktur; membuat karya yang menunjukkan penerapan hukum fluida dalam kehidupan sehari-hari; menganalisis konsep kalor dan termodinamika serta penerapannya untuk mengidentifikasi fenomena perubahan iklim; menganalisis gejala gelombang dan penerapannya dalam kehidupan sehari-hari; mengevaluasi rangkaian listrik; menganalisis fenomena elektromagnetik; menganalisis teori dasar fisika modern dan pengaruhnya terhadap perkembangan teknologi; serta menerapkan teori dasar digital dalam kehidupan sehari-hari.
+
+Elemen Keterampilan Proses:
+Menerapkan keterampilan proses yang mencakup: mengamati fenomena ilmiah dalam kehidupan sehari-hari maupun laboratorium; mempertanyakan dan memprediksi hubungan antar variabel dan hipotesis; merencanakan dan melakukan penyelidikan ilmiah; memproses, menganalisis data dan informasi; mengevaluasi dan refleksi; serta mengomunikasikan hasil penyelidikan ilmiah secara lisan maupun tulisan.`,
+      kodeMA: 'FIS-F-PEMAHAMAN-001',
+      modelMA: 'Problem Based Learning (PBL)',
       modaMA: 'Tatap Muka',
-      temaMA: 'Pemanfaatan Energi Terbarukan: Rancang Bangun Purwarupa Sel Surya Sederhana',
-      produkMA: 'Miniatur Charger Tenaga Surya (Solar Charger) Ramah Lingkungan',
-      sumberMA: 'Buku Fisika SMA Kelas X Kemdikbudristek, Panel Surya Mini 5V, Multimeter'
+      temaMA: 'Analisis Gerak dan Gaya serta Penerapan Termodinamika dalam Teknologi Ramah Lingkungan',
+      produkMA: 'Laporan Eksperimen Pengujian Hukum Fluida / Dinamika dan Prototipe Sederhana',
+      sumberMA: 'Buku Fisika SMA Kelas XI/XII Kemendikdasmen SK BSKAP 046/2025, Alat Peraga Lab Fisika'
     },
     sma_kimia: {
       mapel: 'Kimia',
       singkatan: 'KIM',
-      fase: 'Fase E / Kelas 10',
-      alokasiTotal: '108 JP / Tahun',
-      jpMinggu: '3 JP / Minggu',
-      jpPertemuan: '3 JP @ 45 Menit',
-      elemenKode: `1 | KIMIA | Pemahaman Kimia
-2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase E, peserta didik memahami struktur atom, tabel periodik unsur, hukum-hukum dasar kimia, konsep mol, reaksi kimia dalam kehidupan sehari-hari, dan penerapan 12 prinsip kimia hijau (green chemistry) untuk pelestarian lingkungan.`,
-      cpElemen: `Elemen Pemahaman Kimia: Memahami lambang unsur, konfigurasi elektron, ikatan kimia, hukum Lavoisier, Proust, dan prinsip Green Chemistry.
-Elemen Keterampilan Proses: Praktikum reaksi asam basa, penimbangan stoikiometri, dan observasi produk ramah lingkungan.`,
-      kodeMA: 'KIM-E-KIMIA-001',
+      fase: 'Fase F / Kelas 11 - 12',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | KIM | Pemahaman Kimia
+2 | PROS | Keterampilan Proses`,
+      cpUmum: `Pada akhir fase F, murid memiliki kemampuan menganalisis hubungan struktur atom dengan sistem periodik unsur; membandingkan jenis ikatan kimia serta kaitannya dengan bentuk molekul dan gaya intermolekuler dalam memprediksi sifat fisik materi; mengaitkan perubahan entalpi standar dari suatu reaksi kimia dengan sumber energi yang ada di lingkungan sekitar; menganalisis faktor-faktor yang mempengaruhi laju reaksi; menganalisis kesetimbangan kimia dan penerapannya; menjelaskan daya hantar listrik dan sifat koligatif larutan; menjelaskan sel elektrokimia dalam kehidupan sehari-hari; dan menjelaskan senyawa karbon dan makromolekul; serta menerapkan keterampilan proses sains.`,
+      cpElemen: `Elemen Pemahaman Kimia:
+Menganalisis hubungan struktur atom dengan sistem periodik unsur; membandingkan jenis ikatan kimia serta kaitannya dengan bentuk molekul dan gaya intermolekuler dalam memprediksi sifat fisik materi; mengaitkan perubahan entalpi standar dari suatu reaksi kimia dengan sumber energi yang ada di lingkungan sekitar; menganalisis faktor-faktor yang mempengaruhi laju reaksi; menganalisis kesetimbangan kimia dan penerapannya; menjelaskan daya hantar listrik dan sifat koligatif larutan; menjelaskan sel elektrokimia dalam kehidupan sehari-hari; dan menjelaskan senyawa karbon dan makromolekul.
+
+Elemen Keterampilan Proses:
+Menerapkan keterampilan proses yang mencakup mengamati fenomena ilmiah dalam kehidupan sehari-hari maupun laboratorium; merumuskan pertanyaan dan hipotesis yang dapat diselidiki; merencanakan dan melakukan penyelidikan; memproses dan menganalisis data; mengevaluasi kesimpulan; serta mengomunikasikan hasil penyelidikan ilmiah.`,
+      kodeMA: 'KIM-F-PEMAHAMAN-001',
       modelMA: 'Inkuiri Terbimbing',
       modaMA: 'Tatap Muka',
-      temaMA: 'Penerapan 12 Prinsip Kimia Hijau dalam Pengurangan Sampah Plastik Rumah Tangga',
-      produkMA: 'Bioplastik dari Pati Singkong dan Laporan Uji Biodegradasi',
-      sumberMA: 'Buku Kimia SMA Kelas X Kemdikbudristek, Pati Singkong, Gliserol'
+      temaMA: 'Analisis Faktor-Faktor Laju Reaksi dan Kesetimbangan Kimia dalam Industri Ramah Lingkungan',
+      produkMA: 'Laporan Hasil Penyelidikan Laju Reaksi dan Infografis Aplikasi Elektrokimia',
+      sumberMA: 'Buku Kimia SMA Kelas XI/XII Kemendikdasmen SK BSKAP 046/2025, Peralatan Laboratorium Kimia'
     },
     sma_biologi: {
       mapel: 'Biologi',
       singkatan: 'BIO',
-      fase: 'Fase E / Kelas 10',
-      alokasiTotal: '108 JP / Tahun',
-      jpMinggu: '3 JP / Minggu',
-      jpPertemuan: '3 JP @ 45 Menit',
-      elemenKode: `1 | BIOLOGI | Pemahaman Biologi
-2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase E, peserta didik memahami keanekaragaman hayati tingkat gen, jenis, dan ekosistem serta peranannya; struktur virus dan peranannya dalam bioteknologi; daur biogeokimia ekosistem; serta upaya pelestarian lingkungan hidup.`,
-      cpElemen: `Elemen Pemahaman Biologi: Mengidentifikasi keanekaragaman flora-fauna nusantara garis Wallace-Weber, replikasi virus, interaksi ekosistem, dan pencemaran lingkungan.
-Elemen Keterampilan Proses: Pengamatan mikroskopis, survei keanekaragaman vegetasi sekolah, dan kampanye konservasi.`,
-      kodeMA: 'BIO-E-BIOLOGI-001',
+      fase: 'Fase F / Kelas 11 - 12',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | BIO | Pemahaman Biologi
+2 | PROS | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase F, murid memiliki kemampuan mengaitkan hubungan antara struktur dan fungsi organel di dalam sel; menerapkan prinsip-prinsip bioproses yang terjadi di dalam sel; menganalisis keterkaitan antar sistem organ dalam tubuh untuk merespons stimulus internal dan eksternal; menerapkan prinsip pewarisan sifat; mengaitkan mekanisme evolusi dengan proses terjadi keanekaragaman dan kelangsungan hidup organisme; menerapkan prinsip pertumbuhan dan perkembangan; serta menganalisis proses bioteknologi modern; dan menguasai keterampilan proses penyelidikan ilmiah.`,
+      cpElemen: `Elemen Pemahaman Biologi:
+Mengaitkan hubungan antara struktur dan fungsi organel di dalam sel; menerapkan prinsip-prinsip bioproses yang terjadi di dalam sel; menganalisis keterkaitan antar sistem organ dalam tubuh untuk merespons stimulus internal dan eksternal; menerapkan prinsip pewarisan sifat; mengaitkan mekanisme evolusi dengan proses terjadi keanekaragaman dan kelangsungan hidup organisme; menerapkan prinsip pertumbuhan dan perkembangan; serta menganalisis proses bioteknologi modern.
+
+Elemen Keterampilan Proses:
+Menerapkan keterampilan proses yang mencakup: mengamati fenomena kehidupan mikroskopis dan makroskopis; mempertanyakan dan memprediksi hipotesis biologis; merencanakan dan melaksanakan penyelidikan; memproses dan menganalisis data hayati; mengevaluasi hasil pengamatan; serta mengomunikasikan temuan secara ilmiah.`,
+      kodeMA: 'BIO-F-PEMAHAMAN-001',
       modelMA: 'Discovery Learning',
       modaMA: 'Tatap Muka',
-      temaMA: 'Keanekaragaman Hayati Indonesia dan Ancaman Kepunahan Satwa Endemik',
-      produkMA: 'E-Booklet Katalog Satwa Endemik Terancam Punah dan Strategi Konservasi',
-      sumberMA: 'Buku Biologi SMA Kelas X Kemdikbudristek, Database IUCN Red List'
+      temaMA: 'Keterkaitan Sistem Organ Tubuh Manusia dalam Merespons Stimulus dan Homeostasis',
+      produkMA: 'Laporan Pengamatan Mikroskopis Bioproses Sel dan Poster Edukasi Bioteknologi Modern',
+      sumberMA: 'Buku Biologi SMA Kelas XI/XII Kemendikdasmen SK BSKAP 046/2025, Mikroskop dan Preparat'
     },
     sma_ekonomi: {
       mapel: 'Ekonomi',
       singkatan: 'EKO',
-      fase: 'Fase E / Kelas 10',
-      alokasiTotal: '108 JP / Tahun',
-      jpMinggu: '3 JP / Minggu',
-      jpPertemuan: '3 JP @ 45 Menit',
-      elemenKode: `1 | EKONOMI | Pemahaman Konsep Ekonomi
-2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase E, peserta didik memahami konsep kelangkaan, skala prioritas kebutuhan, biaya peluang, sistem ekonomi, pelaku ekonomi, hukum permintaan dan penawaran, serta literasi perbankan dan keuangan inklusif.`,
-      cpElemen: `Elemen Pemahaman Konsep: Menganalisis motif dan prinsip ekonomi, kurva permintaan-penawaran, peran OJK dan BI, serta produk investasi legal.
-Elemen Keterampilan Proses: Riset pasar harga kebutuhan pokok dan penyusunan rencana keuangan pribadi mandiri.`,
-      kodeMA: 'EKO-E-EKONOMI-001',
+      fase: 'Fase F / Kelas 11 - 12',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | KON | Pemahaman Konsep
+2 | PROS | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase F, murid memiliki kemampuan menjelaskan berbagai konsep dasar ekonomi; mengidentifikasi berbagai permasalahan ekonomi dan keuangan, termasuk keterkaitan permasalahan ekonomi dengan literasi ekonomi dan keuangan digital yang terjadi di lingkungan sekitar, serta menganalisis dampak dari permasalahan ekonomi dan keuangan yang sedang terjadi berdasarkan konsep yang sudah dipelajari; memahami konsep-konsep pendapatan nasional dan pertumbuhan ekonomi serta kaitannya dengan kemiskinan, kesenjangan ekonomi, serta solusi untuk mengatasinya; memahami konsep ketenagakerjaan dan masalahnya serta solusi untuk mengatasinya; memahami konsep uang dan peredaran uang serta kaitannya dengan inflasi dan kebijakan moneter; memahami konsep akuntansi keuangan dasar dalam konteks menilai kondisi keuangan unit usaha (persamaan dasar akuntansi, siklus akuntansi dan laporan keuangan); dan memahami konsep kebijakan fiskal, fungsi anggaran negara dan daerah, dan perpajakan; konsep ekonomi internasional dan masalahnya.`,
+      cpElemen: `Elemen Pemahaman Konsep:
+Menjelaskan berbagai konsep dasar ekonomi; mengidentifikasi berbagai permasalahan ekonomi dan keuangan termasuk literasi ekonomi dan keuangan digital; memahami konsep pendapatan nasional, ketenagakerjaan, uang dan peredaran uang, inflasi, kebijakan moneter dan fiskal, APBN/APBD, perpajakan, akuntansi keuangan dasar unit usaha, serta ekonomi internasional.
+
+Elemen Keterampilan Proses:
+Mengamati kondisi dan masalah ekonomi dan keuangan di lingkungan sekitar; merumuskan pertanyaan ekonomi; mengumpulkan informasi ekonomi dari berbagai sumber primer dan sekunder; mengolah, menganalisis data ekonomi, dan menyimpulkan solusi; serta menyajikan dan mengomunikasikan gagasan ekonomi secara kritis dan objektif.`,
+      kodeMA: 'EKO-F-KONSEP-001',
       modelMA: 'Problem Based Learning (PBL)',
       modaMA: 'Tatap Muka',
-      temaMA: 'Analisis Kelangkaan dan Skala Prioritas Pengelolaan Keuangan Remaja di Era Digital',
-      produkMA: 'Buku Rencana Anggaran Keuangan Pribadi (Personal Financial Plan Sheet)',
-      sumberMA: 'Buku Ekonomi SMA Kelas X Kemdikbudristek, Modul Literasi Keuangan OJK'
+      temaMA: 'Analisis Pendapatan Nasional, Kesenjangan Ekonomi, dan Solusi Literasi Keuangan Digital',
+      produkMA: 'Laporan Analisis Masalah Ekonomi Daerah dan Laporan Keuangan Sederhana Unit Usaha',
+      sumberMA: 'Buku Siswa Ekonomi SMA Kelas XI/XII Kemendikdasmen SK BSKAP 046/2025, Data BPS dan BI'
     },
     sma_sosiologi: {
       mapel: 'Sosiologi',
       singkatan: 'SOS',
-      fase: 'Fase E / Kelas 10',
-      alokasiTotal: '108 JP / Tahun',
-      jpMinggu: '3 JP / Minggu',
-      jpPertemuan: '3 JP @ 45 Menit',
-      elemenKode: `1 | SOSIOLOGI | Pemahaman Konsep Sosiologi
-2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase E, peserta didik memahami fungsi sosiologi sebagai ilmu pengkaji masyarakat, interaksi sosial, pembentukan identitas diri, tindakan sosial, dan gejala sosial di era digital.`,
-      cpElemen: `Elemen Pemahaman: Mengidentifikasi karakteristik masyarakat, faktor pendorong interaksi sosial, serta diferensiasi sosial.
-Elemen Proses: Observasi lapangan interaksi remaja, wawancara mendalam, dan penulisan artikel studi kasus sosial.`,
-      kodeMA: 'SOS-E-SOSIOLOGI-001',
+      fase: 'Fase F / Kelas 11 - 12',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | KON | Pemahaman Konsep
+2 | PROS | Keterampilan Proses`,
+      cpUmum: `Pada akhir Fase F, murid menguasai sejumlah kompetensi, yakni murid mampu berpikir kritis dan kreatif; melakukan kajian literasi atas fenomena Sosiologi, menganalisis, menyajikan, melaporkan dan mengomunikasikan hasil kajian; mampu menunjukkan sikap berkesadaran sebagai warga yang baik, dan menghasilkan projek inovatif atas fenomena Sosiologi dalam bentuk digital maupun nondigital. Kompetensi tersebut terbentuk setelah murid menganalisis berbagai permasalahan sosial, konflik, dan integrasi sosial yang terjadi di masyarakat; dan murid juga mampu menyusun pemecahan masalah sosial dalam perspektif pemberdayaan, menerapkan prinsip kesetaraan dalam perbedaan sosial yang digunakan untuk mewujudkan masyarakat multikultural yang harmonis.`,
+      cpElemen: `Elemen Pemahaman Konsep:
+Menganalisis berbagai permasalahan sosial, kelompok sosial, diferensiasi dan stratifikasi sosial, konflik sosial, dan integrasi sosial yang terjadi di masyarakat; menyusun pemecahan masalah sosial dalam perspektif pemberdayaan komunitas dan kearifan lokal; serta menerapkan prinsip kesetaraan dalam mewujudkan keharmonisan sosial.
+
+Elemen Keterampilan Proses:
+Merumuskan pertanyaan penelitian sosial sederhana; merencanakan dan mengumpulkan data sosial melalui observasi, wawancara, dan studi dokumen; mengolah dan menganalisis fenomena sosial secara objektif; menyimpulkan temuan; serta menyajikan laporan kajian sosial baik dalam format karya tulis ilmiah maupun konten digital inovatif.`,
+      kodeMA: 'SOS-F-KONSEP-001',
       modelMA: 'Inkuiri Terbimbing',
       modaMA: 'Tatap Muka',
-      temaMA: 'Dinamika Interaksi Sosial Remaja dan Fenomena FOMO di Media Sosial',
-      produkMA: 'Laporan Studi Kasus Mini Sosiologis Interaksi Virtual Siswa',
-      sumberMA: 'Buku Sosiologi SMA Kelas X Kemdikbudristek, Jurnal Fenomena Sosial Remaja'
+      temaMA: 'Analisis Permasalahan Sosial dan Resolusi Konflik Berbasis Pemberdayaan Komunitas Lokal',
+      produkMA: 'Laporan Kajian Penelitian Sosial Sederhana dan Video Dokumenter Mini Solusi Masalah Sosial',
+      sumberMA: 'Buku Sosiologi SMA Kelas XI/XII Kemendikdasmen SK BSKAP 046/2025, Jurnal Sosiologi Terakreditasi'
     },
     sma_geografi: {
       mapel: 'Geografi',
       singkatan: 'GEO',
-      fase: 'Fase E / Kelas 10',
-      alokasiTotal: '108 JP / Tahun',
-      jpMinggu: '3 JP / Minggu',
-      jpPertemuan: '3 JP @ 45 Menit',
-      elemenKode: `1 | GEOGRAFI | Pemahaman Geografi
-2 | PROSES | Keterampilan Proses`,
-      cpUmum: `Pada akhir Fase E, peserta didik memahami konsep dasar ilmu geografi, peta, penginderaan jauh, Sistem Informasi Geografis (SIG), penelitian geografi, serta fenomena geosfer dan mitigasi bencana alam.`,
-      cpElemen: `Elemen Pemahaman: Memahami 10 konsep esensial geografi, 4 prinsip geografi, pembacaan kontur peta, dan mitigasi bencana alam.
-Elemen Proses: Pembuatan peta tematik dasar, analisis citra Google Earth, dan laporan kerawanan bencana.`,
-      kodeMA: 'GEO-E-GEOGRAFI-001',
+      fase: 'Fase F / Kelas 11 - 12',
+      alokasiTotal: '180 JP / Tahun',
+      jpMinggu: '5 JP / Minggu',
+      jpPertemuan: '2 JP @ 45 Menit',
+      elemenKode: `1 | KON | Pemahaman Konsep
+2 | PROS | Keterampilan Proses`,
+      cpUmum: `Pada akhir fase F, murid memiliki kemampuan menganalisis keuntungan dari posisi strategis wilayah Indonesia dari sisi astronomis, geografis, geologis dan pemanfaatan sumber daya alam yang ada; memahami pola keanekaragaman hayati Indonesia dan dunia; memahami karakteristik geografi penduduk di wilayah Indonesia; memahami perubahan iklim, kebencanaan, dan lingkungan hidup sebagai bagian yang tak terpisahkan dari kondisi alam Indonesia; dan memahami kewilayahan dan pembangunan serta kerja sama antarnegara; serta menerapkan keterampilan proses penyelidikan spasial.`,
+      cpElemen: `Elemen Pemahaman Konsep:
+Menganalisis keuntungan dari posisi strategis wilayah Indonesia dari sisi astronomis, geografis, geologis dan pemanfaatan sumber daya alam yang ada; memahami pola keanekaragaman hayati Indonesia dan dunia; memahami karakteristik geografi penduduk di wilayah Indonesia; memahami perubahan iklim, kebencanaan, dan lingkungan hidup sebagai bagian yang tak terpisahkan dari kondisi alam Indonesia; dan memahami kewilayahan dan pembangunan serta kerja sama antarnegara.
+
+Elemen Keterampilan Proses:
+Mengamati fenomena geosfer di Indonesia dan/atau dunia untuk memahami pola dan karakteristik spasial; membuat pertanyaan ilmiah; mengumpulkan data melalui observasi langsung dan kajian pustaka; menganalisis data spasial dengan pendekatan keruangan, kelingkungan, dan kewilayahan; menyimpulkan hasil analisis; serta mengomunikasikannya dalam bentuk peta tematik, infografis, dan laporan digital.`,
+      kodeMA: 'GEO-F-KONSEP-001',
       modelMA: 'Problem Based Learning (PBL)',
       modaMA: 'Tatap Muka',
-      temaMA: 'Mitigasi Bencana Alam Gempa Bumi dan Tanah Longsor Berbasis Analisis Keruangan',
-      produkMA: 'Peta Tematik Jalur Evakuasi dan Titik Kumpul Aman Bencana Sekolah',
-      sumberMA: 'Buku Geografi SMA Kelas X Kemdikbudristek, Peta Rupa Bumi Indonesia (BIG)'
+      temaMA: 'Posisi Strategis Wilayah Indonesia dan Pengelolaan Sumber Daya Alam Berkelanjutan',
+      produkMA: 'Peta Tematik Sebaran Sumber Daya Alam / Kebencanaan dan Laporan Analisis Keruangan',
+      sumberMA: 'Buku Siswa Geografi SMA Kelas XI/XII Kemendikdasmen SK BSKAP 046/2025, Peta RBI BIG'
     },
     sma_sejarah: {
       mapel: 'Sejarah',
@@ -667,25 +701,20 @@ Elemen Sejarah: Menganalisis jalur masuknya Islam ke nusantara melalui dakwah da
       alokasiTotal: '72 JP / Tahun',
       jpMinggu: '2 JP / Minggu',
       jpPertemuan: '2 JP @ 45 Menit',
-      elemenKode: `1 | BK | Berpikir Komputasional (BK)
-2 | TIK | Teknologi Informasi dan Komunikasi (TIK)
-3 | SK | Sistem Komputer (SK)
-4 | JKI | Jaringan Komputer dan Internet (JKI)
-5 | AD | Analisis Data (AD)
-6 | AP | Algoritma dan Pemrograman (AP)
-7 | DSI | Dampak Sosial Informatika (DSI)
-8 | PLB | Praktik Lintas Bidang (PLB)`,
-      cpUmum: `Pada akhir Fase E, peserta didik memahami strategi algoritmik standar (searching, sorting); memanfaatkan integrasi aplikasi perkantoran tingkat lanjut; memahami interaksi hardware dan OS; keamanan data jaringan; visualisasi data; serta membangun program prosedural menggunakan bahasa Python.`,
-      cpElemen: `Elemen BK: Menerapkan algoritma bubble sort, selection sort, binary search pada persoalan nyata.
-Elemen TIK: Integrasi aplikasi office (Mail Merge, Link Chart) dan cloud storage.
-Elemen AD: Pengumpulan data, data cleaning, dan visualisasi data menggunakan spreadsheet/Python.
-Elemen AP: Membuat kode program Python untuk memecahkan persoalan matematika dan logika.`,
-      kodeMA: 'INFOR-E-AP-001',
+      elemenKode: `1 | BK | Berpikir Komputasional
+2 | LD | Literasi Digital`,
+      cpUmum: `Pada akhir Fase E, murid memiliki kemampuan memahami konsep struktur data dan algoritma standar; menerapkan proses komputasi yang dilakukan manusia secara mandiri atau berkelompok untuk mendapatkan data yang berkualitas; menerapkan algoritma dan struktur data standar untuk menghasilkan berbagai solusi dalam menyelesaikan persoalan; menuliskan solusi rancangan program sederhana dalam format pseudocode yang dekat dengan bahasa komputer; memahami model dan menyimulasikan dinamika Input - Process - Output dalam sebuah komputer Von Neumann, serta memahami peran sistem operasi; serta menguasai literasi digital tingkat lanjut terkait ekosistem periksa fakta, jaringan, kekayaan intelektual, dan keamanan akun digital.`,
+      cpElemen: `Elemen Berpikir Komputasional:
+Memahami konsep struktur data dan algoritma standar; menerapkan proses komputasi secara mandiri maupun berkelompok untuk menghasilkan data berkualitas; menerapkan algoritma dan struktur data standar menghasilkan berbagai alternatif solusi persoalan; menuliskan solusi rancangan program sederhana format pseudocode yang dekat bahasa pemrograman komputer; serta menyimulasikan arsitektur komputer Von Neumann (Input-Process-Output) dan peran sistem operasi.
+
+Elemen Literasi Digital:
+Memahami penggunaan mesin pencari dengan variabel kompleks; memanfaatkan ekosistem cek fakta dan cara membaca lateral untuk memverifikasi informasi; memanfaatkan piranti lunak produktivitas perkantoran terintegrasi; memahami konfigurasi keamanan dasar jaringan kabel/nirkabel; memproduksi dan mendiseminasikan konten positif; menghargai Hak Kekayaan Intelektual (HAKI); menyaring konten negatif; serta mengelola keamanan kredensial akun menggunakan pengelola kata sandi dan autentikasi dua langkah (2FA).`,
+      kodeMA: 'INFOR-E-BK-001',
       modelMA: 'Project Based Learning (PjBL)',
       modaMA: 'Tatap Muka (Laboratorium Komputer)',
-      temaMA: 'Dasar Pemrograman Bahasa Python: Struktur Kontrol Percabangan dan Perulangan',
-      produkMA: 'Aplikasi Skrip Python Sederhana Sistem Rekap Nilai Siswa',
-      sumberMA: 'Buku Informatika SMA Kelas X Kemdikbudristek, Platform Google Colab'
+      temaMA: 'Perancangan Algoritma Struktur Data Standar Pseudocode dan Manajemen Keamanan Identitas Digital',
+      produkMA: 'Dokumentasi Algoritma Solusi Terstruktur Pseudocode dan Laporan Audit Keamanan Akun Digital Siswa',
+      sumberMA: 'Buku Siswa Informatika SMA Kelas X Kemendikdasmen SK BSKAP 046/2025, Lab Komputer'
     },
     sma_pjok: {
       mapel: 'PJOK',
@@ -1088,94 +1117,122 @@ Elemen Berdampak: Mempersembahkan pementasan teater mini yang menginspirasi peno
   sma_pkwu_kerajinan: {
     mapel: 'Prakarya dan Kewirausahaan (PKWU) - Kerajinan',
     singkatan: 'PKWU-K',
-    fase: 'Fase E & F (Kelas 10 - 12)',
+    fase: 'Fase E / Kelas 10',
     alokasiTotal: '72 JP / Tahun',
     jpMinggu: '2 JP / Minggu',
     jpPertemuan: '2 JP @ 45 Menit',
-    elemenKode: `1 | OBS | Observasi dan Eksplorasi Kerajinan Nusantara
-2 | DES | Desain / Perencanaan Produk Kerajinan
-3 | PROD | Produksi Kerajinan Ramah Lingkungan
-4 | REF | Refleksi dan Evaluasi Pemasaran Usaha`,
-    cpUmum: `Pada akhir Fase E & F, peserta didik mampu mengeksplorasi potensi bahan alam/limbah di daerahnya, mendesain produk kerajinan bernilai jual tinggi dengan sentuhan kearifan lokal, memproduksi kerajinan secara higienis dan presisi, serta merancang strategi pemasaran digital dan evaluasi kelayakan usaha.`,
-    cpElemen: `Elemen Observasi: Mengidentifikasi karakteristik bahan lunak/keras/limbah daur ulang serta motif kerajinan khas nusantara.
-Elemen Desain: Membuat sketsa rancangan produk kerajinan inovatif, kemasan estetis, dan estimasi Rencana Anggaran Biaya (RAB).
-Elemen Produksi: Mengolah bahan kerajinan dengan teknik terampil (anyam, ukir, jahit, rakit) sesuai standar keselamatan kerja K3.
-Elemen Refleksi & Evaluasi: Menganalisis respon pasar, menghitung Harga Pokok Penjualan (HPP), dan merumuskan strategi promosi e-commerce.`,
+    elemenKode: `1 | OBS | Observasi dan Eksplorasi
+2 | DES | Desain/Perencanaan
+3 | PROD | Produksi
+4 | REF | Refleksi dan Evaluasi`,
+    cpUmum: `Pada akhir Fase E, murid memiliki kemampuan mengeksplorasi beragam produk kerajinan nusantara berdasarkan aspek ergonomis dan nilai ekonomis dari berbagai sumber; membuat rancangan/desain produk kerajinan nusantara melalui modifikasi bahan, alat, teknik, dan prosedur pembuatan berdasarkan analisis kebutuhan pasar dan/atau potensi sumber daya yang tersedia; membuat produk kerajinan nusantara bernilai ekonomis berdasarkan desain yang dibuat dan ditampilkan dengan displai dan/atau kemasan produk; dan menggunakan hasil refleksi dari observasi, eksplorasi, desain, dan produksi untuk mengevaluasi produk kerajinan dan memberikan saran perbaikan.`,
+    cpElemen: `Elemen Observasi dan Eksplorasi:
+Mengeksplorasi beragam produk kerajinan nusantara berdasarkan aspek ergonomis dan nilai ekonomis dari berbagai sumber.
+
+Elemen Desain/Perencanaan:
+Membuat rancangan/desain produk kerajinan nusantara melalui modifikasi bahan, alat, teknik, dan prosedur pembuatan berdasarkan analisis kebutuhan pasar dan/atau potensi sumber daya yang tersedia.
+
+Elemen Produksi:
+Membuat produk kerajinan nusantara bernilai ekonomis berdasarkan desain yang dibuat dan ditampilkan dengan displai dan/atau kemasan produk.
+
+Elemen Refleksi dan Evaluasi:
+Menggunakan hasil refleksi dari observasi, eksplorasi, desain, dan produksi untuk mengevaluasi produk kerajinan dan memberikan saran perbaikan.`,
     kodeMA: 'PKWUK-E-PROD-001',
     modelMA: 'Project Based Learning (PjBL)',
     modaMA: 'Tatap Muka (Bengkel Karya)',
-    temaMA: 'Pemanfaatan Limbah Organik / Plastik Menjadi Produk Kerajinan Dekorasi Interior Modern',
-    produkMA: 'Produk Kerajinan Hiasan Rumah Berbahan Daur Ulang Siap Jual Lengkap Kemasan',
-    sumberMA: 'Buku Siswa PKWU Kerajinan SMA Kelas X Kemdikbudristek, Bahan Limbah Ramah Lingkungan'
+    temaMA: 'Pemanfaatan Bahan Alam dan Limbah Lokal Menjadi Produk Kerajinan Nusantara Bernilai Ekonomis',
+    produkMA: 'Produk Kerajinan Nusantara Bernilai Ekonomis Lengkap dengan Displai dan Kemasan Estetis',
+    sumberMA: 'Buku Guru dan Siswa PKWU Kerajinan Kemendikdasmen SK BSKAP 046/2025, Potensi Bahan Lokal'
   },
   sma_pkwu_rekayasa: {
     mapel: 'Prakarya dan Kewirausahaan (PKWU) - Rekayasa',
     singkatan: 'PKWU-R',
-    fase: 'Fase E & F (Kelas 10 - 12)',
+    fase: 'Fase E / Kelas 10',
     alokasiTotal: '72 JP / Tahun',
     jpMinggu: '2 JP / Minggu',
     jpPertemuan: '2 JP @ 45 Menit',
-    elemenKode: `1 | OBS | Observasi dan Eksplorasi Alat Rekayasa Teknologi
-2 | DES | Desain dan Perancangan Skema Rangkaian
-3 | PROD | Perakitan Produk Rekayasa Tepat Guna
-4 | REF | Pengujian, Evaluasi, dan Rencana Bisnis`,
-    cpUmum: `Pada akhir Fase E & F, peserta didik memiliki nalar rekayasa teknologi terapan, mampu merancang skema sistem mekanik atau elektronika sederhana/IoT, merakit alat tepat guna untuk mempermudah aktivitas kehidupan sehari-hari, serta merintis model bisnis teknologi ramah lingkungan.`,
-    cpElemen: `Elemen Observasi: Mengkaji prinsip kerja alat konversi energi, sensor otomatis, dan peralatan rekayasa praktis di lingkungan sekitar.
-Elemen Desain: Menggambar diagram alir dan skema sirkuit alat rekayasa serta menghitung efisiensi daya dan biaya komponen.
-Elemen Produksi: Merangkai dan menyolder komponen elektronik / mekanik menjadi prototipe alat tepat guna fungsional.
-Elemen Refleksi & Evaluasi: Melakukan uji fungsi kehandalan alat, memperbaiki kendala teknis (troubleshooting), dan mempresentasikan pitch deck usaha.`,
+    elemenKode: `1 | OBS | Observasi dan Eksplorasi
+2 | DES | Desain/Perencanaan
+3 | PROD | Produksi
+4 | REF | Refleksi dan Evaluasi`,
+    cpUmum: `Pada akhir fase E, murid memiliki kemampuan menganalisis aspek-aspek yang penting diobservasi dalam pengembangan produk rekayasa teknologi terapan; mengeksplorasi karakteristik bahan, alat, teknik, prosedur pembuatan produk prototipe/dummy/model rekayasa teknologi terapan berdasarkan analisis kebutuhan, kelayakan fungsi, atau nilai ekonomis; membuat rancangan prototipe/dummy/model rekayasa teknologi terapan dari hasil mengeksplorasi bahan, teknik, alat, dan prosedur pembuatan, serta memperhatikan potensi budaya, kearifan lokal dan teknologi yang siap dikembangkan; membuat produk rekayasa teknologi terapan sesuai dengan kebutuhan lingkungan melalui modifikasi bahan, alat, teknik, dan prosedur pembuatan yang berdampak pada lingkungan maupun kehidupan sehari-hari; dan memberi penilaian dan saran perbaikan produk rekayasa teknologi terapan karya diri sendiri, teman sebaya, maupun dari sumber yang lain; serta merefleksikan proses dan hasil observasi, eksplorasi, desain, dan evaluasi produk berdasarkan kajian ilmiah terhadap fungsi dan nilai guna.`,
+    cpElemen: `Elemen Observasi dan Eksplorasi:
+Menganalisis aspek-aspek yang penting diobservasi dalam pengembangan produk rekayasa teknologi terapan; mengeksplorasi karakteristik bahan, alat, teknik, prosedur pembuatan produk prototipe/dummy/model rekayasa teknologi terapan berdasarkan analisis kebutuhan, kelayakan fungsi, atau nilai ekonomis.
+
+Elemen Desain/Perencanaan:
+Membuat rancangan prototipe/dummy/model rekayasa teknologi terapan dari hasil mengeksplorasi bahan, teknik, alat, dan prosedur pembuatan, serta memperhatikan potensi budaya, kearifan lokal dan teknologi yang siap dikembangkan.
+
+Elemen Produksi:
+Membuat produk rekayasa teknologi terapan sesuai dengan kebutuhan lingkungan melalui modifikasi bahan, alat, teknik, dan prosedur pembuatan yang berdampak pada lingkungan maupun kehidupan sehari-hari.
+
+Elemen Refleksi dan Evaluasi:
+Memberi penilaian dan saran perbaikan produk rekayasa teknologi terapan karya diri sendiri, teman sebaya, maupun dari sumber yang lain; merefleksikan proses dan hasil observasi, eksplorasi, desain, dan evaluasi produk berdasarkan kajian ilmiah terhadap fungsi dan nilai guna.`,
     kodeMA: 'PKWUR-E-PROD-001',
     modelMA: 'Project Based Learning (PjBL)',
     modaMA: 'Tatap Muka (Laboratorium Rekayasa)',
-    temaMA: 'Pembuatan Alat Penyiram Tanaman Otomatis Berbasis Sensor Kelembapan Tanah',
-    produkMA: 'Prototipe Alat Otomasi Siram Tanaman Tepat Guna dan Lembar Panduan Manual Penggunaan',
-    sumberMA: 'Buku Siswa PKWU Rekayasa Kelas X Kemdikbudristek, Modul Arduino/Sensor, Komponen Elektronik'
+    temaMA: 'Pengembangan Prototipe Produk Rekayasa Teknologi Terapan untuk Kebutuhan Lingkungan',
+    produkMA: 'Prototipe Produk Rekayasa Teknologi Terapan dan Laporan Uji Kelayakan Fungsi',
+    sumberMA: 'Buku Siswa PKWU Rekayasa Kelas X Kemendikdasmen SK BSKAP 046/2025, Komponen Elektronika'
   },
   sma_pkwu_budidaya: {
     mapel: 'Prakarya dan Kewirausahaan (PKWU) - Budidaya',
     singkatan: 'PKWU-B',
-    fase: 'Fase E & F (Kelas 10 - 12)',
+    fase: 'Fase E / Kelas 10',
     alokasiTotal: '72 JP / Tahun',
     jpMinggu: '2 JP / Minggu',
     jpPertemuan: '2 JP @ 45 Menit',
-    elemenKode: `1 | OBS | Observasi dan Eksplorasi Komoditas Budidaya Unggulan
-2 | DES | Desain dan Perencanaan Budidaya Pertanian/Perikanan
-3 | PROD | Praktik Penanaman / Pemeliharaan Organik
-4 | REF | Pemanenan, Pemasaran, dan Analisis Keuangan Usaha`,
-    cpUmum: `Pada akhir Fase E & F, peserta didik mampu mengamati potensi komoditas tanaman pangan, sayuran hidroponik, atau ikan konsumsi; merancang sistem budidaya berkelanjutan; melaksanakan pemeliharaan bebas pestisida kimiawi; serta mengelola pascapanen dan rantai distribusi agribisnis bernilai ekonomi.`,
-    cpElemen: `Elemen Observasi: Menganalisis kondisi agroklimat tanah, kebutuhan air, dan peluang pasar hasil budidaya hortikultura / perikanan.
-Elemen Desain: Menyusun proposal budidaya terpadu meliputi jadwal tanam, pemilihan bibit unggul, nutrisi pupuk, dan anggaran modal kerja.
-Elemen Produksi: Melakukan persemaian bibit, pembuatan pupuk kompos/organik cair, pemantauan hama hayati, hingga masa panen raya.
-Elemen Refleksi & Evaluasi: Mengalkulasi Break Even Point (BEP), ROI usaha tani, serta memasarkan produk panen segar ke konsumen.`,
+    elemenKode: `1 | OBS | Eksplorasi dan Observasi
+2 | DES | Desain/Perencanaan
+3 | PROD | Produksi
+4 | REF | Evaluasi dan Refleksi`,
+    cpUmum: `Pada akhir Fase E, murid memiliki kemampuan menganalisis keragaman teknik budi daya tanaman, jamur, ternak, atau ikan yang bernilai ekonomis; menyusun rencana kegiatan budi daya dan kelayakannya berdasarkan analisis kebutuhan pasar dan/atau potensi sumber daya yang tersedia; melakukan kegiatan budi daya berbasis nilai ekonomi produk/kebutuhan pasar dan/atau sumber daya yang tersedia dan pengemasan yang menarik; serta mengevaluasi dan merefleksi proses serta produk budi daya bernilai ekonomis yang dihasilkan.`,
+    cpElemen: `Elemen Eksplorasi dan Observasi:
+Menganalisis keragaman teknik budi daya tanaman, jamur, ternak, atau ikan yang bernilai ekonomis.
+
+Elemen Desain/Perencanaan:
+Menyusun rencana kegiatan budi daya dan kelayakannya berdasarkan analisis kebutuhan pasar dan/atau potensi sumber daya yang tersedia.
+
+Elemen Produksi:
+Melakukan kegiatan budi daya berbasis nilai ekonomi produk/kebutuhan pasar dan/atau sumber daya yang tersedia dan pengemasan yang menarik.
+
+Elemen Evaluasi dan Refleksi:
+Mengevaluasi dan merefleksi proses serta produk budi daya bernilai ekonomis yang dihasilkan.`,
     kodeMA: 'PKWUB-E-PROD-001',
     modelMA: 'Project Based Learning (PjBL)',
     modaMA: 'Tatap Muka (Kebun Percobaan Sekolah)',
-    temaMA: 'Budidaya Sayuran Organik Sistem Hidroponik Wick / NFT Bernilai Ekonomi Tinggi',
-    produkMA: 'Sayuran Segar Hasil Panen Hidroponik dan Pembukuan Laporan Laba-Rugi Agribisnis',
-    sumberMA: 'Buku Siswa PKWU Budidaya Kelas X Kemdikbudristek, Instalasi Hidroponik, Nutrisi AB Mix'
+    temaMA: 'Kegiatan Budi Daya Tanaman / Jamur / Ternak / Ikan Berbasis Kebutuhan Pasar dan Nilai Ekonomis',
+    produkMA: 'Produk Budi Daya Segar Bernilai Ekonomis dengan Pengemasan Menarik dan Laporan Evaluasi',
+    sumberMA: 'Buku Siswa PKWU Budidaya Kelas X Kemendikdasmen SK BSKAP 046/2025, Sarana Produksi Budi Daya'
   },
   sma_pkwu_pengolahan: {
     mapel: 'Prakarya dan Kewirausahaan (PKWU) - Pengolahan',
     singkatan: 'PKWU-P',
-    fase: 'Fase E & F (Kelas 10 - 12)',
+    fase: 'Fase E / Kelas 10',
     alokasiTotal: '72 JP / Tahun',
     jpMinggu: '2 JP / Minggu',
     jpPertemuan: '2 JP @ 45 Menit',
-    elemenKode: `1 | OBS | Observasi dan Eksplorasi Bahan Pangan Nabati / Hewani
-2 | DES | Desain Formulasi Resep dan Kemasan Higienis
-3 | PROD | Produksi Makanan / Minuman Khas Nusantara
-4 | REF | Evaluasi Sensoris, Legalitas PIRT, dan Pemasaran`,
-    cpUmum: `Pada akhir Fase E & F, peserta didik mampu mengeksplorasi bahan pangan lokal khas daerah; mendesain inovasi resep makanan/minuman sehat bercita rasa tinggi; mempraktikkan pengolahan sesuai standar keamanan pangan (GMP/HACCP); serta menyusun rencana branding, pengemasan modern, dan pemasaran kuliner.`,
-    cpElemen: `Elemen Observasi: Mengidentifikasi kandungan gizi bahan baku pangan lokal serta tren pasar produk kuliner nusantara dan internasional.
-Elemen Desain: Menyusun resep baku (standard recipe card), menentukan kemasan ramah lingkungan, dan membuat label informasi nilai gizi.
-Elemen Produksi: Mengolah bahan makanan/minuman dengan teknik memasak higienis serta sanitasi peralatan yang steril.
-Elemen Refleksi & Evaluasi: Melakukan uji organoleptik rasa dan aroma, menghitung harga jual kompetitif, dan menjual produk melalui bazar sekolah.`,
+    elemenKode: `1 | OBS | Observasi dan Eksplorasi
+2 | RANC | Perencanaan
+3 | PROD | Produksi
+4 | REF | Refleksi dan Evaluasi`,
+    cpUmum: `Pada akhir Fase E, murid memiliki kemampuan menganalisis dan menginformasikan bahan, alat, dan teknik pengolahan, pengemasan, dan penyajian produk olahan pangan nusantara dan atau nonpangan; merancang pengembangan produk olahan pangan nusantara dan atau nonpangan secara sistematis dan kreatif; membuat, mengemas, dan menyajikan produk olahan pangan nusantara dan atau nonpangan hasil rancangan pengembangan secara kreatif dan inovatif; serta mengevaluasi dan merefleksi setiap tahapan pengembangan produk olahan pangan nusantara dan atau nonpangan.`,
+    cpElemen: `Elemen Observasi dan Eksplorasi:
+Menganalisis dan menginformasikan bahan, alat, dan teknik pengolahan, pengemasan, dan penyajian produk olahan pangan nusantara dan atau nonpangan.
+
+Elemen Perencanaan:
+Merancang pengembangan produk olahan pangan nusantara dan atau nonpangan secara sistematis dan kreatif.
+
+Elemen Produksi:
+Membuat, mengemas, dan menyajikan produk olahan pangan nusantara dan atau nonpangan hasil rancangan pengembangan secara kreatif dan inovatif.
+
+Elemen Refleksi dan Evaluasi:
+Mengevaluasi dan merefleksi setiap tahapan pengembangan produk olahan pangan nusantara dan atau nonpangan.`,
     kodeMA: 'PKWUP-E-PROD-001',
     modelMA: 'Project Based Learning (PjBL)',
     modaMA: 'Tatap Muka (Dapur Pengolahan)',
-    temaMA: 'Inovasi Olahan Pangan Nabati Lokal Menjadi Camilan Sehat Kekinian Bernilai Jual',
-    produkMA: 'Produk Makanan Olahan Kemasan Berlabel Lengkap dan Standar Uji Kelayakan Rasa',
-    sumberMA: 'Buku Siswa PKWU Pengolahan Kelas X Kemdikbudristek, Bahan Pangan Lokal, Peralatan Dapur'
+    temaMA: 'Pengembangan Produk Olahan Pangan Nusantara dan Nonpangan Secara Kreatif dan Inovatif',
+    produkMA: 'Produk Olahan Pangan Nusantara Hasil Pengembangan dengan Kemasan dan Penyajian Menarik',
+    sumberMA: 'Buku Siswa PKWU Pengolahan Kelas X Kemendikdasmen SK BSKAP 046/2025, Bahan Pangan Lokal'
   },
   sma_pak: {
     mapel: 'Pendidikan Agama Kristen dan Budi Pekerti',
