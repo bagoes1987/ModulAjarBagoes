@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Main Stylesheet (Standalone & Bulletproof) -->
-  <link rel="stylesheet" href="styles.css?v=20261002_smartchips">
+  <link rel="stylesheet" href="styles.css?v=20261009_pkm">
 </head>
 <body>
 
@@ -1162,34 +1162,594 @@ Tuliskan 3 alternatif kalimat deskriptif raport yang positif, mengapresiasi pros
   <!-- Section: Laporan PKM (Pemantapan Kemampuan Mengajar) -->
   <section id="laporan-pkm" class="section section-alt">
     <div class="b-container">
-      <div class="section-head" style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem;">
+      <div class="section-head" style="text-align: center; max-width: 850px; margin: 0 auto 2.5rem;">
         <span class="badge-label badge-blue">
           <i class="fas fa-chalkboard-teacher"></i> Pemantapan Kemampuan Mengajar (PKM)
         </span>
-        <h2 class="section-title">Laporan PKM</h2>
+        <h2 class="section-title">Generator Prompt AI Laporan PKM</h2>
         <p class="section-desc">
-          Panduan penyusunan, format template laporan, instrumen refleksi diri, dan perangkat pembelajaran Pemantapan Kemampuan Mengajar (PKM) berbasis Kurikulum Merdeka &amp; Deep Learning.
+          Bantu mahasiswa keguruan / FKIP / UT menyusun laporan akhir PKM sesuai ketentuan modul resmi. Pilih bagian laporan, sesuaikan data konteks Anda (atau gunakan contoh otomatis), lalu salin prompt siap pakai untuk ChatGPT, Gemini, Claude, atau DeepSeek!
         </p>
       </div>
 
-      <!-- Placeholder Card (Siap diisi pembahasan isi selanjutnya) -->
-      <div style="background: white; border-radius: 1.25rem; border: 2px dashed #93c5fd; padding: 3.5rem 2rem; text-align: center; max-width: 850px; margin: 0 auto; box-shadow: 0 4px 20px rgba(37, 99, 235, 0.05);">
-        <div style="width: 4.5rem; height: 4.5rem; background: #eff6ff; color: #2563eb; border-radius: 1.25rem; display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.25rem; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);">
-          <i class="fas fa-file-signature"></i>
+      <!-- PKM Container -->
+      <div class="pkm-container">
+        <!-- Tab Navigasi 5 Komponen Laporan PKM -->
+        <div class="pkm-tabs-nav">
+          <button class="pkm-tab-btn active" data-tab="pendahuluan">
+            <i class="fas fa-school"></i>
+            <span>1. Pendahuluan</span>
+          </button>
+          <button class="pkm-tab-btn" data-tab="manfaat">
+            <i class="fas fa-heart-pulse"></i>
+            <span>2. Manfaat &amp; Refleksi Diri</span>
+          </button>
+          <button class="pkm-tab-btn" data-tab="eksak">
+            <i class="fas fa-flask"></i>
+            <span>3A. Ulasan RPP Eksak</span>
+          </button>
+          <button class="pkm-tab-btn" data-tab="noneksak">
+            <i class="fas fa-book-reader"></i>
+            <span>3B. Ulasan RPP Non-Eksak</span>
+          </button>
+          <button class="pkm-tab-btn" data-tab="kesimpulan">
+            <i class="fas fa-clipboard-check"></i>
+            <span>4. Kesimpulan &amp; Saran</span>
+          </button>
         </div>
-        <h3 style="font-size: 1.4rem; font-weight: 800; color: #1e3a8a; margin-bottom: 0.65rem;">
-          Format Laporan PKM (Pemantapan Kemampuan Mengajar)
-        </h3>
-        <p style="color: #64748b; font-size: 0.95rem; line-height: 1.65; max-width: 620px; margin: 0 auto 1.5rem;">
-          Bagian ini disiapkan untuk format Laporan PKM (seperti sistematika laporan Bab I–III, RPP/Modul Ajar praktik, lembar refleksi diri, alat penilaian APKG 1 &amp; 2, serta lampiran). Siap dikonfigurasi sesuai kebutuhan Bapak/Ibu!
-        </p>
-        <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
-          <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: #dbeafe; color: #1e40af; font-size: 0.8rem; font-weight: 700; padding: 0.4rem 0.95rem; border-radius: 9999px;">
-            <i class="fas fa-clock"></i> Menunggu Arahan Pembahasan Isi
-          </span>
-          <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: #ecfdf5; color: #047857; font-size: 0.8rem; font-weight: 700; padding: 0.4rem 0.95rem; border-radius: 9999px;">
-            <i class="fas fa-check-circle"></i> Navigasi Navbar &amp; Mobile Siap
-          </span>
+
+        <!-- ================= PANEL 1: PENDAHULUAN ================= -->
+        <div id="pkm-panel-pendahuluan" class="pkm-tab-panel active">
+          <div class="pkm-grid">
+            <!-- Form Input Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-sliders-h" style="color: #2563eb;"></i> Konteks Lokasi &amp; Kelas Mengajar</h4>
+                  <div class="pkm-card-subtitle">Sesuai Modul PKM: Gambaran lingkungan, fisik sekolah, kondisi kelas, dan profil siswa</div>
+                </div>
+                <div class="pkm-btn-actions">
+                  <button type="button" class="pkm-btn-sm sample" onclick="fillPkmSample('pendahuluan')">
+                    <i class="fas fa-magic"></i> Contoh Otomatis
+                  </button>
+                  <button type="button" class="pkm-btn-sm" onclick="resetPkmForm('pendahuluan')">
+                    <i class="fas fa-undo"></i> Reset
+                  </button>
+                </div>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">Nama Sekolah / Lokasi Praktik <span class="req">*</span></label>
+                <input type="text" class="pkm-input" data-tab-owner="pendahuluan" data-pkm-field="namaSekolah" placeholder="Contoh: SD Negeri 01 Harapan Bangsa">
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">Jenjang, Kelas &amp; Jumlah Siswa <span class="req">*</span></label>
+                <input type="text" class="pkm-input" data-tab-owner="pendahuluan" data-pkm-field="jenjangKelas" placeholder="Contoh: Kelas 3 (32 Peserta Didik: 15 Laki-laki, 17 Perempuan)">
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Keadaan Lingkungan Sekolah
+                  <small>Lokasi geografis, suasana lingkungan belajar di sekitar sekolah, akses transportasi</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="pendahuluan" data-pkm-field="lingkunganSekolah" rows="2" placeholder="Jelaskan lingkungan sekitar sekolah..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kondisi Fisik Bangunan &amp; Sarana Prasarana Sekolah
+                  <small>Kelayakan gedung, lapangan, perpustakaan, toilet, fasilitas pendukung</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="pendahuluan" data-pkm-field="kondisiFisikSekolah" rows="2" placeholder="Jelaskan kondisi fisik bangunan sekolah..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kondisi Ruang Kelas Tempat Praktik Mengajar
+                  <small>Ukuran ruang, pencahayaan, ventilasi/sirkulasi, penataan meja kursi, pojok baca</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="pendahuluan" data-pkm-field="kondisiKelas" rows="3" placeholder="Jelaskan ukuran kelas, pencahayaan alami, sirkulasi udara, dll..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Karakteristik &amp; Latar Belakang Siswa
+                  <small>Keaktifan, latar belakang keluarga, variasi kemampuan literasi/numerasi</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="pendahuluan" data-pkm-field="karakteristikSiswa" rows="2" placeholder="Jelaskan karakteristik peserta didik..."></textarea>
+              </div>
+
+              <div class="pkm-form-group" style="margin-bottom: 0;">
+                <label class="pkm-label">
+                  Urgensi / Alasan Praktik PKM di Sekolah Ini
+                  <small>Mengapa perbaikan pembelajaran mendalam (Deep Learning) penting dilakukan di kelas ini</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="pendahuluan" data-pkm-field="urgensiPkm" rows="2" placeholder="Urgensi penerapan inovasi pembelajaran..."></textarea>
+              </div>
+            </div>
+
+            <!-- Prompt Preview Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-robot" style="color: #6366f1;"></i> Prompt AI Siap Salin (Bab I)</h4>
+                  <div class="pkm-card-subtitle">Prompt ini dirancang khusus untuk menghasilkan teks Bab I Pendahuluan yang baku &amp; akademis</div>
+                </div>
+                <span class="prompt-tag" style="background: #eff6ff; color: #1d4ed8;">Modul Bab I</span>
+              </div>
+
+              <textarea id="pkm-prompt-output-pendahuluan" class="pkm-prompt-output-box" readonly></textarea>
+
+              <button type="button" class="pkm-copy-big-btn" onclick="copyPkmPrompt('pendahuluan', this)">
+                <i class="fas fa-copy"></i>
+                <span>Salin Prompt Bab I Pendahuluan</span>
+              </button>
+
+              <div class="pkm-ai-direct-box">
+                <div class="pkm-ai-direct-title"><i class="fas fa-external-link-alt"></i> Langsung Tempelkan ke Platform AI Pilihan Anda:</div>
+                <div class="pkm-ai-pills">
+                  <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn chatgpt">
+                    <i class="fas fa-robot"></i> ChatGPT
+                  </a>
+                  <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn gemini">
+                    <i class="fab fa-google"></i> Gemini
+                  </a>
+                  <a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn deepseek">
+                    <i class="fas fa-brain"></i> DeepSeek
+                  </a>
+                  <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn claude">
+                    <i class="fas fa-comment-dots"></i> Claude
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 2: MANFAAT & REFLEKSI DIRI ================= -->
+        <div id="pkm-panel-manfaat" class="pkm-tab-panel">
+          <div class="pkm-grid">
+            <!-- Form Input Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-user-graduate" style="color: #2563eb;"></i> Data Refleksi &amp; Bimbingan Supervisor</h4>
+                  <div class="pkm-card-subtitle">Sesuai Modul PKM: Manfaat RPP, bimbingan Supervisor 1 &amp; 2, perasaan &amp; kendala refleksi</div>
+                </div>
+                <div class="pkm-btn-actions">
+                  <button type="button" class="pkm-btn-sm sample" onclick="fillPkmSample('manfaat')">
+                    <i class="fas fa-magic"></i> Contoh Otomatis
+                  </button>
+                  <button type="button" class="pkm-btn-sm" onclick="resetPkmForm('manfaat')">
+                    <i class="fas fa-undo"></i> Reset
+                  </button>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Nama Mahasiswa / Praktikan</label>
+                  <input type="text" class="pkm-input" data-tab-owner="manfaat" data-pkm-field="namaMahasiswa" placeholder="Contoh: Budi Santoso">
+                </div>
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Program Studi &amp; Fakultas</label>
+                  <input type="text" class="pkm-input" data-tab-owner="manfaat" data-pkm-field="programStudi" placeholder="Contoh: S1 PGSD - FKIP">
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Supervisor 1 (Dosen Pembimbing PKM)</label>
+                  <input type="text" class="pkm-input" data-tab-owner="manfaat" data-pkm-field="supervisor1" placeholder="Nama Dosen Pembimbing...">
+                </div>
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Supervisor 2 (Guru Pamong di Sekolah)</label>
+                  <input type="text" class="pkm-input" data-tab-owner="manfaat" data-pkm-field="supervisor2" placeholder="Nama Guru Pamong...">
+                </div>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Manfaat Menyusun RPP &amp; Mempraktikkannya dalam Mengajar
+                  <small>Dampak kemampuan menyusun alur JP, langkah Deep Learning, dan mental memfasilitasi kelas</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="manfaat" data-pkm-field="manfaatRpp" rows="2" placeholder="Uraikan manfaat menyusun dan menerapkan RPP..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Manfaat Bimbingan &amp; Umpan Balik Supervisor 1 dan Supervisor 2
+                  <small>Masukan akademik Supervisor 1 dan bimbingan taktikal kelas dari Supervisor 2</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="manfaat" data-pkm-field="manfaatSupervisor" rows="3" placeholder="Masukan dan umpan balik yang didapat..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Perasaan yang Dirasakan Setelah Melakukan Refleksi Diri
+                  <small>Kesadaran kelemahan/kelebihan, empati siswa, dan kepercayaan diri sebagai pendidik</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="manfaat" data-pkm-field="perasaanRefleksi" rows="2" placeholder="Apa yang Anda rasakan setelah refleksi mandiri..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kesulitan dalam Melakukan Proses Refleksi Pembelajaran
+                  <small>Hambatan bersikap objektif terhadap kekurangan diri, mencatat dinamika interaksi siswa</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="manfaat" data-pkm-field="kesulitanRefleksi" rows="2" placeholder="Kesulitan saat merefleksikan proses mengajar..."></textarea>
+              </div>
+
+              <div class="pkm-form-group" style="margin-bottom: 0;">
+                <label class="pkm-label">
+                  Pengalaman Khas / Unik Saat Melaksanakan Refleksi Pembelajaran
+                  <small>Momen berharga saat menyadari perlunya keluwesan adaptasi di luar skenario kaku RPP</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="manfaat" data-pkm-field="pengalamanUnik" rows="2" placeholder="Pengalaman khas atau unik saat refleksi..."></textarea>
+              </div>
+            </div>
+
+            <!-- Prompt Preview Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-robot" style="color: #6366f1;"></i> Prompt AI Siap Salin (Bab II)</h4>
+                  <div class="pkm-card-subtitle">Format naratif reflektif mendalam untuk subbab Manfaat PKM &amp; Pengalaman Refleksi Diri</div>
+                </div>
+                <span class="prompt-tag" style="background: #fdf2f8; color: #be185d;">Modul Bab II</span>
+              </div>
+
+              <textarea id="pkm-prompt-output-manfaat" class="pkm-prompt-output-box" readonly></textarea>
+
+              <button type="button" class="pkm-copy-big-btn" onclick="copyPkmPrompt('manfaat', this)">
+                <i class="fas fa-copy"></i>
+                <span>Salin Prompt Manfaat &amp; Refleksi Diri</span>
+              </button>
+
+              <div class="pkm-ai-direct-box">
+                <div class="pkm-ai-direct-title"><i class="fas fa-external-link-alt"></i> Langsung Tempelkan ke Platform AI Pilihan Anda:</div>
+                <div class="pkm-ai-pills">
+                  <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn chatgpt"><i class="fas fa-robot"></i> ChatGPT</a>
+                  <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn gemini"><i class="fab fa-google"></i> Gemini</a>
+                  <a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn deepseek"><i class="fas fa-brain"></i> DeepSeek</a>
+                  <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn claude"><i class="fas fa-comment-dots"></i> Claude</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 3: ULASAN RPP EKSAK ================= -->
+        <div id="pkm-panel-eksak" class="pkm-tab-panel">
+          <div class="pkm-grid">
+            <!-- Form Input Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-flask" style="color: #2563eb;"></i> Praktik Mengajar Eksakta (IPA / MTK)</h4>
+                  <div class="pkm-card-subtitle">Sesuai Modul PKM: Kronologis, kejadian unik, respons siswa, dan rujukan ilmiah teori</div>
+                </div>
+                <div class="pkm-btn-actions">
+                  <button type="button" class="pkm-btn-sm sample" onclick="fillPkmSample('eksak')">
+                    <i class="fas fa-magic"></i> Contoh Otomatis (IPA)
+                  </button>
+                  <button type="button" class="pkm-btn-sm" onclick="resetPkmForm('eksak')">
+                    <i class="fas fa-undo"></i> Reset
+                  </button>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Hari, Tanggal &amp; Waktu</label>
+                  <input type="text" class="pkm-input" data-tab-owner="eksak" data-pkm-field="hariTanggalWaktu" placeholder="Contoh: Kamis, 2 November, 09.00 - 10.00 WIB">
+                </div>
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Mapel &amp; Kelas</label>
+                  <input type="text" class="pkm-input" data-tab-owner="eksak" data-pkm-field="mapelKelas" placeholder="Contoh: IPA (Sains) - Kelas 3 SD">
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Topik / Materi Pokok</label>
+                  <input type="text" class="pkm-input" data-tab-owner="eksak" data-pkm-field="materiPokok" placeholder="Contoh: Proses Terjadinya Air Hujan">
+                </div>
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Supervisor Pengamat</label>
+                  <input type="text" class="pkm-input" data-tab-owner="eksak" data-pkm-field="supervisorPengamat" placeholder="Contoh: Ibu Tika, S.Pd. (Supervisor 2)">
+                </div>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kegiatan Awal / Pembuka
+                  <small>Lagu, apersepsi kontekstual di halaman/dalam kelas, tujuan pembelajaran</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="eksak" data-pkm-field="kegiatanAwal" rows="2" placeholder="Uraikan kegiatan pembukaan..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kegiatan Inti
+                  <small>Media gambar/alat peraga, diskusi kelompok, pengerjaan lembar kerja (LKS), presentasi</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="eksak" data-pkm-field="kegiatanInti" rows="2" placeholder="Uraikan tahapan kegiatan inti..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">Kegiatan Akhir / Penutup</label>
+                <input type="text" class="pkm-input" data-tab-owner="eksak" data-pkm-field="kegiatanAkhir" placeholder="Contoh: Merangkum materi, siswa menuliskan alur hujan secara singkat">
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Hal-Hal Unik yang Terjadi Selama Pembelajaran <span class="req">*</span>
+                  <small>Wajib dicantumkan: Peristiwa khas di lapangan yang menarik perhatian guru/supervisor</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="eksak" data-pkm-field="halUnik" rows="2" placeholder="Contoh: Siswa meminta belajar di luar kelas saja karena menikmati melihat awan..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Reaksi dan Tanggapan Siswa <span class="req">*</span>
+                  <small>Wajib dicantumkan: Keaktifan, antusiasme, keseriusan mengerjakan tugas</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="eksak" data-pkm-field="reaksiSiswa" rows="2" placeholder="Contoh: Siswa tampak sangat antusias dan mengerjakan tugas dengan sungguh-sungguh..."></textarea>
+              </div>
+
+              <div class="pkm-form-group" style="margin-bottom: 0;">
+                <label class="pkm-label">
+                  Rujukan Teori / Landasan Ilmiah Pendidikan <span class="req">*</span>
+                  <small>Wajib dicantumkan: Teori ahli pendidikan yang melandasi metode/tindakan beserta sumber link/buku</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="eksak" data-pkm-field="rujukanTeori" rows="3" placeholder="Contoh: Devi (2010) metode penemuan dengan pengalaman langsung (Sumber: http://...)"></textarea>
+              </div>
+            </div>
+
+            <!-- Prompt Preview Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-robot" style="color: #6366f1;"></i> Prompt AI Ulasan RPP Eksak</h4>
+                  <div class="pkm-card-subtitle">Format ulasan naratif analitis sesuai contoh baku modul PKM mata kuliah IPA/MTK</div>
+                </div>
+                <span class="prompt-tag" style="background: #ecfdf5; color: #047857;">RPP Eksakta</span>
+              </div>
+
+              <textarea id="pkm-prompt-output-eksak" class="pkm-prompt-output-box" readonly></textarea>
+
+              <button type="button" class="pkm-copy-big-btn" onclick="copyPkmPrompt('eksak', this)">
+                <i class="fas fa-copy"></i>
+                <span>Salin Prompt Ulasan RPP Eksak</span>
+              </button>
+
+              <div class="pkm-ai-direct-box">
+                <div class="pkm-ai-direct-title"><i class="fas fa-external-link-alt"></i> Langsung Tempelkan ke Platform AI Pilihan Anda:</div>
+                <div class="pkm-ai-pills">
+                  <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn chatgpt"><i class="fas fa-robot"></i> ChatGPT</a>
+                  <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn gemini"><i class="fab fa-google"></i> Gemini</a>
+                  <a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn deepseek"><i class="fas fa-brain"></i> DeepSeek</a>
+                  <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn claude"><i class="fas fa-comment-dots"></i> Claude</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 4: ULASAN RPP NON-EKSAK ================= -->
+        <div id="pkm-panel-noneksak" class="pkm-tab-panel">
+          <div class="pkm-grid">
+            <!-- Form Input Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-book-reader" style="color: #2563eb;"></i> Praktik Mengajar Non-Eksakta (Bahasa / IPS)</h4>
+                  <div class="pkm-card-subtitle">Sesuai Modul PKM: Kronologis, kejadian unik, dinamika kelas, dan rujukan ilmiah teori</div>
+                </div>
+                <div class="pkm-btn-actions">
+                  <button type="button" class="pkm-btn-sm sample" onclick="fillPkmSample('noneksak')">
+                    <i class="fas fa-magic"></i> Contoh Otomatis (B.Indo)
+                  </button>
+                  <button type="button" class="pkm-btn-sm" onclick="resetPkmForm('noneksak')">
+                    <i class="fas fa-undo"></i> Reset
+                  </button>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Hari, Tanggal &amp; Waktu</label>
+                  <input type="text" class="pkm-input" data-tab-owner="noneksak" data-pkm-field="hariTanggalWaktu" placeholder="Contoh: Selasa, 21 Oktober, 10.00 - 10.45 WIB">
+                </div>
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Mapel &amp; Kelas</label>
+                  <input type="text" class="pkm-input" data-tab-owner="noneksak" data-pkm-field="mapelKelas" placeholder="Contoh: Bahasa Indonesia - Kelas 3 SD">
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Topik / Materi Pokok</label>
+                  <input type="text" class="pkm-input" data-tab-owner="noneksak" data-pkm-field="materiPokok" placeholder="Contoh: Menulis dan Mengidentifikasi Kalimat Perintah">
+                </div>
+                <div class="pkm-form-group">
+                  <label class="pkm-label">Supervisor Pengamat</label>
+                  <input type="text" class="pkm-input" data-tab-owner="noneksak" data-pkm-field="supervisorPengamat" placeholder="Contoh: Ibu Tika, S.Pd. (Supervisor 2)">
+                </div>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kegiatan Awal / Pembuka
+                  <small>Tujuan pembelajaran, motivasi mengemukakan kalimat perintah ke teman</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="noneksak" data-pkm-field="kegiatanAwal" rows="2" placeholder="Uraikan kegiatan pembukaan..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kegiatan Inti
+                  <small>Wacana cerita, pembagian kerja berpasangan, menulis kalimat, presentasi</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="noneksak" data-pkm-field="kegiatanInti" rows="2" placeholder="Uraikan tahapan kegiatan inti..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">Kegiatan Akhir / Penutup</label>
+                <input type="text" class="pkm-input" data-tab-owner="noneksak" data-pkm-field="kegiatanAkhir" placeholder="Contoh: Evaluasi melengkapi kalimat perintah, PR majalah anak">
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Hal-Hal Unik yang Terjadi Selama Pembelajaran <span class="req">*</span>
+                  <small>Wajib dicantumkan: Respons tidak biasa siswa (misal: siswa pasif/mengantuk jadi fokus)</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="noneksak" data-pkm-field="halUnik" rows="2" placeholder="Contoh: Siswa yang biasanya mengantuk menjadi perhatian dan menengok ke supervisor..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Reaksi dan Tanggapan Siswa <span class="req">*</span>
+                  <small>Wajib dicantumkan: Dinamika kelas (misal kelas padat 40 siswa, ada yang mengobrol)</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="noneksak" data-pkm-field="reaksiSiswa" rows="2" placeholder="Contoh: Sebagian memperhatikan, sebagian mengobrol saat kerja berpasangan..."></textarea>
+              </div>
+
+              <div class="pkm-form-group" style="margin-bottom: 0;">
+                <label class="pkm-label">
+                  Rujukan Teori / Landasan Ilmiah Pendidikan <span class="req">*</span>
+                  <small>Wajib dicantumkan: Landasan teori model pembelajaran berpasangan beserta sumber</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="noneksak" data-pkm-field="rujukanTeori" rows="3" placeholder="Contoh: Sutardi & Sudirjo (2007) model belajar kelompok berpasangan untuk interaksi siswa (Sumber: http://...)"></textarea>
+              </div>
+            </div>
+
+            <!-- Prompt Preview Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-robot" style="color: #6366f1;"></i> Prompt AI Ulasan RPP Non-Eksak</h4>
+                  <div class="pkm-card-subtitle">Format ulasan naratif analitis sesuai contoh modul PKM Bahasa/IPS/Tematik</div>
+                </div>
+                <span class="prompt-tag" style="background: #fef3c7; color: #b45309;">RPP Non-Eksak</span>
+              </div>
+
+              <textarea id="pkm-prompt-output-noneksak" class="pkm-prompt-output-box" readonly></textarea>
+
+              <button type="button" class="pkm-copy-big-btn" onclick="copyPkmPrompt('noneksak', this)">
+                <i class="fas fa-copy"></i>
+                <span>Salin Prompt Ulasan RPP Non-Eksak</span>
+              </button>
+
+              <div class="pkm-ai-direct-box">
+                <div class="pkm-ai-direct-title"><i class="fas fa-external-link-alt"></i> Langsung Tempelkan ke Platform AI Pilihan Anda:</div>
+                <div class="pkm-ai-pills">
+                  <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn chatgpt"><i class="fas fa-robot"></i> ChatGPT</a>
+                  <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn gemini"><i class="fab fa-google"></i> Gemini</a>
+                  <a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn deepseek"><i class="fas fa-brain"></i> DeepSeek</a>
+                  <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn claude"><i class="fas fa-comment-dots"></i> Claude</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PANEL 5: KESIMPULAN & SARAN ================= -->
+        <div id="pkm-panel-kesimpulan" class="pkm-tab-panel">
+          <div class="pkm-grid">
+            <!-- Form Input Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-clipboard-check" style="color: #2563eb;"></i> Kesimpulan Praktik, Evaluasi PKM &amp; RTL</h4>
+                  <div class="pkm-card-subtitle">Sesuai Modul PKM: Rangkuman keberhasilan, masukan prosedur PKM, dan rencana guru ke depan</div>
+                </div>
+                <div class="pkm-btn-actions">
+                  <button type="button" class="pkm-btn-sm sample" onclick="fillPkmSample('kesimpulan')">
+                    <i class="fas fa-magic"></i> Contoh Otomatis
+                  </button>
+                  <button type="button" class="pkm-btn-sm" onclick="resetPkmForm('kesimpulan')">
+                    <i class="fas fa-undo"></i> Reset
+                  </button>
+                </div>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Kesimpulan Keberhasilan Praktik PKM Mahasiswa
+                  <small>Peningkatan kemampuan merancang RPP, menguasai kelas, dan menggunakan metode aktif</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="kesimpulan" data-pkm-field="kesimpulanPraktik" rows="3" placeholder="Uraikan kesimpulan peningkatan kemampuan mengajar..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Dampak terhadap Respons &amp; Pemahaman Siswa
+                  <small>Perkembangan motivasi, kerja sama kelompok, dan pemahaman bermakna siswa</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="kesimpulan" data-pkm-field="dampakSiswa" rows="2" placeholder="Uraikan perubahan positif siswa..."></textarea>
+              </div>
+
+              <div class="pkm-form-group">
+                <label class="pkm-label">
+                  Evaluasi &amp; Saran terhadap Mata Kuliah PKM &amp; Prosedur Praktik
+                  <small>Masukan konstruktif untuk bimbingan Supervisor 1 &amp; 2, durasi refleksi, pengayaan modul</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="kesimpulan" data-pkm-field="evaluasiPkm" rows="3" placeholder="Saran perbaikan prosedur mata kuliah PKM..."></textarea>
+              </div>
+
+              <div class="pkm-form-group" style="margin-bottom: 0;">
+                <label class="pkm-label">
+                  Rencana Tindak Lanjut (RTL) Masa Depan Guru dalam Mengelola Pembelajaran
+                  <small>Komitmen guru menerapkan 3 pilar Deep Learning, refleksi rutin, dan forum KKG/MGMP</small>
+                </label>
+                <textarea class="pkm-textarea" data-tab-owner="kesimpulan" data-pkm-field="rencanaMasaDepan" rows="3" placeholder="Rencana pengembangan keprofesian berkelanjutan guru..."></textarea>
+              </div>
+            </div>
+
+            <!-- Prompt Preview Panel -->
+            <div class="pkm-card">
+              <div class="pkm-card-header">
+                <div>
+                  <h4 class="pkm-card-title"><i class="fas fa-robot" style="color: #6366f1;"></i> Prompt AI Siap Salin (Bab Penutup)</h4>
+                  <div class="pkm-card-subtitle">Format Bab Kesimpulan, Saran Konstruktif, dan Rencana Tindak Lanjut Guru (RTL)</div>
+                </div>
+                <span class="prompt-tag" style="background: #e0e7ff; color: #4338ca;">Bab Penutup</span>
+              </div>
+
+              <textarea id="pkm-prompt-output-kesimpulan" class="pkm-prompt-output-box" readonly></textarea>
+
+              <button type="button" class="pkm-copy-big-btn" onclick="copyPkmPrompt('kesimpulan', this)">
+                <i class="fas fa-copy"></i>
+                <span>Salin Prompt Kesimpulan &amp; Saran</span>
+              </button>
+
+              <div class="pkm-ai-direct-box">
+                <div class="pkm-ai-direct-title"><i class="fas fa-external-link-alt"></i> Langsung Tempelkan ke Platform AI Pilihan Anda:</div>
+                <div class="pkm-ai-pills">
+                  <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn chatgpt"><i class="fas fa-robot"></i> ChatGPT</a>
+                  <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn gemini"><i class="fab fa-google"></i> Gemini</a>
+                  <a href="https://chat.deepseek.com" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn deepseek"><i class="fas fa-brain"></i> DeepSeek</a>
+                  <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="pkm-ai-pill-btn claude"><i class="fas fa-comment-dots"></i> Claude</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner Panduan Modul PKM -->
+        <div class="pkm-info-banner">
+          <i class="fas fa-lightbulb"></i>
+          <div class="pkm-info-banner-content">
+            <h5>Panduan Praktis Penggunaan Prompt Laporan PKM</h5>
+            <p>
+              1. <strong>Lengkapi Data Nyata:</strong> Isi formulir dengan data sekolah, kelas, supervisor, dan pengalaman praktik riil Anda agar narasi laporan bersifat otentik.<br>
+              2. <strong>Wajib Ada 3 Elemen pada Ulasan RPP:</strong> Modul PKM mensyaratkan setiap ulasan praktik mengajar memuat: (a) Peristiwa unik selama mengajar, (b) Tanggapan/reaksi siswa, dan (c) Rujukan ilmiah/teori pendidikan pendukung.<br>
+              3. <strong>Salin &amp; Periksa Kembali:</strong> Klik tombol salin, tempelkan ke AI (ChatGPT / Gemini / DeepSeek / Claude), lalu telaah hasilnya bersama Supervisor 1 atau Supervisor 2 sebelum dijilid dalam Laporan Akhir PKM.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -1349,5 +1909,6 @@ Tuliskan 3 alternatif kalimat deskriptif raport yang positif, mengapresiasi pros
   <script src="cp_reader_data.js"></script>
   <script src="mapel_presets_data.js?v=20261002_smartchips"></script>
   <script src="app.js?v=20261002_smartchips"></script>
+  <script src="pkm_generator.js?v=20261009_pkm"></script>
 </body>
 </html>
