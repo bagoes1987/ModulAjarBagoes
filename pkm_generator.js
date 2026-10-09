@@ -72,7 +72,18 @@
   };
 
   // State Aktif
+  // State Aktif
   let currentTab = 'pendahuluan';
+
+  // Ketentuan Tipografi Baku Modul PKM
+  const TYPOGRAPHY_GUIDE = `
+KETENTUAN FORMAT & TIPOGRAFI NASKAH (SESUAI MODUL RESMI PKM):
+- Ukuran Kertas: A4
+- Jenis Huruf: Times New Roman
+- Ukuran Huruf: 12 pt
+- Spasi Baris: 1,5 spasi (Line Spacing 1.5)
+- Perataan Paragraf: Justify (Rata Kanan-Kiri)
+- Standar Naskah: Siap langsung disalin dan ditempel ke lembar kerja pengolah kata (MS Word / Google Docs) tanpa perlu penataan ulang yang rumit.`;
 
   // Builder Prompt Generator untuk Masing-Masing Komponen
   function generatePrompt(tabKey) {
@@ -83,6 +94,8 @@
 Tugas Anda adalah menyusun draf naskah ilmiah formal yang komprehensif untuk:
 "BAB I: PENDAHULUAN - A. Gambaran Umum Sekolah dan Konteks Ruang Kelas"
 sesuai dengan ketentuan baku modul laporan akhir PKM.
+
+${TYPOGRAPHY_GUIDE}
 
 DATA KONTEKS LOKASI PRAKTIK MAHASISWA:
 1. Satuan Pendidikan / Sekolah: ${d.namaSekolah || '[Nama Sekolah]'}
@@ -100,7 +113,8 @@ KETENTUAN DAN SISTEMATIKA PENULISAN:
    - Paragraf 2: Gambaran detail ruang kelas tempat praktik (ukuran, ventilasi, pencahayaan alami, penataan meja kursi, ketersediaan pojok baca/media ajar) serta kaitannya dengan kenyamanan belajar siswa.
    - Paragraf 3: Profil karakteristik peserta didik (rentang kemampuan, kebiasaan belajar, latar belakang sosial-ekonomi) dan dinamika interaksi yang terjadi di kelas tersebut.
    - Paragraf 4: Alasan urgensi mengapa praktik PKM (berbasis pembelajaran mendalam / Deep Learning dan Kurikulum Merdeka) penting diterapkan untuk menjawab tantangan di kelas dan sekolah tersebut.
-3. Langsung sajikan teks isi laporan yang siap disalin dan ditempel ke dalam dokumen laporan akhir PKM mahasiswa tanpa basa-basi pengantar pembuka.`;
+3. Susun naskah dengan struktur paragraf yang rapi dan proporsional untuk standar cetak kertas A4, huruf Times New Roman 12 pt, dan spasi 1,5.
+4. Langsung sajikan teks isi laporan yang siap disalin dan ditempel ke dalam dokumen laporan akhir PKM mahasiswa tanpa basa-basi pengantar pembuka.`;
     }
 
     if (tabKey === 'manfaat') {
@@ -110,6 +124,8 @@ KETENTUAN DAN SISTEMATIKA PENULISAN:
 Tugas Anda adalah menyusun draf naskah laporan reflektif yang mendalam untuk:
 "BAB II / BAGIAN: MANFAAT MENGIKUTI PRAKTIK PKM DAN REFLEKSI DIRI"
 sesuai dengan ketentuan baku modul laporan akhir PKM.
+
+${TYPOGRAPHY_GUIDE}
 
 DATA PRAKTIKAN DAN PENGALAMAN REFLEKSI:
 1. Identitas Mahasiswa & Prodi: ${d.namaMahasiswa || '[Nama Mahasiswa]'} - ${d.programStudi || '[Program Studi]'}
@@ -129,7 +145,8 @@ KETENTUAN DAN SISTEMATIKA PENULISAN:
    c. Dinamika Emosional dan Kesadaran Pasca-Refleksi Diri: Transformasi cara pandang terhadap peran guru, empati kepada siswa, dan rasa tanggung jawab moral pendidik.
    d. Analisis Kritis Kesulitan Refleksi: Kejujuran dalam mengidentifikasi kelemahan mengajar diri sendiri serta cara mengatasi bias subjektif.
    e. Catatan Pengalaman Unik/Khas: Pembelajaran berharga bahwa dinamika kelas nyata menuntut fleksibilitas dan seni mengajar yang melampaui teks kaku RPP.
-3. Langsung berikan teks naskah laporan yang siap disalin utuh untuk laporan PKM tanpa teks pengantar pembuka/penutup.`;
+3. Susun naskah siap cetak dengan standar modul: Kertas A4, font Times New Roman 12 pt, spasi 1,5, dan paragraf rata kanan-kiri.
+4. Langsung berikan teks naskah laporan yang siap disalin utuh untuk laporan PKM tanpa teks pengantar pembuka/penutup.`;
     }
 
     if (tabKey === 'eksak') {
@@ -139,6 +156,8 @@ KETENTUAN DAN SISTEMATIKA PENULISAN:
 Tugas Anda adalah membuat ulasan analitis-reflektif pelaksanaan praktik pembelajaran untuk:
 "ULASAN PROSES PRAKTIK MENGAJAR MATA PELAJARAN EKSAKTA (IPA / MATEMATIKA / SAINS)"
 Sesuai standar rubrik laporan PKM yang memuat kronologis, keunikan proses, reaksi peserta didik, dan rujukan ilmiah pendukung.
+
+${TYPOGRAPHY_GUIDE}
 
 DATA PRAKTIK PEMBELAJARAN EKSAKTA:
 1. Waktu Pelaksanaan: ${d.hariTanggalWaktu || '[Hari, Tanggal, Jam]'}
@@ -157,7 +176,8 @@ KETENTUAN STRUKTUR PENULISAN ULASAN SESUAI MODUL PKM:
 2. Paragraf 2 (Proses Kegiatan Inti & Penutup): Uraikan pengorganisasian kelas (berkelompok/individu), penggunaan media demonstrasi/LKS, interaksi tanya jawab, presentasi, serta bagaimana kegiatan dirangkum dan dievaluasi.
 3. Paragraf 3 (Reaksi Siswa & Peristiwa Unik): Bahas respons dan antusiasme siswa secara detail, serta ulas secara mendalam kejadian unik yang terjadi selama proses pembelajaran (misal: antusiasme siswa saat di halaman sekolah dan reaksi saat kembali ke kelas).
 4. Paragraf 4 (Landasan Teori & Rujukan Ilmiah): Jelaskan alasan pedagogis di balik rancangan tindakan mengajar tersebut dengan mengintegrasikan kutipan rujukan teori pendidikan yang dicantumkan (seperti rujukan Devi, 2010 atau teori penemuan langsung) lengkap dengan sitasi dan tautan/sumber rujukannya.
-5. Gunakan gaya bahasa naratif reflektif khas laporan PKM UT/FKIP. Sajikan teks langsung yang siap dimasukkan ke dalam laporan tanpa prolog atau epilog.`;
+5. Format naskah harus memenuhi standar tipografi: Kertas A4, jenis huruf Times New Roman 12 pt, spasi 1,5, dan rata kanan-kiri.
+6. Gunakan gaya bahasa naratif reflektif khas laporan PKM UT/FKIP. Sajikan teks langsung yang siap dimasukkan ke dalam laporan tanpa prolog atau epilog.`;
     }
 
     if (tabKey === 'noneksak') {
@@ -167,6 +187,8 @@ KETENTUAN STRUKTUR PENULISAN ULASAN SESUAI MODUL PKM:
 Tugas Anda adalah membuat ulasan analitis-reflektif pelaksanaan praktik pembelajaran untuk:
 "ULASAN PROSES PRAKTIK MENGAJAR MATA PELAJARAN NON-EKSAKTA (BAHASA / TEMATIK / IPS / PKn)"
 Sesuai standar rubrik laporan PKM yang memuat kronologis, keunikan proses, reaksi peserta didik, dinamika kelas besar, dan rujukan ilmiah pendukung.
+
+${TYPOGRAPHY_GUIDE}
 
 DATA PRAKTIK PEMBELAJARAN NON-EKSAKTA:
 1. Waktu Pelaksanaan: ${d.hariTanggalWaktu || '[Hari, Tanggal, Jam]'}
@@ -185,7 +207,8 @@ KETENTUAN STRUKTUR PENULISAN ULASAN SESUAI MODUL PKM:
 2. Paragraf 2 (Kegiatan Inti & Penugasan Berpasangan): Uraikan pengolahan wacana teks/materi, pembagian kelompok berpasangan, pengerjaan tugas menulis, presentasi di depan kelas, serta evaluasi formatif di akhir sesi.
 3. Paragraf 3 (Dinamika Kelas, Reaksi Siswa & Keunikan): Ulas secara jujur dinamika kelas padat (misal 40 siswa), siswa yang antusias vs yang mengobrol saat kerja kelompok, serta sorot peristiwa unik (seperti siswa yang biasanya mengantuk/pasif berubah menjadi fokus mengamati kehadiran supervisor dan guru).
 4. Paragraf 4 (Kajian Pedagogis & Landasan Teori): Berikan justifikasi ilmiah mengapa metode belajar berpasangan tersebut dipilih dengan mengutip teori pendidikan terkait (misalnya Sutardi dan Sudirjo, 2007 tentang pola interaksi sosial siswa) beserta sumber rujukannya.
-5. Tuliskan dalam bahasa Indonesia formal, ilmiah, mengalir, dan bernuansa reflektif khas guru pembelajar. Sajikan teks langsung yang siap pakai tanpa kata pengantar pembuka.`;
+5. Format naskah harus memenuhi standar tipografi: Kertas A4, jenis huruf Times New Roman 12 pt, spasi 1,5, dan rata kanan-kiri.
+6. Tuliskan dalam bahasa Indonesia formal, ilmiah, mengalir, dan bernuansa reflektif khas guru pembelajar. Sajikan teks langsung yang siap pakai tanpa kata pengantar pembuka.`;
     }
 
     if (tabKey === 'kesimpulan') {
@@ -195,6 +218,8 @@ KETENTUAN STRUKTUR PENULISAN ULASAN SESUAI MODUL PKM:
 Tugas Anda adalah menyusun bab penutup yang komprehensif, tegas, dan bernas untuk:
 "BAB PENUTUP: KESIMPULAN DAN SARAN TINDAK LANJUT"
 sesuai dengan ketentuan baku modul laporan akhir PKM.
+
+${TYPOGRAPHY_GUIDE}
 
 DATA CAPAIAN DAN RENCANA TINDAK LANJUT:
 1. Kesimpulan Keberhasilan Praktik PKM: ${d.kesimpulanPraktik || '[Peningkatan Keterampilan Mengajar Mahasiswa]'}
@@ -210,7 +235,8 @@ KETENTUAN DAN SISTEMATIKA PENULISAN:
       - 1. Saran untuk Pengelola Mata Kuliah PKM & Supervisor: Rekomendasi konstruktif terkait sistem bimbingan, durasi refleksi, dan pengayaan modul berbasis AI/teknologi.
       - 2. Saran untuk Pihak Sekolah Tempat Praktik: Masukan positif untuk pemeliharaan fasilitas dan kolaborasi guru sejawat.
       - 3. Rencana Tindak Lanjut Guru (RTL): Komitmen nyata mahasiswa ke depan dalam mengelola pembelajaran bermakna (Mindful, Meaningful, Joyful), keteraturan refleksi mandiri pasca-mengajar, dan partisipasi dalam komunitas belajar (KKG/MGMP).
-2. Tuliskan dengan gaya bahasa baku ilmiah, penuh optimisme profesional, dan siap dijadikan halaman penutup laporan akhir PKM. Langsung berikan teks naskah tanpa pengantar pembuka/penutup.`;
+2. Standar tipografi naskah: Kertas A4, jenis huruf Times New Roman 12 pt, spasi 1,5, dan perataan Justify (Rata Kanan-Kiri).
+3. Tuliskan dengan gaya bahasa baku ilmiah, penuh optimisme profesional, dan siap dijadikan halaman penutup laporan akhir PKM. Langsung berikan teks naskah tanpa pengantar pembuka/penutup.`;
     }
 
     return '';
